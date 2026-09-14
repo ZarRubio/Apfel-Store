@@ -44,7 +44,7 @@ public/images/        # Imágenes servidas por Next/Image
 
 Los componentes nunca importan `src/data/products.ts` directamente. Usan las funciones de `src/lib/products.ts`, que actualmente devuelven datos locales. Para integrar Supabase en una fase posterior, se reemplaza esa implementación manteniendo el contrato de las funciones y los tipos de `src/types/product.ts`.
 
-Las imágenes usan rutas en `public/images/products` y `public/images/catalog`. Cada color apunta a su fotografía. `src/data/imagePresentation.ts` guarda ajustes de escala y centrado para las fotos con márgenes desiguales, sin alterar los archivos originales.
+Las cards, el detalle y sus miniaturas usan WebP normalizados en `public/products/normalized`. El manifiesto generado `src/data/normalizedProductImages.json` resuelve las rutas sin cambiar la información comercial. Consulta [Normalizar imágenes](docs/PRODUCT-IMAGES.md) para añadir fuentes y regenerar el catálogo.
 
 ## Agregar un producto
 

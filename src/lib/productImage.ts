@@ -1,25 +1,14 @@
 import type { Product } from '@/types/product';
-import type { CSSProperties } from 'react';
-import { imagePresentation } from '@/data/imagePresentation';
+import normalizedImages from '@/data/normalizedProductImages.json';
 
-// These source files have real transparency and a consistent front/back crop.
-// Variant galleries keep the product's own color-specific images.
-const cutouts: Record<string, string> = {
-  'iphone-17-pro-max': '/images/products/17-pro-silver.webp',
-  'iphone-17-pro': '/images/products/17-pro-blue.webp',
-  'iphone-17': '/images/products/17-black.webp',
-  'iphone-16': '/images/products/16-black.webp',
-};
+const images: Readonly<Record<string, string>> = normalizedImages;
 
-export function getCardImage(product: Product) {
-  return cutouts[product.slug] ?? product.images[0];
+// Only successfully generated files enter the manifest. New/unprocessed assets
+// retain their source URL until the next normalize-images run.
+export function getProductImage(src: string) {
+  return images[src] ?? src;
 }
 
-export function getImageFrameStyle(src: string): CSSProperties {
-  const frame = imagePresentation[src];
-  return {
-    '--image-scale': frame?.scale ?? 1,
-    '--image-x': `${frame?.x ?? 0}%`,
-    '--image-y': `${frame?.y ?? 0}%`,
-  } as CSSProperties;
+export function getCardImage(product: Product) {
+  return getProductImage(product.colors[0]?.image ?? product.images[0]);
 }

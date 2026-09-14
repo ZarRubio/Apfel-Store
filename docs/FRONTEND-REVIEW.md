@@ -2,7 +2,7 @@
 
 ## Resuelto
 
-- **Fotografías:** los 21 modelos tienen 92 opciones de color, todas con una ruta distinta y un archivo existente. Se eliminó de las tarjetas el recorte transparente que mostraba un color diferente al inicial. Se midieron los encuadres actuales y se aplicaron 35 correcciones puntuales de escala o centrado a las fotos con márgenes desiguales; los archivos originales no se alteraron.
+- **Fotografías:** Sharp genera WebP de 1200 × 1200 con transparencia y escala compartida por modelo. Cards, detalle y miniaturas resuelven sus rutas mediante un manifiesto generado. Las 35 compensaciones CSS anteriores se retiraron; los originales permanecen intactos. El proceso y sus límites están descritos en `docs/PRODUCT-IMAGES.md`.
 - **URL y rastreo:** `src/constants/site.ts` y la metadata usan la URL privada de Sites en lugar de `apfel-store.example`. Se mantiene `noindex` y el bloqueo en `robots.txt` mientras los datos comerciales estén pendientes.
 - **Información comercial:** la disponibilidad de los 21 modelos es “por confirmar”. El filtro de disponibilidad solo aparece cuando existan datos confirmados. La sección Ofertas muestra únicamente dos modelos que tienen un precio anterior de referencia; la consulta por WhatsApp pide confirmación del precio final, inventario, garantía y entrega.
 - **Documentación:** `docs/DESIGN.md` y `README.md` describen ahora los 21 modelos, los filtros reales, el carrusel manual y la situación comercial de la vista privada.

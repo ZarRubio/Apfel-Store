@@ -1,0 +1,2431 @@
+{
+  "canvas": 1200,
+  "occupancy": 0.8,
+  "results": [
+    {
+      "file": "iphone-11-pro-max/11-pro-max-256gb-gris-espacial.jpg",
+      "output": "iphone-11-pro-max/11-pro-max-256gb-gris-espacial.webp",
+      "group": "iphone-11-pro-max",
+      "original": {
+        "width": 768,
+        "height": 768
+      },
+      "boundingBox": {
+        "left": 147,
+        "top": 45,
+        "width": 484,
+        "height": 665
+      },
+      "modelHeight": 924,
+      "sourceCalibration": 1.3894736842105264,
+      "groupScale": 1.0389610389610389,
+      "appliedScale": 1.4421052631578948,
+      "rendered": {
+        "width": 698,
+        "height": 959
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-11-pro-max/11-pro-max-256gb-oro.jpg",
+      "output": "iphone-11-pro-max/11-pro-max-256gb-oro.webp",
+      "group": "iphone-11-pro-max",
+      "original": {
+        "width": 679,
+        "height": 932
+      },
+      "boundingBox": {
+        "left": 4,
+        "top": 4,
+        "width": 675,
+        "height": 924
+      },
+      "modelHeight": 924,
+      "sourceCalibration": 1,
+      "groupScale": 1.0389610389610389,
+      "appliedScale": 1.0378787878787878,
+      "rendered": {
+        "width": 701,
+        "height": 959
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-11-pro-max/11-pro-max-256gb-plata.jpg",
+      "output": "iphone-11-pro-max/11-pro-max-256gb-plata.webp",
+      "group": "iphone-11-pro-max",
+      "original": {
+        "width": 1199,
+        "height": 800
+      },
+      "boundingBox": {
+        "left": 352,
+        "top": 101,
+        "width": 496,
+        "height": 686
+      },
+      "modelHeight": 924,
+      "sourceCalibration": 1.346938775510204,
+      "groupScale": 1.0389610389610389,
+      "appliedScale": 1.3979591836734695,
+      "rendered": {
+        "width": 693,
+        "height": 959
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-11-pro-max/11-pro-max-256gb-verde-media-noche.jpg",
+      "output": "iphone-11-pro-max/11-pro-max-256gb-verde-media-noche.webp",
+      "group": "iphone-11-pro-max",
+      "original": {
+        "width": 736,
+        "height": 1039
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 736,
+        "height": 1039
+      },
+      "modelHeight": 924,
+      "sourceCalibration": 0.8893166506256015,
+      "groupScale": 1.0389610389610389,
+      "appliedScale": 0.9230028873917228,
+      "rendered": {
+        "width": 679,
+        "height": 959
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-11-pro/11-pro-256gb-gris-espacial.jpg",
+      "output": "iphone-11-pro/11-pro-256gb-gris-espacial.webp",
+      "group": "iphone-11-pro",
+      "original": {
+        "width": 828,
+        "height": 814
+      },
+      "boundingBox": {
+        "left": 163,
+        "top": 106,
+        "width": 501,
+        "height": 671
+      },
+      "modelHeight": 786,
+      "sourceCalibration": 1.1713859910581221,
+      "groupScale": 1.2213740458015268,
+      "appliedScale": 1.4307004470938898,
+      "rendered": {
+        "width": 717,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-11-pro/11-pro-256gb-oro.jpg",
+      "output": "iphone-11-pro/11-pro-256gb-oro.webp",
+      "group": "iphone-11-pro",
+      "original": {
+        "width": 834,
+        "height": 1000
+      },
+      "boundingBox": {
+        "left": 122,
+        "top": 198,
+        "width": 590,
+        "height": 786
+      },
+      "modelHeight": 786,
+      "sourceCalibration": 1,
+      "groupScale": 1.2213740458015268,
+      "appliedScale": 1.2213740458015268,
+      "rendered": {
+        "width": 721,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-11-pro/11-pro-256gb-plata.jpg",
+      "output": "iphone-11-pro/11-pro-256gb-plata.webp",
+      "group": "iphone-11-pro",
+      "original": {
+        "width": 735,
+        "height": 870
+      },
+      "boundingBox": {
+        "left": 112,
+        "top": 174,
+        "width": 512,
+        "height": 682
+      },
+      "modelHeight": 786,
+      "sourceCalibration": 1.152492668621701,
+      "groupScale": 1.2213740458015268,
+      "appliedScale": 1.4076246334310851,
+      "rendered": {
+        "width": 721,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-11-pro/11-pro-256gb-verde-medianoche.jpg",
+      "output": "iphone-11-pro/11-pro-256gb-verde-medianoche.webp",
+      "group": "iphone-11-pro",
+      "original": {
+        "width": 1200,
+        "height": 1600
+      },
+      "boundingBox": {
+        "left": 120,
+        "top": 173,
+        "width": 934,
+        "height": 1252
+      },
+      "modelHeight": 786,
+      "sourceCalibration": 0.6277955271565495,
+      "groupScale": 1.2213740458015268,
+      "appliedScale": 0.7667731629392971,
+      "rendered": {
+        "width": 716,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-11/11-128gb-amarillo.jpg",
+      "output": "iphone-11/11-128gb-amarillo.webp",
+      "group": "iphone-11",
+      "original": {
+        "width": 1024,
+        "height": 1024
+      },
+      "boundingBox": {
+        "left": 146,
+        "top": 16,
+        "width": 732,
+        "height": 993
+      },
+      "modelHeight": 902,
+      "sourceCalibration": 0.9083585095669687,
+      "groupScale": 1.06430155210643,
+      "appliedScale": 0.9657603222557906,
+      "rendered": {
+        "width": 707,
+        "height": 959
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-11/11-128gb-blanco.jpg",
+      "output": "iphone-11/11-128gb-blanco.webp",
+      "group": "iphone-11",
+      "original": {
+        "width": 940,
+        "height": 940
+      },
+      "boundingBox": {
+        "left": 168,
+        "top": 110,
+        "width": 603,
+        "height": 722
+      },
+      "modelHeight": 902,
+      "sourceCalibration": 1.2493074792243768,
+      "groupScale": 1.06430155210643,
+      "appliedScale": 1.3282548476454294,
+      "rendered": {
+        "width": 801,
+        "height": 959
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-11/11-128gb-morado.jpg",
+      "output": "iphone-11/11-128gb-morado.webp",
+      "group": "iphone-11",
+      "original": {
+        "width": 1000,
+        "height": 1200
+      },
+      "boundingBox": {
+        "left": 168,
+        "top": 150,
+        "width": 662,
+        "height": 900
+      },
+      "modelHeight": 902,
+      "sourceCalibration": 1.0022222222222221,
+      "groupScale": 1.06430155210643,
+      "appliedScale": 1.0655555555555556,
+      "rendered": {
+        "width": 705,
+        "height": 959
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-11/11-128gb-negro.jpg",
+      "output": "iphone-11/11-128gb-negro.webp",
+      "group": "iphone-11",
+      "original": {
+        "width": 1199,
+        "height": 874
+      },
+      "boundingBox": {
+        "left": 276,
+        "top": 55,
+        "width": 543,
+        "height": 739
+      },
+      "modelHeight": 902,
+      "sourceCalibration": 1.2205683355886332,
+      "groupScale": 1.06430155210643,
+      "appliedScale": 1.297699594046008,
+      "rendered": {
+        "width": 705,
+        "height": 959
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-11/11-128gb-rojo.jpg",
+      "output": "iphone-11/11-128gb-rojo.webp",
+      "group": "iphone-11",
+      "original": {
+        "width": 1000,
+        "height": 1200
+      },
+      "boundingBox": {
+        "left": 168,
+        "top": 149,
+        "width": 662,
+        "height": 902
+      },
+      "modelHeight": 902,
+      "sourceCalibration": 1,
+      "groupScale": 1.06430155210643,
+      "appliedScale": 1.0631929046563193,
+      "rendered": {
+        "width": 704,
+        "height": 959
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-11/11-128gb-verde.jpg",
+      "output": "iphone-11/11-128gb-verde.webp",
+      "group": "iphone-11",
+      "original": {
+        "width": 1200,
+        "height": 1200
+      },
+      "boundingBox": {
+        "left": 259,
+        "top": 135,
+        "width": 682,
+        "height": 930
+      },
+      "modelHeight": 902,
+      "sourceCalibration": 0.9698924731182795,
+      "groupScale": 1.06430155210643,
+      "appliedScale": 1.0311827956989248,
+      "rendered": {
+        "width": 703,
+        "height": 959
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-12-pro-max/12-pro-max-256gb-azul-marino.jpg",
+      "output": "iphone-12-pro-max/12-pro-max-256gb-azul-marino.webp",
+      "group": "iphone-12-pro-max",
+      "original": {
+        "width": 940,
+        "height": 1112
+      },
+      "boundingBox": {
+        "left": 168,
+        "top": 160,
+        "width": 600,
+        "height": 816
+      },
+      "modelHeight": 809,
+      "sourceCalibration": 0.991421568627451,
+      "groupScale": 1.1866501854140914,
+      "appliedScale": 1.1752450980392157,
+      "rendered": {
+        "width": 705,
+        "height": 959
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-12-pro-max/12-pro-max-256gb-grafito.jpg",
+      "output": "iphone-12-pro-max/12-pro-max-256gb-grafito.webp",
+      "group": "iphone-12-pro-max",
+      "original": {
+        "width": 736,
+        "height": 736
+      },
+      "boundingBox": {
+        "left": 64,
+        "top": 14,
+        "width": 609,
+        "height": 693
+      },
+      "modelHeight": 809,
+      "sourceCalibration": 1.1673881673881674,
+      "groupScale": 1.1866501854140914,
+      "appliedScale": 1.3838383838383839,
+      "rendered": {
+        "width": 843,
+        "height": 959
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-12-pro-max/12-pro-max-256gb-oro.jpg",
+      "output": "iphone-12-pro-max/12-pro-max-256gb-oro.webp",
+      "group": "iphone-12-pro-max",
+      "original": {
+        "width": 940,
+        "height": 1112
+      },
+      "boundingBox": {
+        "left": 173,
+        "top": 207,
+        "width": 595,
+        "height": 809
+      },
+      "modelHeight": 809,
+      "sourceCalibration": 1,
+      "groupScale": 1.1866501854140914,
+      "appliedScale": 1.185414091470952,
+      "rendered": {
+        "width": 705,
+        "height": 959
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-12-pro-max/12-pro-max-256gb-plata.jpg",
+      "output": "iphone-12-pro-max/12-pro-max-256gb-plata.webp",
+      "group": "iphone-12-pro-max",
+      "original": {
+        "width": 810,
+        "height": 768
+      },
+      "boundingBox": {
+        "left": 123,
+        "top": 0,
+        "width": 565,
+        "height": 766
+      },
+      "modelHeight": 809,
+      "sourceCalibration": 1.056135770234987,
+      "groupScale": 1.1866501854140914,
+      "appliedScale": 1.251958224543081,
+      "rendered": {
+        "width": 707,
+        "height": 959
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-12-pro/12-pro-128gb-y-256gb-azul-marino.jpg",
+      "output": "iphone-12-pro/12-pro-128gb-y-256gb-azul-marino.webp",
+      "group": "iphone-12-pro",
+      "original": {
+        "width": 1000,
+        "height": 1200
+      },
+      "boundingBox": {
+        "left": 168,
+        "top": 149,
+        "width": 662,
+        "height": 901
+      },
+      "modelHeight": 901,
+      "sourceCalibration": 1,
+      "groupScale": 1.065482796892342,
+      "appliedScale": 1.065482796892342,
+      "rendered": {
+        "width": 705,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-12-pro/12-pro-128gb-y-256gb-grafito.jpg",
+      "output": "iphone-12-pro/12-pro-128gb-y-256gb-grafito.webp",
+      "group": "iphone-12-pro",
+      "original": {
+        "width": 1098,
+        "height": 1500
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 1096,
+        "height": 1499
+      },
+      "modelHeight": 901,
+      "sourceCalibration": 0.6010673782521682,
+      "groupScale": 1.065482796892342,
+      "appliedScale": 0.6404269513008672,
+      "rendered": {
+        "width": 702,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-12-pro/12-pro-128gb-y-256gb-oro.jpg",
+      "output": "iphone-12-pro/12-pro-128gb-y-256gb-oro.webp",
+      "group": "iphone-12-pro",
+      "original": {
+        "width": 444,
+        "height": 606
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 444,
+        "height": 606
+      },
+      "modelHeight": 901,
+      "sourceCalibration": 1.4867986798679869,
+      "groupScale": 1.065482796892342,
+      "appliedScale": 1.5841584158415842,
+      "rendered": {
+        "width": 703,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-12-pro/12-pro-128gb-y-256gb-plata.jpg",
+      "output": "iphone-12-pro/12-pro-128gb-y-256gb-plata.webp",
+      "group": "iphone-12-pro",
+      "original": {
+        "width": 736,
+        "height": 898
+      },
+      "boundingBox": {
+        "left": 32,
+        "top": 5,
+        "width": 672,
+        "height": 882
+      },
+      "modelHeight": 901,
+      "sourceCalibration": 1.0215419501133787,
+      "groupScale": 1.065482796892342,
+      "appliedScale": 1.08843537414966,
+      "rendered": {
+        "width": 731,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-12/12-128gb-azul.jpg",
+      "output": "iphone-12/12-128gb-azul.webp",
+      "group": "iphone-12",
+      "original": {
+        "width": 1102,
+        "height": 1500
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 1102,
+        "height": 1500
+      },
+      "modelHeight": 1200,
+      "sourceCalibration": 0.8,
+      "groupScale": 0.8,
+      "appliedScale": 0.64,
+      "rendered": {
+        "width": 705,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-12/12-128gb-blanco.jpg",
+      "output": "iphone-12/12-128gb-blanco.webp",
+      "group": "iphone-12",
+      "original": {
+        "width": 1000,
+        "height": 1000
+      },
+      "boundingBox": {
+        "left": 144,
+        "top": 16,
+        "width": 712,
+        "height": 968
+      },
+      "modelHeight": 1200,
+      "sourceCalibration": 1.2396694214876034,
+      "groupScale": 0.8,
+      "appliedScale": 0.9917355371900827,
+      "rendered": {
+        "width": 706,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-12/12-128gb-negro.jpg",
+      "output": "iphone-12/12-128gb-negro.webp",
+      "group": "iphone-12",
+      "original": {
+        "width": 736,
+        "height": 909
+      },
+      "boundingBox": {
+        "left": 24,
+        "top": 22,
+        "width": 648,
+        "height": 879
+      },
+      "modelHeight": 1200,
+      "sourceCalibration": 1.3651877133105803,
+      "groupScale": 0.8,
+      "appliedScale": 1.0921501706484642,
+      "rendered": {
+        "width": 708,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-12/12-128gb-purpura.jpg",
+      "output": "iphone-12/12-128gb-purpura.webp",
+      "group": "iphone-12",
+      "original": {
+        "width": 1200,
+        "height": 1631
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 1200,
+        "height": 1631
+      },
+      "modelHeight": 1200,
+      "sourceCalibration": 0.7357449417535254,
+      "groupScale": 0.8,
+      "appliedScale": 0.5885959534028203,
+      "rendered": {
+        "width": 706,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-12/12-128gb-rojo.jpg",
+      "output": "iphone-12/12-128gb-rojo.webp",
+      "group": "iphone-12",
+      "original": {
+        "width": 600,
+        "height": 600
+      },
+      "boundingBox": {
+        "left": 78,
+        "top": 0,
+        "width": 443,
+        "height": 599
+      },
+      "modelHeight": 1200,
+      "sourceCalibration": 2.003338898163606,
+      "groupScale": 0.8,
+      "appliedScale": 1.6026711185308848,
+      "rendered": {
+        "width": 710,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-12/12-128gb-verde.jpg",
+      "output": "iphone-12/12-128gb-verde.webp",
+      "group": "iphone-12",
+      "original": {
+        "width": 1200,
+        "height": 1200
+      },
+      "boundingBox": {
+        "left": 154,
+        "top": 0,
+        "width": 891,
+        "height": 1200
+      },
+      "modelHeight": 1200,
+      "sourceCalibration": 1,
+      "groupScale": 0.8,
+      "appliedScale": 0.8,
+      "rendered": {
+        "width": 713,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-13-pro-max/13-pro-max-128gb-y-256gb-azul-sierra.jpg",
+      "output": "iphone-13-pro-max/13-pro-max-128gb-y-256gb-azul-sierra.webp",
+      "group": "iphone-13-pro-max",
+      "original": {
+        "width": 507,
+        "height": 646
+      },
+      "boundingBox": {
+        "left": 2,
+        "top": 2,
+        "width": 500,
+        "height": 638
+      },
+      "modelHeight": 726,
+      "sourceCalibration": 1.1379310344827587,
+      "groupScale": 1.322314049586777,
+      "appliedScale": 1.5047021943573669,
+      "rendered": {
+        "width": 752,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-13-pro-max/13-pro-max-128gb-y-256gb-grafito.jpg",
+      "output": "iphone-13-pro-max/13-pro-max-128gb-y-256gb-grafito.webp",
+      "group": "iphone-13-pro-max",
+      "original": {
+        "width": 1000,
+        "height": 1000
+      },
+      "boundingBox": {
+        "left": 200,
+        "top": 94,
+        "width": 599,
+        "height": 809
+      },
+      "modelHeight": 726,
+      "sourceCalibration": 0.8974042027194067,
+      "groupScale": 1.322314049586777,
+      "appliedScale": 1.1866501854140914,
+      "rendered": {
+        "width": 711,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-13-pro-max/13-pro-max-128gb-y-256gb-oro.jpg",
+      "output": "iphone-13-pro-max/13-pro-max-128gb-y-256gb-oro.webp",
+      "group": "iphone-13-pro-max",
+      "original": {
+        "width": 560,
+        "height": 726
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 560,
+        "height": 726
+      },
+      "modelHeight": 726,
+      "sourceCalibration": 1,
+      "groupScale": 1.322314049586777,
+      "appliedScale": 1.322314049586777,
+      "rendered": {
+        "width": 740,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-13-pro-max/13-pro-max-128gb-y-256gb-plata.jpg",
+      "output": "iphone-13-pro-max/13-pro-max-128gb-y-256gb-plata.webp",
+      "group": "iphone-13-pro-max",
+      "original": {
+        "width": 720,
+        "height": 755
+      },
+      "boundingBox": {
+        "left": 96,
+        "top": 15,
+        "width": 529,
+        "height": 684
+      },
+      "modelHeight": 726,
+      "sourceCalibration": 1.0614035087719298,
+      "groupScale": 1.322314049586777,
+      "appliedScale": 1.4035087719298245,
+      "rendered": {
+        "width": 742,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-13-pro/13-pro-128gb-y-256gb-azul-sierra.jpg",
+      "output": "iphone-13-pro/13-pro-128gb-y-256gb-azul-sierra.webp",
+      "group": "iphone-13-pro",
+      "original": {
+        "width": 1137,
+        "height": 1500
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 1136,
+        "height": 1499
+      },
+      "modelHeight": 1378,
+      "sourceCalibration": 0.9192795196797865,
+      "groupScale": 0.6966618287373004,
+      "appliedScale": 0.6404269513008672,
+      "rendered": {
+        "width": 728,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-13-pro/13-pro-128gb-y-256gb-grafito.jpg",
+      "output": "iphone-13-pro/13-pro-128gb-y-256gb-grafito.webp",
+      "group": "iphone-13-pro",
+      "original": {
+        "width": 522,
+        "height": 664
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 522,
+        "height": 664
+      },
+      "modelHeight": 1378,
+      "sourceCalibration": 2.075301204819277,
+      "groupScale": 0.6966618287373004,
+      "appliedScale": 1.4457831325301205,
+      "rendered": {
+        "width": 755,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-13-pro/13-pro-128gb-y-256gb-oro.jpg",
+      "output": "iphone-13-pro/13-pro-128gb-y-256gb-oro.webp",
+      "group": "iphone-13-pro",
+      "original": {
+        "width": 1000,
+        "height": 1200
+      },
+      "boundingBox": {
+        "left": 120,
+        "top": 98,
+        "width": 760,
+        "height": 1004
+      },
+      "modelHeight": 1378,
+      "sourceCalibration": 1.3725099601593624,
+      "groupScale": 0.6966618287373004,
+      "appliedScale": 0.9561752988047809,
+      "rendered": {
+        "width": 727,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-13-pro/13-pro-128gb-y-256gb-plata.jpg",
+      "output": "iphone-13-pro/13-pro-128gb-y-256gb-plata.webp",
+      "group": "iphone-13-pro",
+      "original": {
+        "width": 1152,
+        "height": 1536
+      },
+      "boundingBox": {
+        "left": 112,
+        "top": 150,
+        "width": 1032,
+        "height": 1378
+      },
+      "modelHeight": 1378,
+      "sourceCalibration": 1,
+      "groupScale": 0.6966618287373004,
+      "appliedScale": 0.6966618287373004,
+      "rendered": {
+        "width": 719,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-13/13-128gb-y-256gb-azul.jpg",
+      "output": "iphone-13/13-128gb-y-256gb-azul.webp",
+      "group": "iphone-13",
+      "original": {
+        "width": 736,
+        "height": 736
+      },
+      "boundingBox": {
+        "left": 175,
+        "top": 109,
+        "width": 386,
+        "height": 528
+      },
+      "modelHeight": 998,
+      "sourceCalibration": 1.8901515151515151,
+      "groupScale": 0.9619238476953907,
+      "appliedScale": 1.8181818181818181,
+      "rendered": {
+        "width": 702,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-13/13-128gb-y-256gb-blanco.jpg",
+      "output": "iphone-13/13-128gb-y-256gb-blanco.webp",
+      "group": "iphone-13",
+      "original": {
+        "width": 736,
+        "height": 1000
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 736,
+        "height": 1000
+      },
+      "modelHeight": 998,
+      "sourceCalibration": 0.998,
+      "groupScale": 0.9619238476953907,
+      "appliedScale": 0.96,
+      "rendered": {
+        "width": 707,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-13/13-128gb-y-256gb-medianoche.jpg",
+      "output": "iphone-13/13-128gb-y-256gb-medianoche.webp",
+      "group": "iphone-13",
+      "original": {
+        "width": 574,
+        "height": 779
+      },
+      "boundingBox": {
+        "left": 24,
+        "top": 34,
+        "width": 528,
+        "height": 710
+      },
+      "modelHeight": 998,
+      "sourceCalibration": 1.4056338028169013,
+      "groupScale": 0.9619238476953907,
+      "appliedScale": 1.352112676056338,
+      "rendered": {
+        "width": 714,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-13/13-128gb-y-256gb-rojojpg.jpg",
+      "output": "iphone-13/13-128gb-y-256gb-rojojpg.webp",
+      "group": "iphone-13",
+      "original": {
+        "width": 400,
+        "height": 600
+      },
+      "boundingBox": {
+        "left": 16,
+        "top": 55,
+        "width": 369,
+        "height": 490
+      },
+      "modelHeight": 998,
+      "sourceCalibration": 2.036734693877551,
+      "groupScale": 0.9619238476953907,
+      "appliedScale": 1.9591836734693877,
+      "rendered": {
+        "width": 723,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-13/13-128gb-y-256gb-rosa.jpg",
+      "output": "iphone-13/13-128gb-y-256gb-rosa.webp",
+      "group": "iphone-13",
+      "original": {
+        "width": 1000,
+        "height": 1200
+      },
+      "boundingBox": {
+        "left": 132,
+        "top": 102,
+        "width": 737,
+        "height": 998
+      },
+      "modelHeight": 998,
+      "sourceCalibration": 1,
+      "groupScale": 0.9619238476953907,
+      "appliedScale": 0.9619238476953907,
+      "rendered": {
+        "width": 709,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-13/13-128gb-y-256gb-verde.jpg",
+      "output": "iphone-13/13-128gb-y-256gb-verde.webp",
+      "group": "iphone-13",
+      "original": {
+        "width": 736,
+        "height": 1000
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 736,
+        "height": 1000
+      },
+      "modelHeight": 998,
+      "sourceCalibration": 0.998,
+      "groupScale": 0.9619238476953907,
+      "appliedScale": 0.96,
+      "rendered": {
+        "width": 707,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-14-pro-max/14-pro-max-128gb-y-256gb-morado-oscuro.jpg",
+      "output": "iphone-14-pro-max/14-pro-max-128gb-y-256gb-morado-oscuro.webp",
+      "group": "iphone-14-pro-max",
+      "original": {
+        "width": 736,
+        "height": 917
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 736,
+        "height": 917
+      },
+      "modelHeight": 917,
+      "sourceCalibration": 1,
+      "groupScale": 1.0468920392584515,
+      "appliedScale": 1.0468920392584515,
+      "rendered": {
+        "width": 771,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-14-pro-max/14-pro-max-128gb-y-256gb-negro-espacial.jpg",
+      "output": "iphone-14-pro-max/14-pro-max-128gb-y-256gb-negro-espacial.webp",
+      "group": "iphone-14-pro-max",
+      "original": {
+        "width": 978,
+        "height": 1200
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 975,
+        "height": 1200
+      },
+      "modelHeight": 917,
+      "sourceCalibration": 0.7641666666666667,
+      "groupScale": 1.0468920392584515,
+      "appliedScale": 0.8,
+      "rendered": {
+        "width": 780,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-14-pro-max/14-pro-max-128gb-y-256gb-oro.jpg",
+      "output": "iphone-14-pro-max/14-pro-max-128gb-y-256gb-oro.webp",
+      "group": "iphone-14-pro-max",
+      "original": {
+        "width": 736,
+        "height": 1041
+      },
+      "boundingBox": {
+        "left": 35,
+        "top": 113,
+        "width": 653,
+        "height": 815
+      },
+      "modelHeight": 917,
+      "sourceCalibration": 1.1251533742331288,
+      "groupScale": 1.0468920392584515,
+      "appliedScale": 1.177914110429448,
+      "rendered": {
+        "width": 769,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-14-pro-max/14-pro-max-128gb-y-256gb-plata.jpg",
+      "output": "iphone-14-pro-max/14-pro-max-128gb-y-256gb-plata.webp",
+      "group": "iphone-14-pro-max",
+      "original": {
+        "width": 735,
+        "height": 754
+      },
+      "boundingBox": {
+        "left": 66,
+        "top": 11,
+        "width": 590,
+        "height": 725
+      },
+      "modelHeight": 917,
+      "sourceCalibration": 1.2648275862068965,
+      "groupScale": 1.0468920392584515,
+      "appliedScale": 1.3241379310344827,
+      "rendered": {
+        "width": 781,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-14-pro/14-pro-128gb-y-256gb-morado-oscuro.jpg",
+      "output": "iphone-14-pro/14-pro-128gb-y-256gb-morado-oscuro.webp",
+      "group": "iphone-14-pro",
+      "original": {
+        "width": 992,
+        "height": 1200
+      },
+      "boundingBox": {
+        "left": 38,
+        "top": 46,
+        "width": 916,
+        "height": 1131
+      },
+      "modelHeight": 1063,
+      "sourceCalibration": 0.9398762157382847,
+      "groupScale": 0.90310442144873,
+      "appliedScale": 0.8488063660477454,
+      "rendered": {
+        "width": 778,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-14-pro/14-pro-128gb-y-256gb-negro-espacial.jpg",
+      "output": "iphone-14-pro/14-pro-128gb-y-256gb-negro-espacial.webp",
+      "group": "iphone-14-pro",
+      "original": {
+        "width": 1080,
+        "height": 1080
+      },
+      "boundingBox": {
+        "left": 108,
+        "top": 11,
+        "width": 865,
+        "height": 1063
+      },
+      "modelHeight": 1063,
+      "sourceCalibration": 1,
+      "groupScale": 0.90310442144873,
+      "appliedScale": 0.90310442144873,
+      "rendered": {
+        "width": 781,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-14-pro/14-pro-128gb-y-256gb-oro.jpg",
+      "output": "iphone-14-pro/14-pro-128gb-y-256gb-oro.webp",
+      "group": "iphone-14-pro",
+      "original": {
+        "width": 736,
+        "height": 884
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 729,
+        "height": 876
+      },
+      "modelHeight": 1063,
+      "sourceCalibration": 1.2134703196347032,
+      "groupScale": 0.90310442144873,
+      "appliedScale": 1.095890410958904,
+      "rendered": {
+        "width": 799,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-14-pro/14-pro-128gb-y-256gb-plata.jpg",
+      "output": "iphone-14-pro/14-pro-128gb-y-256gb-plata.webp",
+      "group": "iphone-14-pro",
+      "original": {
+        "width": 735,
+        "height": 754
+      },
+      "boundingBox": {
+        "left": 66,
+        "top": 11,
+        "width": 590,
+        "height": 725
+      },
+      "modelHeight": 1063,
+      "sourceCalibration": 1.466206896551724,
+      "groupScale": 0.90310442144873,
+      "appliedScale": 1.3241379310344827,
+      "rendered": {
+        "width": 781,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-14/14-128gb-y-256gb-amarillo.jpg",
+      "output": "iphone-14/14-128gb-y-256gb-amarillo.webp",
+      "group": "iphone-14",
+      "original": {
+        "width": 1152,
+        "height": 1536
+      },
+      "boundingBox": {
+        "left": 136,
+        "top": 165,
+        "width": 873,
+        "height": 1157
+      },
+      "modelHeight": 1099,
+      "sourceCalibration": 0.9498703543647364,
+      "groupScale": 0.8735213830755232,
+      "appliedScale": 0.8297320656871219,
+      "rendered": {
+        "width": 724,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-14/14-128gb-y-256gb-azul.jpg",
+      "output": "iphone-14/14-128gb-y-256gb-azul.webp",
+      "group": "iphone-14",
+      "original": {
+        "width": 731,
+        "height": 1000
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 731,
+        "height": 1000
+      },
+      "modelHeight": 1099,
+      "sourceCalibration": 1.099,
+      "groupScale": 0.8735213830755232,
+      "appliedScale": 0.96,
+      "rendered": {
+        "width": 702,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-14/14-128gb-y-256gb-blanco-estrella.jpg",
+      "output": "iphone-14/14-128gb-y-256gb-blanco-estrella.webp",
+      "group": "iphone-14",
+      "original": {
+        "width": 736,
+        "height": 736
+      },
+      "boundingBox": {
+        "left": 160,
+        "top": 66,
+        "width": 454,
+        "height": 604
+      },
+      "modelHeight": 1099,
+      "sourceCalibration": 1.8195364238410596,
+      "groupScale": 0.8735213830755232,
+      "appliedScale": 1.5894039735099337,
+      "rendered": {
+        "width": 722,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-14/14-128gb-y-256gb-medianoche.jpg",
+      "output": "iphone-14/14-128gb-y-256gb-medianoche.webp",
+      "group": "iphone-14",
+      "original": {
+        "width": 735,
+        "height": 793
+      },
+      "boundingBox": {
+        "left": 88,
+        "top": 19,
+        "width": 568,
+        "height": 738
+      },
+      "modelHeight": 1099,
+      "sourceCalibration": 1.489159891598916,
+      "groupScale": 0.8735213830755232,
+      "appliedScale": 1.3008130081300813,
+      "rendered": {
+        "width": 739,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-14/14-128gb-y-256gb-purpura.jpg",
+      "output": "iphone-14/14-128gb-y-256gb-purpura.webp",
+      "group": "iphone-14",
+      "original": {
+        "width": 832,
+        "height": 1103
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 831,
+        "height": 1099
+      },
+      "modelHeight": 1099,
+      "sourceCalibration": 1,
+      "groupScale": 0.8735213830755232,
+      "appliedScale": 0.8735213830755232,
+      "rendered": {
+        "width": 726,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-14/14-128gb-y-256gb-rojo.jpg",
+      "output": "iphone-14/14-128gb-y-256gb-rojo.webp",
+      "group": "iphone-14",
+      "original": {
+        "width": 1152,
+        "height": 1536
+      },
+      "boundingBox": {
+        "left": 128,
+        "top": 152,
+        "width": 896,
+        "height": 1176
+      },
+      "modelHeight": 1099,
+      "sourceCalibration": 0.9345238095238095,
+      "groupScale": 0.8735213830755232,
+      "appliedScale": 0.8163265306122449,
+      "rendered": {
+        "width": 731,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-15-pro-max/15-pro-max-256gb-titanio-azul.jpg",
+      "output": "iphone-15-pro-max/15-pro-max-256gb-titanio-azul.webp",
+      "group": "iphone-15-pro-max",
+      "original": {
+        "width": 806,
+        "height": 1000
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 806,
+        "height": 1000
+      },
+      "modelHeight": 890,
+      "sourceCalibration": 0.89,
+      "groupScale": 1.0786516853932584,
+      "appliedScale": 0.96,
+      "rendered": {
+        "width": 774,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-15-pro-max/15-pro-max-256gb-titanio-blanco.jpg",
+      "output": "iphone-15-pro-max/15-pro-max-256gb-titanio-blanco.webp",
+      "group": "iphone-15-pro-max",
+      "original": {
+        "width": 1000,
+        "height": 1200
+      },
+      "boundingBox": {
+        "left": 140,
+        "top": 156,
+        "width": 716,
+        "height": 890
+      },
+      "modelHeight": 890,
+      "sourceCalibration": 1,
+      "groupScale": 1.0786516853932584,
+      "appliedScale": 1.0786516853932584,
+      "rendered": {
+        "width": 772,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-15-pro-max/15-pro-max-256gb-titanio-natural.jpg",
+      "output": "iphone-15-pro-max/15-pro-max-256gb-titanio-natural.webp",
+      "group": "iphone-15-pro-max",
+      "original": {
+        "width": 736,
+        "height": 913
+      },
+      "boundingBox": {
+        "left": 32,
+        "top": 40,
+        "width": 672,
+        "height": 833
+      },
+      "modelHeight": 890,
+      "sourceCalibration": 1.0684273709483794,
+      "groupScale": 1.0786516853932584,
+      "appliedScale": 1.1524609843937574,
+      "rendered": {
+        "width": 774,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-15-pro-max/15-pro-max-256gb-titanio-negro.jpg",
+      "output": "iphone-15-pro-max/15-pro-max-256gb-titanio-negro.webp",
+      "group": "iphone-15-pro-max",
+      "original": {
+        "width": 516,
+        "height": 640
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 516,
+        "height": 640
+      },
+      "modelHeight": 890,
+      "sourceCalibration": 1.390625,
+      "groupScale": 1.0786516853932584,
+      "appliedScale": 1.5,
+      "rendered": {
+        "width": 774,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-15-pro/15-pro-256gb-titanio-azul.jpg",
+      "output": "iphone-15-pro/15-pro-256gb-titanio-azul.webp",
+      "group": "iphone-15-pro",
+      "original": {
+        "width": 735,
+        "height": 876
+      },
+      "boundingBox": {
+        "left": 78,
+        "top": 98,
+        "width": 561,
+        "height": 667
+      },
+      "modelHeight": 667,
+      "sourceCalibration": 1,
+      "groupScale": 1.43928035982009,
+      "appliedScale": 1.43928035982009,
+      "rendered": {
+        "width": 807,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-15-pro/15-pro-256gb-titanio-blanco.jpg",
+      "output": "iphone-15-pro/15-pro-256gb-titanio-blanco.webp",
+      "group": "iphone-15-pro",
+      "original": {
+        "width": 736,
+        "height": 1048
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 80,
+        "width": 736,
+        "height": 905
+      },
+      "modelHeight": 667,
+      "sourceCalibration": 0.7370165745856354,
+      "groupScale": 1.43928035982009,
+      "appliedScale": 1.0607734806629834,
+      "rendered": {
+        "width": 781,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-15-pro/15-pro-256gb-titanio-natural.jpg",
+      "output": "iphone-15-pro/15-pro-256gb-titanio-natural.webp",
+      "group": "iphone-15-pro",
+      "original": {
+        "width": 736,
+        "height": 736
+      },
+      "boundingBox": {
+        "left": 136,
+        "top": 65,
+        "width": 500,
+        "height": 619
+      },
+      "modelHeight": 667,
+      "sourceCalibration": 1.0775444264943457,
+      "groupScale": 1.43928035982009,
+      "appliedScale": 1.5508885298869144,
+      "rendered": {
+        "width": 775,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-15-pro/15-pro-256gb-titanio-negro.jpg",
+      "output": "iphone-15-pro/15-pro-256gb-titanio-negro.webp",
+      "group": "iphone-15-pro",
+      "original": {
+        "width": 736,
+        "height": 736
+      },
+      "boundingBox": {
+        "left": 109,
+        "top": 51,
+        "width": 529,
+        "height": 651
+      },
+      "modelHeight": 667,
+      "sourceCalibration": 1.0245775729646698,
+      "groupScale": 1.43928035982009,
+      "appliedScale": 1.4746543778801844,
+      "rendered": {
+        "width": 780,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-15/15-128gb-y-255gb-rosa.jpg",
+      "output": "iphone-15/15-128gb-y-255gb-rosa.webp",
+      "group": "iphone-15",
+      "original": {
+        "width": 727,
+        "height": 909
+      },
+      "boundingBox": {
+        "left": 73,
+        "top": 66,
+        "width": 603,
+        "height": 790
+      },
+      "modelHeight": 1000,
+      "sourceCalibration": 1.2658227848101267,
+      "groupScale": 0.96,
+      "appliedScale": 1.2151898734177216,
+      "rendered": {
+        "width": 733,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-15/15-128gb-y-256gb-amarillo.jpg",
+      "output": "iphone-15/15-128gb-y-256gb-amarillo.webp",
+      "group": "iphone-15",
+      "original": {
+        "width": 1080,
+        "height": 1080
+      },
+      "boundingBox": {
+        "left": 128,
+        "top": 0,
+        "width": 824,
+        "height": 1080
+      },
+      "modelHeight": 1000,
+      "sourceCalibration": 0.9259259259259259,
+      "groupScale": 0.96,
+      "appliedScale": 0.8888888888888888,
+      "rendered": {
+        "width": 732,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-15/15-128gb-y-256gb-azul.jpg",
+      "output": "iphone-15/15-128gb-y-256gb-azul.webp",
+      "group": "iphone-15",
+      "original": {
+        "width": 1100,
+        "height": 1500
+      },
+      "boundingBox": {
+        "left": 102,
+        "top": 152,
+        "width": 896,
+        "height": 1198
+      },
+      "modelHeight": 1000,
+      "sourceCalibration": 0.8347245409015025,
+      "groupScale": 0.96,
+      "appliedScale": 0.8013355592654424,
+      "rendered": {
+        "width": 718,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-15/15-128gb-y-256gb-negro.jpg",
+      "output": "iphone-15/15-128gb-y-256gb-negro.webp",
+      "group": "iphone-15",
+      "original": {
+        "width": 736,
+        "height": 1177
+      },
+      "boundingBox": {
+        "left": 37,
+        "top": 155,
+        "width": 661,
+        "height": 867
+      },
+      "modelHeight": 1000,
+      "sourceCalibration": 1.1534025374855825,
+      "groupScale": 0.96,
+      "appliedScale": 1.1072664359861593,
+      "rendered": {
+        "width": 732,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-15/15-128gb-y-256gb-verde.jpg",
+      "output": "iphone-15/15-128gb-y-256gb-verde.webp",
+      "group": "iphone-15",
+      "original": {
+        "width": 762,
+        "height": 1000
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 762,
+        "height": 1000
+      },
+      "modelHeight": 1000,
+      "sourceCalibration": 1,
+      "groupScale": 0.96,
+      "appliedScale": 0.96,
+      "rendered": {
+        "width": 732,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-16-pro-max/16-pro-max-256gb-titanio-desierto.jpg",
+      "output": "iphone-16-pro-max/16-pro-max-256gb-titanio-desierto.webp",
+      "group": "iphone-16-pro-max",
+      "original": {
+        "width": 736,
+        "height": 1247
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 160,
+        "width": 736,
+        "height": 925
+      },
+      "modelHeight": 887,
+      "sourceCalibration": 0.9589189189189189,
+      "groupScale": 1.0822998872604284,
+      "appliedScale": 1.037837837837838,
+      "rendered": {
+        "width": 764,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-16-pro-max/16-pro-max-256gb-titanio-natural.jpg",
+      "output": "iphone-16-pro-max/16-pro-max-256gb-titanio-natural.webp",
+      "group": "iphone-16-pro-max",
+      "original": {
+        "width": 735,
+        "height": 893
+      },
+      "boundingBox": {
+        "left": 9,
+        "top": 4,
+        "width": 718,
+        "height": 881
+      },
+      "modelHeight": 887,
+      "sourceCalibration": 1.006810442678774,
+      "groupScale": 1.0822998872604284,
+      "appliedScale": 1.0896708286038592,
+      "rendered": {
+        "width": 782,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-16-pro-max/16-pro-max-256gb-titanio-negro.jpg",
+      "output": "iphone-16-pro-max/16-pro-max-256gb-titanio-negro.webp",
+      "group": "iphone-16-pro-max",
+      "original": {
+        "width": 736,
+        "height": 939
+      },
+      "boundingBox": {
+        "left": 14,
+        "top": 19,
+        "width": 708,
+        "height": 887
+      },
+      "modelHeight": 887,
+      "sourceCalibration": 1,
+      "groupScale": 1.0822998872604284,
+      "appliedScale": 1.0822998872604284,
+      "rendered": {
+        "width": 766,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-16-pro/16-pro-256gb-titanio-blanco.jpg",
+      "output": "iphone-16-pro/16-pro-256gb-titanio-blanco.webp",
+      "group": "iphone-16-pro",
+      "original": {
+        "width": 1152,
+        "height": 1536
+      },
+      "boundingBox": {
+        "left": 110,
+        "top": 163,
+        "width": 932,
+        "height": 1153
+      },
+      "modelHeight": 881,
+      "sourceCalibration": 0.764093668690373,
+      "groupScale": 1.0896708286038592,
+      "appliedScale": 0.8326105810928014,
+      "rendered": {
+        "width": 776,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-16-pro/16-pro-256gb-titanio-desierto.jpg",
+      "output": "iphone-16-pro/16-pro-256gb-titanio-desierto.webp",
+      "group": "iphone-16-pro",
+      "original": {
+        "width": 736,
+        "height": 736
+      },
+      "boundingBox": {
+        "left": 91,
+        "top": 15,
+        "width": 578,
+        "height": 712
+      },
+      "modelHeight": 881,
+      "sourceCalibration": 1.2373595505617978,
+      "groupScale": 1.0896708286038592,
+      "appliedScale": 1.348314606741573,
+      "rendered": {
+        "width": 779,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-16-pro/16-pro-256gb-titanio-natural.jpg",
+      "output": "iphone-16-pro/16-pro-256gb-titanio-natural.webp",
+      "group": "iphone-16-pro",
+      "original": {
+        "width": 735,
+        "height": 893
+      },
+      "boundingBox": {
+        "left": 9,
+        "top": 4,
+        "width": 718,
+        "height": 881
+      },
+      "modelHeight": 881,
+      "sourceCalibration": 1,
+      "groupScale": 1.0896708286038592,
+      "appliedScale": 1.0896708286038592,
+      "rendered": {
+        "width": 782,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-16-pro/16-pro-256gb-titanio-negro.jpg",
+      "output": "iphone-16-pro/16-pro-256gb-titanio-negro.webp",
+      "group": "iphone-16-pro",
+      "original": {
+        "width": 640,
+        "height": 640
+      },
+      "boundingBox": {
+        "left": 81,
+        "top": 28,
+        "width": 477,
+        "height": 584
+      },
+      "modelHeight": 881,
+      "sourceCalibration": 1.5085616438356164,
+      "groupScale": 1.0896708286038592,
+      "appliedScale": 1.643835616438356,
+      "rendered": {
+        "width": 784,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-16/16-128gb-y-256gb-azul-ultramar.jpg",
+      "output": "iphone-16/16-128gb-y-256gb-azul-ultramar.webp",
+      "group": "iphone-16",
+      "original": {
+        "width": 400,
+        "height": 600
+      },
+      "boundingBox": {
+        "left": 16,
+        "top": 50,
+        "width": 368,
+        "height": 500
+      },
+      "modelHeight": 664,
+      "sourceCalibration": 1.328,
+      "groupScale": 1.4457831325301205,
+      "appliedScale": 1.92,
+      "rendered": {
+        "width": 707,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-16/16-128gb-y-256gb-blanco.jpg",
+      "output": "iphone-16/16-128gb-y-256gb-blanco.webp",
+      "group": "iphone-16",
+      "original": {
+        "width": 522,
+        "height": 637
+      },
+      "boundingBox": {
+        "left": 2,
+        "top": 2,
+        "width": 518,
+        "height": 632
+      },
+      "modelHeight": 664,
+      "sourceCalibration": 1.0506329113924051,
+      "groupScale": 1.4457831325301205,
+      "appliedScale": 1.518987341772152,
+      "rendered": {
+        "width": 787,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-16/16-128gb-y-256gb-negro.jpg",
+      "output": "iphone-16/16-128gb-y-256gb-negro.webp",
+      "group": "iphone-16",
+      "original": {
+        "width": 735,
+        "height": 878
+      },
+      "boundingBox": {
+        "left": 59,
+        "top": 50,
+        "width": 630,
+        "height": 767
+      },
+      "modelHeight": 664,
+      "sourceCalibration": 0.8657105606258149,
+      "groupScale": 1.4457831325301205,
+      "appliedScale": 1.2516297262059974,
+      "rendered": {
+        "width": 789,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-16/16-128gb-y-256gb-rosa.jpg",
+      "output": "iphone-16/16-128gb-y-256gb-rosa.webp",
+      "group": "iphone-16",
+      "original": {
+        "width": 589,
+        "height": 687
+      },
+      "boundingBox": {
+        "left": 12,
+        "top": 8,
+        "width": 564,
+        "height": 664
+      },
+      "modelHeight": 664,
+      "sourceCalibration": 1,
+      "groupScale": 1.4457831325301205,
+      "appliedScale": 1.4457831325301205,
+      "rendered": {
+        "width": 815,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-16/16-128gb-y-256gb-verde-azulado.jpg",
+      "output": "iphone-16/16-128gb-y-256gb-verde-azulado.webp",
+      "group": "iphone-16",
+      "original": {
+        "width": 1162,
+        "height": 1440
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 1162,
+        "height": 1440
+      },
+      "modelHeight": 664,
+      "sourceCalibration": 0.46111111111111114,
+      "groupScale": 1.4457831325301205,
+      "appliedScale": 0.6666666666666666,
+      "rendered": {
+        "width": 775,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-17-pro-max/17-pro-max-256gb-azul-oscuro.jpg",
+      "output": "iphone-17-pro-max/17-pro-max-256gb-azul-oscuro.webp",
+      "group": "iphone-17-pro-max",
+      "original": {
+        "width": 736,
+        "height": 872
+      },
+      "boundingBox": {
+        "left": 74,
+        "top": 32,
+        "width": 590,
+        "height": 755
+      },
+      "modelHeight": 718,
+      "sourceCalibration": 0.9509933774834437,
+      "groupScale": 1.3370473537604457,
+      "appliedScale": 1.271523178807947,
+      "rendered": {
+        "width": 750,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-17-pro-max/17-pro-max-256gb-naranja-cosmico.jpg",
+      "output": "iphone-17-pro-max/17-pro-max-256gb-naranja-cosmico.webp",
+      "group": "iphone-17-pro-max",
+      "original": {
+        "width": 736,
+        "height": 789
+      },
+      "boundingBox": {
+        "left": 88,
+        "top": 38,
+        "width": 564,
+        "height": 718
+      },
+      "modelHeight": 718,
+      "sourceCalibration": 1,
+      "groupScale": 1.3370473537604457,
+      "appliedScale": 1.3370473537604457,
+      "rendered": {
+        "width": 754,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-17-pro-max/17-pro-max-256gb-plata.jpg",
+      "output": "iphone-17-pro-max/17-pro-max-256gb-plata.webp",
+      "group": "iphone-17-pro-max",
+      "original": {
+        "width": 518,
+        "height": 641
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 518,
+        "height": 641
+      },
+      "modelHeight": 718,
+      "sourceCalibration": 1.1201248049921997,
+      "groupScale": 1.3370473537604457,
+      "appliedScale": 1.497659906396256,
+      "rendered": {
+        "width": 776,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-17-pro/17-pro-256gb-azul-oscuro.jpg",
+      "output": "iphone-17-pro/17-pro-256gb-azul-oscuro.webp",
+      "group": "iphone-17-pro",
+      "original": {
+        "width": 736,
+        "height": 736
+      },
+      "boundingBox": {
+        "left": 105,
+        "top": 44,
+        "width": 527,
+        "height": 647
+      },
+      "modelHeight": 641,
+      "sourceCalibration": 0.990726429675425,
+      "groupScale": 1.497659906396256,
+      "appliedScale": 1.4837712519319939,
+      "rendered": {
+        "width": 782,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-17-pro/17-pro-256gb-naranja-cosmico.jpg",
+      "output": "iphone-17-pro/17-pro-256gb-naranja-cosmico.webp",
+      "group": "iphone-17-pro",
+      "original": {
+        "width": 736,
+        "height": 1104
+      },
+      "boundingBox": {
+        "left": 128,
+        "top": 240,
+        "width": 481,
+        "height": 622
+      },
+      "modelHeight": 641,
+      "sourceCalibration": 1.0305466237942122,
+      "groupScale": 1.497659906396256,
+      "appliedScale": 1.5434083601286173,
+      "rendered": {
+        "width": 742,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    },
+    {
+      "file": "iphone-17-pro/17-pro-256gb-plata.jpg",
+      "output": "iphone-17-pro/17-pro-256gb-plata.webp",
+      "group": "iphone-17-pro",
+      "original": {
+        "width": 518,
+        "height": 641
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 518,
+        "height": 641
+      },
+      "modelHeight": 641,
+      "sourceCalibration": 1,
+      "groupScale": 1.497659906396256,
+      "appliedScale": 1.497659906396256,
+      "rendered": {
+        "width": 776,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-17/17-256gb-azul-neblina.jpg",
+      "output": "iphone-17/17-256gb-azul-neblina.webp",
+      "group": "iphone-17",
+      "original": {
+        "width": 735,
+        "height": 912
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 735,
+        "height": 912
+      },
+      "modelHeight": 912,
+      "sourceCalibration": 1,
+      "groupScale": 1.0526315789473684,
+      "appliedScale": 1.0526315789473684,
+      "rendered": {
+        "width": 774,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-17/17-256gb-blanco.jpg",
+      "output": "iphone-17/17-256gb-blanco.webp",
+      "group": "iphone-17",
+      "original": {
+        "width": 735,
+        "height": 911
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 1,
+        "width": 735,
+        "height": 909
+      },
+      "modelHeight": 912,
+      "sourceCalibration": 1.0033003300330032,
+      "groupScale": 1.0526315789473684,
+      "appliedScale": 1.056105610561056,
+      "rendered": {
+        "width": 776,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-17/17-256gb-lavanda.jpg",
+      "output": "iphone-17/17-256gb-lavanda.webp",
+      "group": "iphone-17",
+      "original": {
+        "width": 968,
+        "height": 1200
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 0,
+        "width": 968,
+        "height": 1200
+      },
+      "modelHeight": 912,
+      "sourceCalibration": 0.76,
+      "groupScale": 1.0526315789473684,
+      "appliedScale": 0.8,
+      "rendered": {
+        "width": 774,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-17/17-256gb-negro.jpg",
+      "output": "iphone-17/17-256gb-negro.webp",
+      "group": "iphone-17",
+      "original": {
+        "width": 1200,
+        "height": 1491
+      },
+      "boundingBox": {
+        "left": 0,
+        "top": 2,
+        "width": 1200,
+        "height": 1489
+      },
+      "modelHeight": 912,
+      "sourceCalibration": 0.6124916051040967,
+      "groupScale": 1.0526315789473684,
+      "appliedScale": 0.6447280053727333,
+      "rendered": {
+        "width": 774,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-17/17-256gb-verde-salvia.jpg",
+      "output": "iphone-17/17-256gb-verde-salvia.webp",
+      "group": "iphone-17",
+      "original": {
+        "width": 736,
+        "height": 912
+      },
+      "boundingBox": {
+        "left": 32,
+        "top": 40,
+        "width": 672,
+        "height": 834
+      },
+      "modelHeight": 912,
+      "sourceCalibration": 1.0935251798561152,
+      "groupScale": 1.0526315789473684,
+      "appliedScale": 1.1510791366906474,
+      "rendered": {
+        "width": 774,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,9 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "incremental": false,
+    "plugins": []
+  },
+  "include": ["normalize-product-images.ts", "normalize-product-images.test.ts"],
+  "exclude": ["../node_modules"]
+}

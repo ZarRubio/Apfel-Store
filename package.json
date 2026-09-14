@@ -9,7 +9,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "build:sites": "node scripts/build-site.mjs"
+    "build:sites": "node scripts/build-site.mjs",
+    "normalize-images": "tsx scripts/normalize-product-images.ts",
+    "test:images": "tsx --test scripts/normalize-product-images.test.ts"
   },
   "engines": {
     "node": ">=20"
@@ -18,7 +20,8 @@
     "motion": "^13.2.0",
     "next": "^16.3.5",
     "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+    "react-dom": "^19.3.0",
+    "sharp": "^0.35.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
@@ -28,6 +31,7 @@
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.3.5",
     "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.13",
     "typescript": "^6.0.3"
   }
 }

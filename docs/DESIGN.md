@@ -14,7 +14,7 @@ Apfel Store usa negro carbón (`#111113`), grafito (`#242529`), plata (`#C5C7CC`
 
 ## Fotografías
 
-Las 92 opciones de color tienen 92 rutas de fotografía distintas y existentes. Los archivos originales mezclan JPG con fondos y márgenes variables; cuatro tarjetas usan recortes WebP transparentes cuyo color coincide con la variante inicial. Otros 35 archivos tienen un ajuste de escala o centrado en `src/data/imagePresentation.ts`. La presentación comparte marco blanco y proporciones sin deformar ni reemplazar las fotografías. Unificar de verdad iluminación y perspectiva requiere fotos de producto consistentes.
+Las 92 opciones de color usan imágenes WebP normalizadas sobre un canvas transparente de 1200 × 1200. Sharp detecta sus límites, calibra la resolución de origen y calcula una escala común por modelo. Las cards tienen un marco cuadrado; detalle y miniaturas usan los mismos archivos sin compensaciones CSS individuales. La iluminación y la perspectiva dependen de las fotografías originales. Véase `docs/PRODUCT-IMAGES.md`.
 
 `ASSET-SOURCES.json` registra la procedencia de los WebP usados en la portada y en parte del catálogo. Los permisos de uso de esas imágenes y de los JPG del catálogo siguen por confirmar antes de abrir la tienda al público.
 
