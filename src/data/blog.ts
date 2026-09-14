@@ -1,0 +1,6 @@
+export interface BlogPost { slug: string; title: string; excerpt: string; content: string[]; category: string; }
+
+export const blogPosts: BlogPost[] = [
+  { slug: 'como-elegir-tu-iphone', title: 'Cómo elegir tu próximo iPhone', excerpt: 'Una guía breve para comparar modelo, capacidad y cámara con más claridad.', category: 'Guía', content: ['Elegir un iPhone empieza por entender cómo lo usarás. Piensa en las fotos, apps y momentos que quieres guardar.', 'La capacidad importa cuando trabajas con video, juegos o muchas fotos. Si prefieres conservar todo sin depender de la nube, elige más almacenamiento.', 'Por último, conversa con un asesor para confirmar disponibilidad, condición y la configuración exacta antes de comprar.'] },
+  { slug: 'sellado-o-exhibicion', title: 'Sellado o de exhibición: qué preguntar', excerpt: 'Las preguntas importantes para comprar con información.', category: 'Compra informada', content: ['Un equipo sellado no ha sido abierto, mientras que uno de exhibición ha estado expuesto o utilizado para demostración.', 'En equipos de exhibición solicita siempre fotografías reales, salud de batería, estado físico, historial de reparaciones y accesorios incluidos.', 'La decisión correcta es la que puedes tomar con todos los detalles sobre la mesa.'] }
+];
