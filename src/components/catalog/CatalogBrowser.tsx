@@ -16,10 +16,13 @@ export function CatalogBrowser({ products }: { products: Product[] }) {
   const filtered = products.filter((product) =>
     (series === 'all' || product.series === series) &&
     (availability === 'all' || (availability === 'available' ? product.available === true : product.available === false)) &&
-    (!offer || (product.offer && product.previousPrice && product.previousPrice > product.price))
+    (!offer || (product.offer && product.previousPrice && product.price !== null && product.previousPrice > product.price))
   ).sort((a, b) => {
-    if (sort === 'low') return a.price - b.price;
-    if (sort === 'high') return b.price - a.price;
+    if (sort === 'low' || sort === 'high') {
+      if (a.price === null) return b.price === null ? 0 : 1;
+      if (b.price === null) return -1;
+      return sort === 'low' ? a.price - b.price : b.price - a.price;
+    }
     if (sort === 'new') return Number(b.series) - Number(a.series);
     return Number(Boolean(b.featured)) - Number(Boolean(a.featured));
   });

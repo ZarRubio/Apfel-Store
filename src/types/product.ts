@@ -6,7 +6,7 @@ export interface ProductColor {
 
 export interface ProductStorage {
   capacity: string;
-  price: number;
+  price: number | null;
 }
 
 export interface ProductSpecification {
@@ -20,7 +20,7 @@ export interface Product {
   slug: string;
   shortDescription: string;
   description: string;
-  price: number;
+  price: number | null;
   previousPrice?: number;
   category: string;
   series: string;
@@ -31,5 +31,7 @@ export interface Product {
   featured?: boolean;
   new?: boolean;
   offer?: boolean;
+  reservationOnly?: boolean;
+  illustrativeImages?: boolean;
   specifications?: ProductSpecification[];
 }

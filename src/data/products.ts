@@ -99,9 +99,49 @@ const catalogImages: Record<string, Record<string, string>> = {
   'iphone-11': { Negro: '/images/catalog/iphone-11/11-128gb-negro.jpg', Verde: '/images/catalog/iphone-11/11-128gb-verde.jpg', Amarillo: '/images/catalog/iphone-11/11-128gb-amarillo.jpg', Morado: '/images/catalog/iphone-11/11-128gb-morado.jpg', Blanco: '/images/catalog/iphone-11/11-128gb-blanco.jpg', Rojo: '/images/catalog/iphone-11/11-128gb-rojo.jpg' }
 };
 
-export const products: Product[] = rawProducts.map((product) => {
+const catalogProducts: Product[] = rawProducts.map((product) => {
   const imageMap = catalogImages[product.slug];
   if (!imageMap) return product;
   const images = [...new Set(Object.values(imageMap))];
   return { ...product, images, colors: product.colors.map((color) => ({ ...color, image: imageMap[color.name] ?? images[0] })) };
 });
+
+const iphone18Colors = [
+  { name: 'Negro', hex: '#34363b', slug: 'negro' },
+  { name: 'Plateado', hex: '#d4d8da', slug: 'plateado' },
+  { name: 'Glaciar', hex: '#b9cbd1', slug: 'glaciar' },
+  { name: 'Borgoña', hex: '#6f4751', slug: 'borgona' },
+] as const;
+
+function iphone18Product(max: boolean): Product {
+  const slug = max ? 'iphone-18-pro-max' : 'iphone-18-pro';
+  const images = iphone18Colors.map((color) => `/products/normalized/${slug}/${slug}-${color.slug}.webp`);
+  return {
+    id: slug,
+    slug,
+    name: max ? 'iPhone 18 Pro Max' : 'iPhone 18 Pro',
+    category: 'iPhone',
+    series: '18',
+    shortDescription: max ? 'La experiencia Pro en su formato más amplio.' : 'Nueva potencia Pro en un formato equilibrado.',
+    description: max
+      ? 'Pantalla de 6,9 pulgadas, chip A20 Pro y cámara principal Fusion de 48 MP con apertura variable. Solicita tu reserva y confirma los detalles con un asesor.'
+      : 'Pantalla de 6,3 pulgadas, chip A20 Pro y cámara principal Fusion de 48 MP con apertura variable. Solicita tu reserva y confirma los detalles con un asesor.',
+    price: null,
+    available: null,
+    featured: true,
+    new: true,
+    reservationOnly: true,
+    illustrativeImages: true,
+    images,
+    colors: iphone18Colors.map((color, index) => ({ name: color.name, hex: color.hex, image: images[index] })),
+    storage: ['256 GB', '512 GB', '1 TB', '2 TB'].map((capacity) => ({ capacity, price: null })),
+    specifications: [
+      { label: 'Pantalla', value: max ? '6,9 pulgadas' : '6,3 pulgadas' },
+      { label: 'Procesador', value: 'A20 Pro' },
+      { label: 'Cámara principal', value: 'Fusion de 48 MP con apertura variable' },
+      { label: 'Capacidades', value: '256 GB, 512 GB, 1 TB y 2 TB' },
+    ],
+  };
+}
+
+export const products: Product[] = [iphone18Product(true), iphone18Product(false), ...catalogProducts];

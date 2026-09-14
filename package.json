@@ -11,7 +11,9 @@
     "lint": "eslint .",
     "build:sites": "node scripts/build-site.mjs",
     "normalize-images": "tsx scripts/normalize-product-images.ts",
-    "test:images": "tsx --test scripts/normalize-product-images.test.ts"
+    "generate-iphone18-art": "tsx scripts/generate-iphone-18-art.ts",
+    "test:images": "tsx --test scripts/normalize-product-images.test.ts",
+    "test:iphone18": "tsx --test scripts/iphone-18.test.ts"
   },
   "engines": {
     "node": ">=20"
