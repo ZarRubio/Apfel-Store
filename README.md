@@ -6,7 +6,7 @@ Frontend e-commerce de Apfel Store, especializado en iPhone. La compra se inicia
 
 - Next.js 16 con App Router y Server Components por defecto
 - React 19, TypeScript estricto y Tailwind CSS 4
-- `motion` disponible para futuras animaciones de interacción
+- Animaciones CSS breves con alternativa para movimiento reducido
 - `next/image` y `next/font`
 - Sin backend, autenticación, pagos ni dependencias de base de datos
 
@@ -44,15 +44,15 @@ public/images/        # Imágenes servidas por Next/Image
 
 Los componentes nunca importan `src/data/products.ts` directamente. Usan las funciones de `src/lib/products.ts`, que actualmente devuelven datos locales. Para integrar Supabase en una fase posterior, se reemplaza esa implementación manteniendo el contrato de las funciones y los tipos de `src/types/product.ts`.
 
-Las imágenes usan rutas estándar (`/images/products/...`) y los componentes aceptan URLs de imagen, por lo que pueden migrar a Cloudinary sin cambiar la UI.
+Las imágenes usan rutas en `public/images/products` y `public/images/catalog`. Cada color apunta a su fotografía. `src/data/imagePresentation.ts` guarda ajustes de escala y centrado para las fotos con márgenes desiguales, sin alterar los archivos originales.
 
 ## Agregar un producto
 
-Añade un objeto `Product` en `src/data/products.ts`, incluyendo `slug`, imágenes existentes en `public/images/products`, colores, capacidades, disponibilidad y especificaciones. La ruta `/iphone/[slug]`, sitemap, metadata y recomendaciones se generan automáticamente.
+Añade un objeto `Product` en `src/data/products.ts`, incluyendo `slug`, imágenes existentes en `public/images`, colores, capacidades, disponibilidad y especificaciones. Usa `available: null` hasta confirmar inventario. La ruta `/iphone/[slug]`, sitemap, metadata y recomendaciones se generan automáticamente.
 
 ## Variables configurables
 
-El nombre, URL pública, descripción y número de WhatsApp están centralizados en `src/constants/site.ts`. No se guardan secretos en el repositorio. Antes de publicación comercial hay que confirmar precios, inventario, permisos de imágenes y políticas de garantía.
+El nombre, URL de Sites, descripción y número de WhatsApp están centralizados en `src/constants/site.ts`. No se guardan secretos en el repositorio. El sitio sigue privado y sin indexar; antes de abrirlo al público hay que confirmar precios, inventario, permisos de imágenes y políticas de garantía.
 
 ## Analítica y SEO
 

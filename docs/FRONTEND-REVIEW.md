@@ -1,22 +1,19 @@
-# Revisión de frontend — Apfel Store
+﻿# Revisión de frontend — Apfel Store
 
-## Mejoras aplicadas
+## Resuelto
 
-- Portada: se sustituyó el JPG con fondo blanco por el recorte WebP con transparencia real que ya existía en el proyecto. La foto y su leyenda tienen espacio propio; la entrada y el hover usan solo `transform` y `opacity`, con movimiento reducido respetado.
-- Catálogo: filtros y orden quedan reflejados en la URL, el primer resultado aparece antes, el estado vacío da una salida clara y las tarjetas comparten marco y tamaño. Los cinco modelos con recortes transparentes disponibles usan esas imágenes; las fotos originales con mucho margen reciben una corrección limitada de escala.
-- Ficha: el precio anterior solo se muestra cuando corresponde a la capacidad base; la foto cambia con una transición breve y los controles tienen objetivos táctiles y estado accesible.
-- Navegación: enlace para saltar al contenido, estado de página actual, cierre del menú con Escape y controles visibles al usar teclado.
-- Publicación: salida estática de Next.js preparada en `out/` para Sites, manteniendo la compilación normal del proyecto.
+- **Fotografías:** los 21 modelos tienen 92 opciones de color, todas con una ruta distinta y un archivo existente. Se eliminó de las tarjetas el recorte transparente que mostraba un color diferente al inicial. Se midieron los encuadres actuales y se aplicaron 35 correcciones puntuales de escala o centrado a las fotos con márgenes desiguales; los archivos originales no se alteraron.
+- **URL y rastreo:** `src/constants/site.ts` y la metadata usan la URL privada de Sites en lugar de `apfel-store.example`. Se mantiene `noindex` y el bloqueo en `robots.txt` mientras los datos comerciales estén pendientes.
+- **Información comercial:** la disponibilidad de los 21 modelos es “por confirmar”. El filtro de disponibilidad solo aparece cuando existan datos confirmados. La sección Ofertas muestra únicamente dos modelos que tienen un precio anterior de referencia; la consulta por WhatsApp pide confirmación del precio final, inventario, garantía y entrega.
+- **Documentación:** `docs/DESIGN.md` y `README.md` describen ahora los 21 modelos, los filtros reales, el carrusel manual y la situación comercial de la vista privada.
 
-## Pendientes de contenido antes de vender
+## Por confirmar antes de abrir al público
 
-1. **Inventario y ofertas.** Los 21 modelos figuran como disponibles. Hay 17 marcados como oferta y 15 de ellos no tienen precio anterior. Es necesario cargar inventario y promociones verificadas para que las etiquetas tengan significado comercial.
-2. **Fotografía completa.** El catálogo contiene fotografías JPG de distintas fuentes, recortes y proporciones. La presentación actual corrige los bordes más visibles, pero una biblioteca definitiva debería fotografiar cada variante con el mismo encuadre, luz y fondo; el CSS no puede reconstruir detalles que faltan. Algunos colores comparten la misma fotografía. Revisar derechos de uso y correspondencia exacta de color/modelo antes de publicar el catálogo final.
-3. **Datos comerciales.** La URL pública de `src/constants/site.ts` sigue siendo `apfel-store.example`, y el sitio conserva `noindex`. Configurar el dominio real, garantía, condiciones, precios y disponibilidad confirmados antes de abrirlo al público.
-4. **Contenido.** La documentación de diseño menciona búsqueda y seis modelos, mientras la aplicación actual ofrece filtros y 21 modelos. Actualizarla cuando se cierre el catálogo definitivo.
+1. Dominio propio, precios finales, inventario, garantía y condiciones de entrega. No se han inventado ni publicado como confirmados.
+2. Permisos de uso de las fotografías. `ASSET-SOURCES.json` registra el origen de los WebP externos; la autorización de uso no consta en el repositorio. Los JPG conservan diferencias reales de luz, perspectiva y calidad que no se pueden eliminar solo con escala y centrado.
+3. Una revisión visual en móvil y la fotografía definitiva de producto antes del lanzamiento comercial.
 
 ## Verificación
 
+- 21 modelos, 92 colores, 92 rutas de fotografía distintas, sin imágenes ausentes.
 - ESLint y compilación estática de Next.js correctos.
-- 21 productos; ninguna ruta de imagen de producto o color faltante.
-- Transparencia real verificada en los cinco recortes que utiliza el catálogo.

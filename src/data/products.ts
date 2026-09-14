@@ -5,11 +5,11 @@ const fallbackImages: Record<string, string> = { '16': image('16-pro-natural.web
 const colorHex: Record<string, string> = { Negro: '#27282b', Plata: '#c5c7cc', Blanco: '#f4f4f2', Oro: '#c8ad82', Grafito: '#56585d', 'Gris Espacial': '#4d4f53', 'Negro Espacial': '#25262a', 'Azul Sierra': '#7a8795', 'Azul Pacífico': '#526a82', 'Verde Medianoche': '#34463f', Verde: '#6f8971', Rojo: '#a64d4e', Rosa: '#d5a5ae', Púrpura: '#80738f', Morado: '#81748e', Amarillo: '#d5b94f', 'Titanio Blanco': '#e4e3df', 'Titanio Negro': '#313338', 'Titanio Natural': '#a79e91', 'Titanio del Desierto': '#b29b82', Medianoche: '#1f2023', 'Morado Oscuro': '#3e3650', 'Titanio Azul': '#394c5f', Azul: '#5b7ea1' };
 function legacyProduct(slug: string, name: string, series: string, line: string, price: number, storage: string[], colors: string[], specs: [string, string][], description: string): Product {
   const productImage = fallbackImages[series];
-  return { id: slug, slug, name, category: 'iPhone', series, shortDescription: description, description, price, available: true, offer: true, images: [productImage], colors: colors.map((color) => ({ name: color, hex: colorHex[color] ?? '#c5c7cc', image: productImage })), storage: storage.map((capacity) => ({ capacity, price })), specifications: specs.map(([label, value]) => ({ label, value })) };
+  return { id: slug, slug, name, category: 'iPhone', series, shortDescription: description, description, price, available: null, offer: false, images: [productImage], colors: colors.map((color) => ({ name: color, hex: colorHex[color] ?? '#c5c7cc', image: productImage })), storage: storage.map((capacity) => ({ capacity, price })), specifications: specs.map(([label, value]) => ({ label, value })) };
 }
 
 const legacyProducts: Product[] = [
-  legacyProduct('iphone-16-pro', 'iPhone 16 Pro', '16', 'Pro', 4000, ['256 GB'], ['Titanio del Desierto', 'Titanio Negro', 'Titanio Natural'], [['Pantalla', '6.3 pulgadas Super Retina XDR OLED LTPO, ProMotion 120Hz'], ['Procesador', 'Apple A18 Pro'], ['Cámara', 'Triple 48 MP + 48 MP + 12 MP, teleobjetivo 5x'], ['Batería', '3582 mAh'], ['Conectividad', '5G']], 'Potencia Pro en un formato más cómodo, con titanio y cámara avanzada.'),
+  legacyProduct('iphone-16-pro', 'iPhone 16 Pro', '16', 'Pro', 4000, ['256 GB'], ['Titanio del Desierto', 'Titanio Negro', 'Titanio Natural', 'Titanio Blanco'], [['Pantalla', '6.3 pulgadas Super Retina XDR OLED LTPO, ProMotion 120Hz'], ['Procesador', 'Apple A18 Pro'], ['Cámara', 'Triple 48 MP + 48 MP + 12 MP, teleobjetivo 5x'], ['Batería', '3582 mAh'], ['Conectividad', '5G']], 'Potencia Pro en un formato más cómodo, con titanio y cámara avanzada.'),
   legacyProduct('iphone-15-pro', 'iPhone 15 Pro', '15', 'Pro', 2800, ['256 GB'], ['Titanio Blanco', 'Titanio Negro', 'Titanio Azul', 'Titanio Natural'], [['Pantalla', '6.1 pulgadas Super Retina XDR OLED LTPO, ProMotion 120Hz, Dynamic Island'], ['Procesador', 'Apple A17 Pro'], ['Cámara', 'Triple 48 MP + 12 MP + 12 MP, teleobjetivo 3x + LiDAR'], ['Batería', '3274 mAh'], ['Conectividad', '5G']], 'Diseño en titanio y rendimiento Pro para crear, jugar y capturar.'),
   legacyProduct('iphone-15', 'iPhone 15', '15', 'Base', 2300, ['128 GB'], ['Negro', 'Azul', 'Verde', 'Amarillo', 'Rosa'], [['Pantalla', '6.1 pulgadas Super Retina XDR OLED, 60Hz, Dynamic Island'], ['Procesador', 'Apple A16 Bionic'], ['Cámara', 'Doble 48 MP + 12 MP, principal y ultra gran angular'], ['Batería', '3349 mAh'], ['Conectividad', '5G']], 'Diseño fresco, cámara de 48 MP y una experiencia fluida para cada día.'),
   legacyProduct('iphone-14-pro-max', 'iPhone 14 Pro Max', '14', 'Pro Max', 2650, ['128 GB', '256 GB'], ['Oro', 'Negro Espacial', 'Morado Oscuro', 'Plata'], [['Pantalla', '6.7 pulgadas Super Retina XDR OLED LTPO, ProMotion 120Hz, Dynamic Island'], ['Procesador', 'Apple A16 Bionic'], ['Cámara', 'Triple 48 MP + 12 MP + 12 MP, teleobjetivo 3x + LiDAR'], ['Batería', '4323 mAh'], ['Conectividad', '5G']], 'Pantalla amplia y cámara Pro para quienes buscan una experiencia inmersiva.'),
@@ -30,7 +30,7 @@ const rawProducts: Product[] = [
   {
     id: 'iphone-17-pro-max', slug: 'iphone-17-pro-max', name: 'iPhone 17 Pro Max', category: 'iPhone', series: '17',
     shortDescription: 'Todo el potencial. En grande.', description: 'Una experiencia Pro diseñada para quienes quieren la máxima pantalla, cámara y autonomía.',
-    price: 5000, previousPrice: 5300, available: true, featured: true, new: true, offer: true,
+    price: 5000, previousPrice: 5300, available: null, featured: true, new: true, offer: true,
     images: [image('17-pro-silver.webp'), image('17-pro-blue.webp'), image('17-pro-orange.webp')],
     colors: [{ name: 'Plateado', hex: '#d3d3cf', image: image('17-pro-silver.webp') }, { name: 'Naranja', hex: '#c87540', image: image('17-pro-orange.webp') }, { name: 'Azul', hex: '#38445a', image: image('17-pro-blue.webp') }],
     storage: [{ capacity: '256 GB', price: 5000 }, { capacity: '512 GB', price: 5600 }],
@@ -39,7 +39,7 @@ const rawProducts: Product[] = [
   {
     id: 'iphone-17-pro', slug: 'iphone-17-pro', name: 'iPhone 17 Pro', category: 'iPhone', series: '17',
     shortDescription: 'Potencia que se nota.', description: 'Rendimiento profesional en un formato equilibrado, con cámara preparada para tus mejores historias.',
-    price: 4600, available: true, featured: true, new: true,
+    price: 4600, available: null, featured: true, new: true,
     images: [image('17-pro-blue.webp'), image('17-pro-silver.webp'), image('17-pro-orange.webp')],
     colors: [{ name: 'Azul', hex: '#38445a', image: image('17-pro-blue.webp') }, { name: 'Plateado', hex: '#d3d3cf', image: image('17-pro-silver.webp') }, { name: 'Naranja', hex: '#c87540', image: image('17-pro-orange.webp') }],
     storage: [{ capacity: '256 GB', price: 4600 }, { capacity: '512 GB', price: 5200 }],
@@ -48,7 +48,7 @@ const rawProducts: Product[] = [
   {
     id: 'iphone-17', slug: 'iphone-17', name: 'iPhone 17', category: 'iPhone', series: '17',
     shortDescription: 'Un gran salto para tu día a día.', description: 'La combinación justa de diseño, potencia y cámara para hacer más de lo que te encanta.',
-    price: 3450, available: true, featured: true, new: true,
+    price: 3450, available: null, featured: true, new: true,
     images: [image('17-lavender.webp'), image('17-black.webp')],
     colors: [{ name: 'Negro', hex: '#333437', image: image('17-black.webp') }, { name: 'Blanco', hex: '#f4f4f2', image: image('17-lavender.webp') }, { name: 'Azul Neblina', hex: '#9baebe', image: image('17-lavender.webp') }, { name: 'Salvia', hex: '#91a18c', image: image('17-lavender.webp') }, { name: 'Lavanda', hex: '#c1b8d7', image: image('17-lavender.webp') }],
     storage: [{ capacity: '256 GB', price: 3450 }],
@@ -57,19 +57,19 @@ const rawProducts: Product[] = [
   {
     id: 'iphone-16-pro-max', slug: 'iphone-16-pro-max', name: 'iPhone 16 Pro Max', category: 'iPhone', series: '16',
     shortDescription: 'Diseño en titanio. Espíritu Pro.', description: 'Una experiencia a lo grande con acabados premium y una cámara que acompaña tu ritmo.',
-    price: 4400, available: true, featured: false,
+    price: 4400, available: null, featured: false,
     images: [image('16-pro-natural.webp')], colors: [{ name: 'Titanio del Desierto', hex: '#b29b82', image: image('16-pro-natural.webp') }, { name: 'Titanio Negro', hex: '#313338', image: image('16-pro-natural.webp') }, { name: 'Titanio Natural', hex: '#a79e91', image: image('16-pro-natural.webp') }], storage: [{ capacity: '256 GB', price: 4400 }],
     specifications: [{ label: 'Pantalla', value: '6.9 pulgadas Super Retina XDR OLED LTPO, ProMotion 120Hz' }, { label: 'Procesador', value: 'Apple A18 Pro' }, { label: 'Cámara', value: 'Triple 48 MP + 48 MP + 12 MP, teleobjetivo 5x + LiDAR' }, { label: 'Batería', value: '4685 mAh' }, { label: 'Conectividad', value: '5G' }]
   },
   {
     id: 'iphone-16', slug: 'iphone-16', name: 'iPhone 16', category: 'iPhone', series: '16',
-    shortDescription: 'Todo lo que te gusta de iPhone.', description: 'Un iPhone confiable y capaz para acompañar cada parte de tu día.', price: 3000, available: true, featured: true,
+    shortDescription: 'Todo lo que te gusta de iPhone.', description: 'Un iPhone confiable y capaz para acompañar cada parte de tu día.', price: 3000, available: null, featured: true,
     images: [image('16-black.webp')], colors: [{ name: 'Negro', hex: '#343637', image: image('16-black.webp') }, { name: 'Blanco', hex: '#f4f4f2', image: image('16-black.webp') }, { name: 'Rosa', hex: '#d5a5ae', image: image('16-black.webp') }, { name: 'Verde Azulado', hex: '#6d8c89', image: image('16-black.webp') }, { name: 'Azul Altamar', hex: '#637b92', image: image('16-black.webp') }], storage: [{ capacity: '128 GB', price: 3000 }],
     specifications: [{ label: 'Pantalla', value: '6.1 pulgadas Super Retina XDR OLED, 60Hz' }, { label: 'Procesador', value: 'Apple A18' }, { label: 'Cámara', value: 'Doble 48 MP + 12 MP, principal y ultra gran angular' }, { label: 'Batería', value: '3561 mAh' }, { label: 'Conectividad', value: '5G' }]
   },
   {
     id: 'iphone-15-pro-max', slug: 'iphone-15-pro-max', name: 'iPhone 15 Pro Max', category: 'iPhone', series: '15',
-    shortDescription: 'Tu entrada al mundo Pro.', description: 'Un equipo de exhibición para quienes buscan una experiencia Pro a un valor especial.', price: 3200, previousPrice: 3500, available: true, offer: true,
+    shortDescription: 'Tu entrada al mundo Pro.', description: 'Una opción Pro para quienes buscan una pantalla amplia y una cámara versátil.', price: 3200, previousPrice: 3500, available: null, offer: true,
     images: [image('15-pro-natural.webp')], colors: [{ name: 'Titanio Blanco', hex: '#e4e3df', image: image('15-pro-natural.webp') }, { name: 'Titanio Negro', hex: '#313338', image: image('15-pro-natural.webp') }, { name: 'Titanio Azul', hex: '#566b82', image: image('15-pro-natural.webp') }, { name: 'Titanio Natural', hex: '#9d9689', image: image('15-pro-natural.webp') }], storage: [{ capacity: '256 GB', price: 3200 }],
     specifications: [{ label: 'Pantalla', value: '6.7 pulgadas Super Retina XDR OLED LTPO, ProMotion 120Hz, Dynamic Island' }, { label: 'Procesador', value: 'Apple A17 Pro' }, { label: 'Cámara', value: 'Triple 48 MP + 12 MP + 12 MP, teleobjetivo 5x + LiDAR' }, { label: 'Batería', value: '4441 mAh' }, { label: 'Conectividad', value: '5G' }]
   }, ...legacyProducts

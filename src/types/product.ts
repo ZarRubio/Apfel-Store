@@ -27,7 +27,7 @@ export interface Product {
   images: string[];
   colors: ProductColor[];
   storage: ProductStorage[];
-  available: boolean;
+  available: boolean | null;
   featured?: boolean;
   new?: boolean;
   offer?: boolean;
