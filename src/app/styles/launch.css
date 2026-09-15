@@ -1,0 +1,43 @@
+/* iPhone 18 launch: distinct visual treatment without changing existing card geometry. */
+.iphone18-hero { background:radial-gradient(ellipse at 78% 48%,#292b34 0%,#141416 54%,#101012 100%); }
+.iphone18-hero .legacy-hero-copy { width:49%; }
+.iphone18-hero h1 { font-size:clamp(56px,6.2vw,92px); line-height:1.02; }
+.iphone18-hero h1 em { background:linear-gradient(110deg,#f7f7fa 8%,#c9cbd5 55%,#9396a5); background-clip:text; -webkit-background-clip:text; }
+.iphone18-hero .legacy-hero-copy p { max-width:435px; }
+.iphone18-hero .legacy-hero-product { top:35px; right:5%; width:48%; height:565px; gap:0; }
+.iphone18-hero .legacy-hero-product>a { width:100%; max-width:560px; }
+.iphone18-hero .legacy-hero-product img { filter:drop-shadow(0 26px 35px #0008); }
+.iphone18-hero .legacy-watermark { top:74px; left:4%; font-size:220px; }
+.iphone18-hero .legacy-product-caption { margin-top:-16px; }
+.hero-reservation-note { display:block; margin-top:18px; color:#b9bbc3; font-size:12px; line-height:1.5; }
+.product-art-note { display:block; color:#777980; font-size:11px; margin-top:8px; }
+.product-card:has(.product-art-note) .product-card-image { background:radial-gradient(circle at 50% 43%,#f7f8fa,#e8e9ed); }
+.product-card:has(.product-art-note) .product-card-image img { width:100%; height:100%; }
+.product-detail-grid:has(.product-image-label) .product-main-image img { object-fit:contain; }
+.catalog-launch { display:flex; align-items:center; justify-content:space-between; gap:36px; padding:30px 34px; border:1px solid #e5e5e9; border-radius:14px; background:linear-gradient(110deg,#f5f5f7,#ebedf1); }
+.catalog-launch h2 { margin:7px 0 9px; font-size:clamp(25px,3vw,38px); letter-spacing:-.04em; }
+.catalog-launch p { max-width:570px; margin:0; color:var(--muted); line-height:1.5; }
+.catalog-launch-links { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:10px; }
+.catalog-launch-links a { display:inline-flex; align-items:center; min-height:44px; padding:0 18px; border:1px solid #c8c9cf; border-radius:999px; background:#fff; color:#202127; font-size:13px; font-weight:600; white-space:nowrap; transition:border-color 160ms ease,transform 160ms var(--ease-ui-out); }
+.catalog-launch-links a:focus-visible { outline:2px solid #2563eb; outline-offset:2px; }
+@media(hover:hover) and (pointer:fine) { .catalog-launch-links a:hover { border-color:#72747d; transform:translateY(-2px); } }
+@media(max-width:900px) {
+  .iphone18-hero .legacy-hero-copy { width:52%; }
+  .iphone18-hero .legacy-hero-product { right:1%; width:47%; height:500px; top:62px; }
+  .iphone18-hero .legacy-watermark { font-size:150px; }
+}
+@media(max-width:640px) {
+  .catalog-launch { flex-direction:column; align-items:flex-start; padding:25px; gap:20px; }
+  .catalog-launch-links { justify-content:flex-start; }
+  .iphone18-hero { min-height:790px; }
+  .iphone18-hero .legacy-hero-copy { width:100%; }
+  .iphone18-hero h1 { font-size:clamp(47px,10vw,66px); }
+  .iphone18-hero .legacy-hero-copy p { margin-inline:auto; max-width:390px; }
+  .iphone18-hero .hero-secondary { display:inline-flex; margin-left:0; }
+  .iphone18-hero .hero-actions { flex-wrap:wrap; gap:6px 18px; }
+  .iphone18-hero .legacy-hero-product { position:relative; top:auto; right:auto; width:100%; height:350px; margin:16px auto 0; }
+  .iphone18-hero .legacy-hero-product>a { width:min(100%,430px); margin:0; }
+  .iphone18-hero .legacy-watermark { top:45px; left:8%; font-size:130px; }
+  .iphone18-hero .legacy-product-caption { margin-top:-22px; font-size:11px; }
+  .iphone18-hero .legacy-product-caption strong { font-size:12px; }
+}

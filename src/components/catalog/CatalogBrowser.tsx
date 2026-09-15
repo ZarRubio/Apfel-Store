@@ -1,19 +1,22 @@
 ﻿'use client';
 
-import { useSearchParams } from 'next/navigation';
 import type { Product } from '@/types/product';
 import { ProductCard } from '@/components/product/ProductCard';
+import { replaceLocationSearch, useLocationSearch } from '@/lib/useLocationSearch';
 
 export function CatalogBrowser({ products }: { products: Product[] }) {
-  const params = useSearchParams();
+  const search = useLocationSearch();
+  const params = new URLSearchParams(search);
   const seriesOptions = [...new Set(products.map((product) => product.series))].sort((a, b) => Number(b) - Number(a));
   const hasKnownAvailability = products.some((product) => product.available !== null);
   const series = seriesOptions.includes(params.get('serie') ?? '') ? params.get('serie')! : 'all';
   const availability = hasKnownAvailability && ['available', 'unavailable'].includes(params.get('disponibilidad') ?? '') ? params.get('disponibilidad')! : 'all';
   const offer = params.get('ofertas') === '1';
+  const query = params.get('q')?.trim() ?? '';
   const sort = ['low', 'high', 'new'].includes(params.get('orden') ?? '') ? params.get('orden')! : 'recommended';
-  const activeFilters = Number(series !== 'all') + Number(availability !== 'all') + Number(offer);
+  const activeFilters = Number(series !== 'all') + Number(availability !== 'all') + Number(offer) + Number(Boolean(query));
   const filtered = products.filter((product) =>
+    (!query || `${product.name} ${product.series} ${product.shortDescription}`.toLocaleLowerCase('es').includes(query.toLocaleLowerCase('es'))) &&
     (series === 'all' || product.series === series) &&
     (availability === 'all' || (availability === 'available' ? product.available === true : product.available === false)) &&
     (!offer || (product.offer && product.previousPrice && product.price !== null && product.previousPrice > product.price))
@@ -28,20 +31,21 @@ export function CatalogBrowser({ products }: { products: Product[] }) {
   });
 
   function updateFilter(name: string, value: string) {
-    const url = new URL(window.location.href);
-    if (value === 'all' || value === 'recommended' || value === '') url.searchParams.delete(name);
-    else url.searchParams.set(name, value);
-    window.history.pushState(null, '', `${url.pathname}${url.search}${url.hash}`);
+    const next = new URLSearchParams(params.toString());
+    if (value === 'all' || value === 'recommended' || value === '') next.delete(name);
+    else next.set(name, value);
+    replaceLocationSearch(next);
   }
 
   function clearFilters() {
-    const url = new URL(window.location.href);
-    ['serie', 'disponibilidad', 'ofertas'].forEach((key) => url.searchParams.delete(key));
-    window.history.pushState(null, '', `${url.pathname}${url.search}${url.hash}`);
+    const next = new URLSearchParams(params.toString());
+    ['q', 'serie', 'disponibilidad', 'ofertas'].forEach((key) => next.delete(key));
+    replaceLocationSearch(next);
   }
 
   return <div>
     <div className="catalog-controls">
+      <label className="catalog-search"><span>Buscar un modelo</span><input name="q" type="search" value={query} placeholder="Ejemplo: iPhone 15 Pro…" autoComplete="off" onChange={(event) => updateFilter('q', event.target.value)} /></label>
       <div className={hasKnownAvailability ? 'filter-group' : 'filter-group filters-unverified'}>
         <label>Serie<select name="serie" value={series} onChange={(event) => updateFilter('serie', event.target.value)}><option value="all">Todas las series</option>{seriesOptions.map((value) => <option key={value} value={value}>iPhone {value}</option>)}</select></label>
         {hasKnownAvailability && <label>Disponibilidad<select name="disponibilidad" value={availability} onChange={(event) => updateFilter('disponibilidad', event.target.value)}><option value="all">Todos los modelos</option><option value="available">Disponible</option><option value="unavailable">Agotado</option></select></label>}

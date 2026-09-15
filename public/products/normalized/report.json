@@ -11,21 +11,21 @@
         "height": 768
       },
       "boundingBox": {
-        "left": 147,
-        "top": 45,
-        "width": 484,
-        "height": 665
+        "left": 150,
+        "top": 46,
+        "width": 480,
+        "height": 662
       },
-      "modelHeight": 924,
-      "sourceCalibration": 1.3894736842105264,
-      "groupScale": 1.0389610389610389,
-      "appliedScale": 1.4421052631578948,
+      "modelHeight": 922,
+      "sourceCalibration": 1.392749244712991,
+      "groupScale": 1.0412147505422993,
+      "appliedScale": 1.448640483383686,
       "rendered": {
-        "width": 698,
+        "width": 695,
         "height": 959
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -37,22 +37,21 @@
         "height": 932
       },
       "boundingBox": {
-        "left": 4,
-        "top": 4,
-        "width": 675,
-        "height": 924
+        "left": 7,
+        "top": 5,
+        "width": 670,
+        "height": 922
       },
-      "modelHeight": 924,
+      "modelHeight": 922,
       "sourceCalibration": 1,
-      "groupScale": 1.0389610389610389,
-      "appliedScale": 1.0378787878787878,
+      "groupScale": 1.0412147505422993,
+      "appliedScale": 1.0401301518438177,
       "rendered": {
-        "width": 701,
+        "width": 697,
         "height": 959
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
-        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -65,20 +64,20 @@
       },
       "boundingBox": {
         "left": 352,
-        "top": 101,
-        "width": 496,
-        "height": 686
+        "top": 102,
+        "width": 495,
+        "height": 685
       },
-      "modelHeight": 924,
-      "sourceCalibration": 1.346938775510204,
-      "groupScale": 1.0389610389610389,
-      "appliedScale": 1.3979591836734695,
+      "modelHeight": 922,
+      "sourceCalibration": 1.345985401459854,
+      "groupScale": 1.0412147505422993,
+      "appliedScale": 1.4,
       "rendered": {
         "width": 693,
         "height": 959
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -91,20 +90,20 @@
       },
       "boundingBox": {
         "left": 0,
-        "top": 0,
-        "width": 736,
-        "height": 1039
+        "top": 1,
+        "width": 735,
+        "height": 1038
       },
-      "modelHeight": 924,
-      "sourceCalibration": 0.8893166506256015,
-      "groupScale": 1.0389610389610389,
-      "appliedScale": 0.9230028873917228,
+      "modelHeight": 922,
+      "sourceCalibration": 0.8882466281310212,
+      "groupScale": 1.0412147505422993,
+      "appliedScale": 0.9238921001926782,
       "rendered": {
         "width": 679,
         "height": 959
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
         "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
@@ -117,21 +116,21 @@
         "height": 814
       },
       "boundingBox": {
-        "left": 163,
+        "left": 164,
         "top": 106,
-        "width": 501,
-        "height": 671
+        "width": 500,
+        "height": 670
       },
-      "modelHeight": 786,
-      "sourceCalibration": 1.1713859910581221,
-      "groupScale": 1.2213740458015268,
-      "appliedScale": 1.4307004470938898,
+      "modelHeight": 781,
+      "sourceCalibration": 1.1656716417910449,
+      "groupScale": 1.229193341869398,
+      "appliedScale": 1.4313432835820896,
       "rendered": {
-        "width": 717,
-        "height": 960
+        "width": 716,
+        "height": 959
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -143,21 +142,21 @@
         "height": 1000
       },
       "boundingBox": {
-        "left": 122,
-        "top": 198,
-        "width": 590,
-        "height": 786
+        "left": 125,
+        "top": 201,
+        "width": 585,
+        "height": 781
       },
-      "modelHeight": 786,
+      "modelHeight": 781,
       "sourceCalibration": 1,
-      "groupScale": 1.2213740458015268,
-      "appliedScale": 1.2213740458015268,
+      "groupScale": 1.229193341869398,
+      "appliedScale": 1.2279129321382842,
       "rendered": {
-        "width": 721,
-        "height": 960
+        "width": 718,
+        "height": 959
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -169,21 +168,21 @@
         "height": 870
       },
       "boundingBox": {
-        "left": 112,
-        "top": 174,
-        "width": 512,
-        "height": 682
+        "left": 114,
+        "top": 175,
+        "width": 508,
+        "height": 680
       },
-      "modelHeight": 786,
-      "sourceCalibration": 1.152492668621701,
-      "groupScale": 1.2213740458015268,
-      "appliedScale": 1.4076246334310851,
+      "modelHeight": 781,
+      "sourceCalibration": 1.1485294117647058,
+      "groupScale": 1.229193341869398,
+      "appliedScale": 1.410294117647059,
       "rendered": {
-        "width": 721,
-        "height": 960
+        "width": 716,
+        "height": 959
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -196,20 +195,20 @@
       },
       "boundingBox": {
         "left": 120,
-        "top": 173,
-        "width": 934,
-        "height": 1252
+        "top": 174,
+        "width": 932,
+        "height": 1250
       },
-      "modelHeight": 786,
-      "sourceCalibration": 0.6277955271565495,
-      "groupScale": 1.2213740458015268,
-      "appliedScale": 0.7667731629392971,
+      "modelHeight": 781,
+      "sourceCalibration": 0.6248,
+      "groupScale": 1.229193341869398,
+      "appliedScale": 0.7672,
       "rendered": {
-        "width": 716,
-        "height": 960
+        "width": 715,
+        "height": 959
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -221,21 +220,21 @@
         "height": 1024
       },
       "boundingBox": {
-        "left": 146,
+        "left": 148,
         "top": 16,
-        "width": 732,
-        "height": 993
+        "width": 727,
+        "height": 992
       },
-      "modelHeight": 902,
-      "sourceCalibration": 0.9083585095669687,
-      "groupScale": 1.06430155210643,
-      "appliedScale": 0.9657603222557906,
+      "modelHeight": 898,
+      "sourceCalibration": 0.905241935483871,
+      "groupScale": 1.069042316258352,
+      "appliedScale": 0.967741935483871,
       "rendered": {
-        "width": 707,
-        "height": 959
+        "width": 704,
+        "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -247,21 +246,21 @@
         "height": 940
       },
       "boundingBox": {
-        "left": 168,
+        "left": 170,
         "top": 110,
-        "width": 603,
+        "width": 600,
         "height": 722
       },
-      "modelHeight": 902,
-      "sourceCalibration": 1.2493074792243768,
-      "groupScale": 1.06430155210643,
-      "appliedScale": 1.3282548476454294,
+      "modelHeight": 898,
+      "sourceCalibration": 1.2437673130193905,
+      "groupScale": 1.069042316258352,
+      "appliedScale": 1.3296398891966759,
       "rendered": {
-        "width": 801,
-        "height": 959
+        "width": 798,
+        "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -273,21 +272,21 @@
         "height": 1200
       },
       "boundingBox": {
-        "left": 168,
-        "top": 150,
-        "width": 662,
-        "height": 900
+        "left": 173,
+        "top": 151,
+        "width": 656,
+        "height": 898
       },
-      "modelHeight": 902,
-      "sourceCalibration": 1.0022222222222221,
-      "groupScale": 1.06430155210643,
-      "appliedScale": 1.0655555555555556,
+      "modelHeight": 898,
+      "sourceCalibration": 1,
+      "groupScale": 1.069042316258352,
+      "appliedScale": 1.069042316258352,
       "rendered": {
-        "width": 705,
-        "height": 959
+        "width": 701,
+        "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -299,21 +298,21 @@
         "height": 874
       },
       "boundingBox": {
-        "left": 276,
+        "left": 278,
         "top": 55,
-        "width": 543,
+        "width": 540,
         "height": 739
       },
-      "modelHeight": 902,
-      "sourceCalibration": 1.2205683355886332,
-      "groupScale": 1.06430155210643,
-      "appliedScale": 1.297699594046008,
+      "modelHeight": 898,
+      "sourceCalibration": 1.2151556156968877,
+      "groupScale": 1.069042316258352,
+      "appliedScale": 1.2990527740189446,
       "rendered": {
-        "width": 705,
-        "height": 959
+        "width": 701,
+        "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -325,21 +324,21 @@
         "height": 1200
       },
       "boundingBox": {
-        "left": 168,
-        "top": 149,
-        "width": 662,
-        "height": 902
+        "left": 172,
+        "top": 151,
+        "width": 656,
+        "height": 898
       },
-      "modelHeight": 902,
+      "modelHeight": 898,
       "sourceCalibration": 1,
-      "groupScale": 1.06430155210643,
-      "appliedScale": 1.0631929046563193,
+      "groupScale": 1.069042316258352,
+      "appliedScale": 1.069042316258352,
       "rendered": {
-        "width": 704,
-        "height": 959
+        "width": 701,
+        "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -351,21 +350,21 @@
         "height": 1200
       },
       "boundingBox": {
-        "left": 259,
-        "top": 135,
-        "width": 682,
-        "height": 930
+        "left": 261,
+        "top": 136,
+        "width": 678,
+        "height": 928
       },
-      "modelHeight": 902,
-      "sourceCalibration": 0.9698924731182795,
-      "groupScale": 1.06430155210643,
-      "appliedScale": 1.0311827956989248,
+      "modelHeight": 898,
+      "sourceCalibration": 0.9676724137931034,
+      "groupScale": 1.069042316258352,
+      "appliedScale": 1.0344827586206897,
       "rendered": {
-        "width": 703,
-        "height": 959
+        "width": 701,
+        "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -377,21 +376,21 @@
         "height": 1112
       },
       "boundingBox": {
-        "left": 168,
-        "top": 160,
-        "width": 600,
-        "height": 816
+        "left": 173,
+        "top": 162,
+        "width": 594,
+        "height": 812
       },
-      "modelHeight": 809,
-      "sourceCalibration": 0.991421568627451,
-      "groupScale": 1.1866501854140914,
-      "appliedScale": 1.1752450980392157,
+      "modelHeight": 808,
+      "sourceCalibration": 0.9950738916256158,
+      "groupScale": 1.188118811881188,
+      "appliedScale": 1.1822660098522169,
       "rendered": {
-        "width": 705,
-        "height": 959
+        "width": 702,
+        "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -403,21 +402,21 @@
         "height": 736
       },
       "boundingBox": {
-        "left": 64,
-        "top": 14,
-        "width": 609,
-        "height": 693
+        "left": 66,
+        "top": 15,
+        "width": 607,
+        "height": 690
       },
-      "modelHeight": 809,
-      "sourceCalibration": 1.1673881673881674,
-      "groupScale": 1.1866501854140914,
-      "appliedScale": 1.3838383838383839,
+      "modelHeight": 808,
+      "sourceCalibration": 1.1710144927536232,
+      "groupScale": 1.188118811881188,
+      "appliedScale": 1.391304347826087,
       "rendered": {
-        "width": 843,
-        "height": 959
+        "width": 845,
+        "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -429,21 +428,21 @@
         "height": 1112
       },
       "boundingBox": {
-        "left": 173,
-        "top": 207,
-        "width": 595,
-        "height": 809
+        "left": 175,
+        "top": 208,
+        "width": 591,
+        "height": 808
       },
-      "modelHeight": 809,
+      "modelHeight": 808,
       "sourceCalibration": 1,
-      "groupScale": 1.1866501854140914,
-      "appliedScale": 1.185414091470952,
+      "groupScale": 1.188118811881188,
+      "appliedScale": 1.188118811881188,
       "rendered": {
-        "width": 705,
-        "height": 959
+        "width": 702,
+        "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -455,21 +454,21 @@
         "height": 768
       },
       "boundingBox": {
-        "left": 123,
+        "left": 125,
         "top": 0,
-        "width": 565,
-        "height": 766
+        "width": 560,
+        "height": 764
       },
-      "modelHeight": 809,
-      "sourceCalibration": 1.056135770234987,
-      "groupScale": 1.1866501854140914,
-      "appliedScale": 1.251958224543081,
+      "modelHeight": 808,
+      "sourceCalibration": 1.057591623036649,
+      "groupScale": 1.188118811881188,
+      "appliedScale": 1.256544502617801,
       "rendered": {
-        "width": 707,
-        "height": 959
+        "width": 704,
+        "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
         "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
@@ -482,21 +481,21 @@
         "height": 1200
       },
       "boundingBox": {
-        "left": 168,
-        "top": 149,
-        "width": 662,
-        "height": 901
+        "left": 170,
+        "top": 151,
+        "width": 658,
+        "height": 898
       },
-      "modelHeight": 901,
+      "modelHeight": 898,
       "sourceCalibration": 1,
-      "groupScale": 1.065482796892342,
-      "appliedScale": 1.065482796892342,
+      "groupScale": 1.069042316258352,
+      "appliedScale": 1.069042316258352,
       "rendered": {
-        "width": 705,
+        "width": 703,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -508,22 +507,21 @@
         "height": 1500
       },
       "boundingBox": {
-        "left": 0,
-        "top": 0,
-        "width": 1096,
-        "height": 1499
+        "left": 1,
+        "top": 2,
+        "width": 1095,
+        "height": 1495
       },
-      "modelHeight": 901,
-      "sourceCalibration": 0.6010673782521682,
-      "groupScale": 1.065482796892342,
-      "appliedScale": 0.6404269513008672,
+      "modelHeight": 898,
+      "sourceCalibration": 0.6006688963210702,
+      "groupScale": 1.069042316258352,
+      "appliedScale": 0.6421404682274248,
       "rendered": {
-        "width": 702,
+        "width": 703,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
-        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -540,16 +538,16 @@
         "width": 444,
         "height": 606
       },
-      "modelHeight": 901,
-      "sourceCalibration": 1.4867986798679869,
-      "groupScale": 1.065482796892342,
+      "modelHeight": 898,
+      "sourceCalibration": 1.481848184818482,
+      "groupScale": 1.069042316258352,
       "appliedScale": 1.5841584158415842,
       "rendered": {
         "width": 703,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
         "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
@@ -563,20 +561,20 @@
       },
       "boundingBox": {
         "left": 32,
-        "top": 5,
-        "width": 672,
-        "height": 882
+        "top": 6,
+        "width": 669,
+        "height": 880
       },
-      "modelHeight": 901,
-      "sourceCalibration": 1.0215419501133787,
-      "groupScale": 1.065482796892342,
-      "appliedScale": 1.08843537414966,
+      "modelHeight": 898,
+      "sourceCalibration": 1.0204545454545455,
+      "groupScale": 1.069042316258352,
+      "appliedScale": 1.0909090909090908,
       "rendered": {
-        "width": 731,
+        "width": 730,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -588,21 +586,21 @@
         "height": 1500
       },
       "boundingBox": {
-        "left": 0,
-        "top": 0,
-        "width": 1102,
-        "height": 1500
+        "left": 1,
+        "top": 1,
+        "width": 1101,
+        "height": 1497
       },
       "modelHeight": 1200,
-      "sourceCalibration": 0.8,
+      "sourceCalibration": 0.8016032064128257,
       "groupScale": 0.8,
-      "appliedScale": 0.64,
+      "appliedScale": 0.6412825651302605,
       "rendered": {
-        "width": 705,
+        "width": 706,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
         "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
@@ -616,20 +614,20 @@
       },
       "boundingBox": {
         "left": 144,
-        "top": 16,
+        "top": 17,
         "width": 712,
-        "height": 968
+        "height": 967
       },
       "modelHeight": 1200,
-      "sourceCalibration": 1.2396694214876034,
+      "sourceCalibration": 1.2409513960703207,
       "groupScale": 0.8,
-      "appliedScale": 0.9917355371900827,
+      "appliedScale": 0.9927611168562565,
       "rendered": {
-        "width": 706,
+        "width": 707,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -643,19 +641,19 @@
       "boundingBox": {
         "left": 24,
         "top": 22,
-        "width": 648,
-        "height": 879
+        "width": 647,
+        "height": 878
       },
       "modelHeight": 1200,
-      "sourceCalibration": 1.3651877133105803,
+      "sourceCalibration": 1.366742596810934,
       "groupScale": 0.8,
-      "appliedScale": 1.0921501706484642,
+      "appliedScale": 1.0933940774487472,
       "rendered": {
-        "width": 708,
+        "width": 707,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -668,20 +666,20 @@
       },
       "boundingBox": {
         "left": 0,
-        "top": 0,
+        "top": 1,
         "width": 1200,
-        "height": 1631
+        "height": 1630
       },
       "modelHeight": 1200,
-      "sourceCalibration": 0.7357449417535254,
+      "sourceCalibration": 0.7361963190184049,
       "groupScale": 0.8,
-      "appliedScale": 0.5885959534028203,
+      "appliedScale": 0.588957055214724,
       "rendered": {
-        "width": 706,
+        "width": 707,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
         "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
@@ -694,22 +692,21 @@
         "height": 600
       },
       "boundingBox": {
-        "left": 78,
-        "top": 0,
-        "width": 443,
-        "height": 599
+        "left": 80,
+        "top": 1,
+        "width": 440,
+        "height": 594
       },
       "modelHeight": 1200,
-      "sourceCalibration": 2.003338898163606,
+      "sourceCalibration": 2.0202020202020203,
       "groupScale": 0.8,
-      "appliedScale": 1.6026711185308848,
+      "appliedScale": 1.6161616161616161,
       "rendered": {
-        "width": 710,
+        "width": 711,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
-        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -721,9 +718,9 @@
         "height": 1200
       },
       "boundingBox": {
-        "left": 154,
+        "left": 158,
         "top": 0,
-        "width": 891,
+        "width": 884,
         "height": 1200
       },
       "modelHeight": 1200,
@@ -731,11 +728,11 @@
       "groupScale": 0.8,
       "appliedScale": 0.8,
       "rendered": {
-        "width": 713,
+        "width": 707,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
         "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
@@ -748,21 +745,21 @@
         "height": 646
       },
       "boundingBox": {
-        "left": 2,
-        "top": 2,
-        "width": 500,
-        "height": 638
+        "left": 4,
+        "top": 4,
+        "width": 497,
+        "height": 636
       },
       "modelHeight": 726,
-      "sourceCalibration": 1.1379310344827587,
+      "sourceCalibration": 1.1415094339622642,
       "groupScale": 1.322314049586777,
-      "appliedScale": 1.5047021943573669,
+      "appliedScale": 1.509433962264151,
       "rendered": {
-        "width": 752,
+        "width": 750,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -774,21 +771,21 @@
         "height": 1000
       },
       "boundingBox": {
-        "left": 200,
-        "top": 94,
-        "width": 599,
-        "height": 809
+        "left": 205,
+        "top": 95,
+        "width": 591,
+        "height": 806
       },
       "modelHeight": 726,
-      "sourceCalibration": 0.8974042027194067,
+      "sourceCalibration": 0.9007444168734491,
       "groupScale": 1.322314049586777,
-      "appliedScale": 1.1866501854140914,
+      "appliedScale": 1.1910669975186103,
       "rendered": {
-        "width": 711,
+        "width": 704,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -814,7 +811,7 @@
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
         "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
@@ -827,21 +824,21 @@
         "height": 755
       },
       "boundingBox": {
-        "left": 96,
-        "top": 15,
-        "width": 529,
-        "height": 684
+        "left": 98,
+        "top": 17,
+        "width": 526,
+        "height": 681
       },
       "modelHeight": 726,
-      "sourceCalibration": 1.0614035087719298,
+      "sourceCalibration": 1.066079295154185,
       "groupScale": 1.322314049586777,
-      "appliedScale": 1.4035087719298245,
+      "appliedScale": 1.4096916299559472,
       "rendered": {
-        "width": 742,
+        "width": 741,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -853,22 +850,21 @@
         "height": 1500
       },
       "boundingBox": {
-        "left": 0,
-        "top": 0,
-        "width": 1136,
-        "height": 1499
+        "left": 1,
+        "top": 1,
+        "width": 1134,
+        "height": 1497
       },
       "modelHeight": 1378,
-      "sourceCalibration": 0.9192795196797865,
+      "sourceCalibration": 0.9205076820307281,
       "groupScale": 0.6966618287373004,
-      "appliedScale": 0.6404269513008672,
+      "appliedScale": 0.6412825651302605,
       "rendered": {
-        "width": 728,
+        "width": 727,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
-        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -880,9 +876,9 @@
         "height": 664
       },
       "boundingBox": {
-        "left": 0,
+        "left": 1,
         "top": 0,
-        "width": 522,
+        "width": 521,
         "height": 664
       },
       "modelHeight": 1378,
@@ -890,11 +886,11 @@
       "groupScale": 0.6966618287373004,
       "appliedScale": 1.4457831325301205,
       "rendered": {
-        "width": 755,
+        "width": 753,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
         "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
@@ -907,21 +903,21 @@
         "height": 1200
       },
       "boundingBox": {
-        "left": 120,
-        "top": 98,
-        "width": 760,
-        "height": 1004
+        "left": 121,
+        "top": 100,
+        "width": 758,
+        "height": 1000
       },
       "modelHeight": 1378,
-      "sourceCalibration": 1.3725099601593624,
+      "sourceCalibration": 1.378,
       "groupScale": 0.6966618287373004,
-      "appliedScale": 0.9561752988047809,
+      "appliedScale": 0.96,
       "rendered": {
-        "width": 727,
+        "width": 728,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -947,7 +943,7 @@
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -959,21 +955,21 @@
         "height": 736
       },
       "boundingBox": {
-        "left": 175,
-        "top": 109,
-        "width": 386,
-        "height": 528
+        "left": 176,
+        "top": 111,
+        "width": 384,
+        "height": 522
       },
-      "modelHeight": 998,
-      "sourceCalibration": 1.8901515151515151,
-      "groupScale": 0.9619238476953907,
-      "appliedScale": 1.8181818181818181,
+      "modelHeight": 996,
+      "sourceCalibration": 1.9080459770114941,
+      "groupScale": 0.963855421686747,
+      "appliedScale": 1.839080459770115,
       "rendered": {
-        "width": 702,
+        "width": 706,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -985,22 +981,21 @@
         "height": 1000
       },
       "boundingBox": {
-        "left": 0,
-        "top": 0,
-        "width": 736,
-        "height": 1000
+        "left": 1,
+        "top": 1,
+        "width": 734,
+        "height": 998
       },
-      "modelHeight": 998,
-      "sourceCalibration": 0.998,
-      "groupScale": 0.9619238476953907,
-      "appliedScale": 0.96,
+      "modelHeight": 996,
+      "sourceCalibration": 0.9979959919839679,
+      "groupScale": 0.963855421686747,
+      "appliedScale": 0.9619238476953907,
       "rendered": {
-        "width": 707,
+        "width": 706,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
-        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1012,21 +1007,21 @@
         "height": 779
       },
       "boundingBox": {
-        "left": 24,
-        "top": 34,
-        "width": 528,
-        "height": 710
+        "left": 26,
+        "top": 35,
+        "width": 522,
+        "height": 708
       },
-      "modelHeight": 998,
-      "sourceCalibration": 1.4056338028169013,
-      "groupScale": 0.9619238476953907,
-      "appliedScale": 1.352112676056338,
+      "modelHeight": 996,
+      "sourceCalibration": 1.4067796610169492,
+      "groupScale": 0.963855421686747,
+      "appliedScale": 1.3559322033898304,
       "rendered": {
-        "width": 714,
+        "width": 708,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1038,21 +1033,21 @@
         "height": 600
       },
       "boundingBox": {
-        "left": 16,
-        "top": 55,
-        "width": 369,
-        "height": 490
+        "left": 17,
+        "top": 56,
+        "width": 367,
+        "height": 488
       },
-      "modelHeight": 998,
-      "sourceCalibration": 2.036734693877551,
-      "groupScale": 0.9619238476953907,
-      "appliedScale": 1.9591836734693877,
+      "modelHeight": 996,
+      "sourceCalibration": 2.040983606557377,
+      "groupScale": 0.963855421686747,
+      "appliedScale": 1.9672131147540983,
       "rendered": {
-        "width": 723,
+        "width": 722,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1064,21 +1059,21 @@
         "height": 1200
       },
       "boundingBox": {
-        "left": 132,
-        "top": 102,
-        "width": 737,
-        "height": 998
+        "left": 133,
+        "top": 103,
+        "width": 733,
+        "height": 996
       },
-      "modelHeight": 998,
+      "modelHeight": 996,
       "sourceCalibration": 1,
-      "groupScale": 0.9619238476953907,
-      "appliedScale": 0.9619238476953907,
+      "groupScale": 0.963855421686747,
+      "appliedScale": 0.963855421686747,
       "rendered": {
-        "width": 709,
+        "width": 707,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1095,16 +1090,16 @@
         "width": 736,
         "height": 1000
       },
-      "modelHeight": 998,
-      "sourceCalibration": 0.998,
-      "groupScale": 0.9619238476953907,
+      "modelHeight": 996,
+      "sourceCalibration": 0.996,
+      "groupScale": 0.963855421686747,
       "appliedScale": 0.96,
       "rendered": {
         "width": 707,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
         "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
@@ -1118,20 +1113,20 @@
       },
       "boundingBox": {
         "left": 0,
-        "top": 0,
+        "top": 1,
         "width": 736,
-        "height": 917
+        "height": 916
       },
-      "modelHeight": 917,
+      "modelHeight": 916,
       "sourceCalibration": 1,
-      "groupScale": 1.0468920392584515,
-      "appliedScale": 1.0468920392584515,
+      "groupScale": 1.0480349344978166,
+      "appliedScale": 1.0480349344978166,
       "rendered": {
         "width": 771,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
         "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
@@ -1144,21 +1139,21 @@
         "height": 1200
       },
       "boundingBox": {
-        "left": 0,
+        "left": 6,
         "top": 0,
-        "width": 975,
+        "width": 965,
         "height": 1200
       },
-      "modelHeight": 917,
-      "sourceCalibration": 0.7641666666666667,
-      "groupScale": 1.0468920392584515,
+      "modelHeight": 916,
+      "sourceCalibration": 0.7633333333333333,
+      "groupScale": 1.0480349344978166,
       "appliedScale": 0.8,
       "rendered": {
-        "width": 780,
+        "width": 772,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
         "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
@@ -1171,21 +1166,21 @@
         "height": 1041
       },
       "boundingBox": {
-        "left": 35,
-        "top": 113,
-        "width": 653,
-        "height": 815
+        "left": 37,
+        "top": 116,
+        "width": 649,
+        "height": 809
       },
-      "modelHeight": 917,
-      "sourceCalibration": 1.1251533742331288,
-      "groupScale": 1.0468920392584515,
-      "appliedScale": 1.177914110429448,
+      "modelHeight": 916,
+      "sourceCalibration": 1.1322620519159456,
+      "groupScale": 1.0480349344978166,
+      "appliedScale": 1.1866501854140914,
       "rendered": {
-        "width": 769,
+        "width": 770,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1200,18 +1195,18 @@
         "left": 66,
         "top": 11,
         "width": 590,
-        "height": 725
+        "height": 724
       },
-      "modelHeight": 917,
-      "sourceCalibration": 1.2648275862068965,
-      "groupScale": 1.0468920392584515,
-      "appliedScale": 1.3241379310344827,
+      "modelHeight": 916,
+      "sourceCalibration": 1.2651933701657458,
+      "groupScale": 1.0480349344978166,
+      "appliedScale": 1.3259668508287292,
       "rendered": {
-        "width": 781,
+        "width": 782,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1224,20 +1219,20 @@
       },
       "boundingBox": {
         "left": 38,
-        "top": 46,
-        "width": 916,
-        "height": 1131
+        "top": 47,
+        "width": 915,
+        "height": 1129
       },
-      "modelHeight": 1063,
-      "sourceCalibration": 0.9398762157382847,
-      "groupScale": 0.90310442144873,
-      "appliedScale": 0.8488063660477454,
+      "modelHeight": 1061,
+      "sourceCalibration": 0.9397697077059345,
+      "groupScale": 0.9048067860508954,
+      "appliedScale": 0.8503100088573959,
       "rendered": {
         "width": 778,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1250,20 +1245,20 @@
       },
       "boundingBox": {
         "left": 108,
-        "top": 11,
-        "width": 865,
-        "height": 1063
+        "top": 12,
+        "width": 864,
+        "height": 1061
       },
-      "modelHeight": 1063,
+      "modelHeight": 1061,
       "sourceCalibration": 1,
-      "groupScale": 0.90310442144873,
-      "appliedScale": 0.90310442144873,
+      "groupScale": 0.9048067860508954,
+      "appliedScale": 0.9048067860508954,
       "rendered": {
-        "width": 781,
+        "width": 782,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1275,22 +1270,21 @@
         "height": 884
       },
       "boundingBox": {
-        "left": 0,
-        "top": 0,
-        "width": 729,
-        "height": 876
+        "left": 2,
+        "top": 2,
+        "width": 726,
+        "height": 872
       },
-      "modelHeight": 1063,
-      "sourceCalibration": 1.2134703196347032,
-      "groupScale": 0.90310442144873,
-      "appliedScale": 1.095890410958904,
+      "modelHeight": 1061,
+      "sourceCalibration": 1.216743119266055,
+      "groupScale": 0.9048067860508954,
+      "appliedScale": 1.1009174311926606,
       "rendered": {
         "width": 799,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
-        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1305,18 +1299,18 @@
         "left": 66,
         "top": 11,
         "width": 590,
-        "height": 725
+        "height": 724
       },
-      "modelHeight": 1063,
-      "sourceCalibration": 1.466206896551724,
-      "groupScale": 0.90310442144873,
-      "appliedScale": 1.3241379310344827,
+      "modelHeight": 1061,
+      "sourceCalibration": 1.4654696132596685,
+      "groupScale": 0.9048067860508954,
+      "appliedScale": 1.3259668508287292,
       "rendered": {
-        "width": 781,
+        "width": 782,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1328,21 +1322,21 @@
         "height": 1536
       },
       "boundingBox": {
-        "left": 136,
-        "top": 165,
-        "width": 873,
-        "height": 1157
+        "left": 137,
+        "top": 169,
+        "width": 871,
+        "height": 1148
       },
-      "modelHeight": 1099,
-      "sourceCalibration": 0.9498703543647364,
-      "groupScale": 0.8735213830755232,
-      "appliedScale": 0.8297320656871219,
+      "modelHeight": 1092,
+      "sourceCalibration": 0.9512195121951219,
+      "groupScale": 0.8791208791208791,
+      "appliedScale": 0.8362369337979094,
       "rendered": {
-        "width": 724,
+        "width": 728,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1355,20 +1349,20 @@
       },
       "boundingBox": {
         "left": 0,
-        "top": 0,
+        "top": 2,
         "width": 731,
-        "height": 1000
+        "height": 996
       },
-      "modelHeight": 1099,
-      "sourceCalibration": 1.099,
-      "groupScale": 0.8735213830755232,
-      "appliedScale": 0.96,
+      "modelHeight": 1092,
+      "sourceCalibration": 1.0963855421686748,
+      "groupScale": 0.8791208791208791,
+      "appliedScale": 0.963855421686747,
       "rendered": {
-        "width": 702,
+        "width": 705,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
         "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
@@ -1381,21 +1375,21 @@
         "height": 736
       },
       "boundingBox": {
-        "left": 160,
-        "top": 66,
-        "width": 454,
-        "height": 604
+        "left": 162,
+        "top": 72,
+        "width": 448,
+        "height": 593
       },
-      "modelHeight": 1099,
-      "sourceCalibration": 1.8195364238410596,
-      "groupScale": 0.8735213830755232,
-      "appliedScale": 1.5894039735099337,
+      "modelHeight": 1092,
+      "sourceCalibration": 1.8414839797639122,
+      "groupScale": 0.8791208791208791,
+      "appliedScale": 1.6188870151770658,
       "rendered": {
-        "width": 722,
+        "width": 725,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1407,21 +1401,21 @@
         "height": 793
       },
       "boundingBox": {
-        "left": 88,
-        "top": 19,
-        "width": 568,
-        "height": 738
+        "left": 90,
+        "top": 20,
+        "width": 565,
+        "height": 736
       },
-      "modelHeight": 1099,
-      "sourceCalibration": 1.489159891598916,
-      "groupScale": 0.8735213830755232,
-      "appliedScale": 1.3008130081300813,
+      "modelHeight": 1092,
+      "sourceCalibration": 1.483695652173913,
+      "groupScale": 0.8791208791208791,
+      "appliedScale": 1.3043478260869565,
       "rendered": {
-        "width": 739,
+        "width": 737,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1433,22 +1427,21 @@
         "height": 1103
       },
       "boundingBox": {
-        "left": 0,
-        "top": 0,
-        "width": 831,
-        "height": 1099
+        "left": 2,
+        "top": 4,
+        "width": 826,
+        "height": 1092
       },
-      "modelHeight": 1099,
+      "modelHeight": 1092,
       "sourceCalibration": 1,
-      "groupScale": 0.8735213830755232,
-      "appliedScale": 0.8735213830755232,
+      "groupScale": 0.8791208791208791,
+      "appliedScale": 0.8791208791208791,
       "rendered": {
         "width": 726,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
-        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1460,21 +1453,21 @@
         "height": 1536
       },
       "boundingBox": {
-        "left": 128,
-        "top": 152,
-        "width": 896,
-        "height": 1176
+        "left": 134,
+        "top": 156,
+        "width": 883,
+        "height": 1168
       },
-      "modelHeight": 1099,
-      "sourceCalibration": 0.9345238095238095,
-      "groupScale": 0.8735213830755232,
-      "appliedScale": 0.8163265306122449,
+      "modelHeight": 1092,
+      "sourceCalibration": 0.934931506849315,
+      "groupScale": 0.8791208791208791,
+      "appliedScale": 0.821917808219178,
       "rendered": {
-        "width": 731,
+        "width": 726,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1491,16 +1484,16 @@
         "width": 806,
         "height": 1000
       },
-      "modelHeight": 890,
-      "sourceCalibration": 0.89,
-      "groupScale": 1.0786516853932584,
+      "modelHeight": 888,
+      "sourceCalibration": 0.888,
+      "groupScale": 1.0810810810810811,
       "appliedScale": 0.96,
       "rendered": {
         "width": 774,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
         "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
@@ -1513,21 +1506,21 @@
         "height": 1200
       },
       "boundingBox": {
-        "left": 140,
-        "top": 156,
-        "width": 716,
-        "height": 890
+        "left": 142,
+        "top": 157,
+        "width": 714,
+        "height": 888
       },
-      "modelHeight": 890,
+      "modelHeight": 888,
       "sourceCalibration": 1,
-      "groupScale": 1.0786516853932584,
-      "appliedScale": 1.0786516853932584,
+      "groupScale": 1.0810810810810811,
+      "appliedScale": 1.0810810810810811,
       "rendered": {
         "width": 772,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1539,21 +1532,21 @@
         "height": 913
       },
       "boundingBox": {
-        "left": 32,
-        "top": 40,
-        "width": 672,
-        "height": 833
+        "left": 33,
+        "top": 41,
+        "width": 670,
+        "height": 831
       },
-      "modelHeight": 890,
-      "sourceCalibration": 1.0684273709483794,
-      "groupScale": 1.0786516853932584,
-      "appliedScale": 1.1524609843937574,
+      "modelHeight": 888,
+      "sourceCalibration": 1.068592057761733,
+      "groupScale": 1.0810810810810811,
+      "appliedScale": 1.1552346570397112,
       "rendered": {
         "width": 774,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1570,16 +1563,16 @@
         "width": 516,
         "height": 640
       },
-      "modelHeight": 890,
-      "sourceCalibration": 1.390625,
-      "groupScale": 1.0786516853932584,
+      "modelHeight": 888,
+      "sourceCalibration": 1.3875,
+      "groupScale": 1.0810810810810811,
       "appliedScale": 1.5,
       "rendered": {
         "width": 774,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
         "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
@@ -1592,21 +1585,21 @@
         "height": 876
       },
       "boundingBox": {
-        "left": 78,
-        "top": 98,
-        "width": 561,
-        "height": 667
+        "left": 79,
+        "top": 99,
+        "width": 558,
+        "height": 666
       },
-      "modelHeight": 667,
+      "modelHeight": 666,
       "sourceCalibration": 1,
-      "groupScale": 1.43928035982009,
-      "appliedScale": 1.43928035982009,
+      "groupScale": 1.4414414414414414,
+      "appliedScale": 1.4414414414414414,
       "rendered": {
-        "width": 807,
+        "width": 804,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1618,22 +1611,21 @@
         "height": 1048
       },
       "boundingBox": {
-        "left": 0,
+        "left": 1,
         "top": 80,
-        "width": 736,
-        "height": 905
+        "width": 734,
+        "height": 904
       },
-      "modelHeight": 667,
-      "sourceCalibration": 0.7370165745856354,
-      "groupScale": 1.43928035982009,
-      "appliedScale": 1.0607734806629834,
+      "modelHeight": 666,
+      "sourceCalibration": 0.7367256637168141,
+      "groupScale": 1.4414414414414414,
+      "appliedScale": 1.0619469026548674,
       "rendered": {
-        "width": 781,
+        "width": 779,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
-        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1646,20 +1638,20 @@
       },
       "boundingBox": {
         "left": 136,
-        "top": 65,
-        "width": 500,
-        "height": 619
+        "top": 68,
+        "width": 497,
+        "height": 614
       },
-      "modelHeight": 667,
-      "sourceCalibration": 1.0775444264943457,
-      "groupScale": 1.43928035982009,
-      "appliedScale": 1.5508885298869144,
+      "modelHeight": 666,
+      "sourceCalibration": 1.0846905537459284,
+      "groupScale": 1.4414414414414414,
+      "appliedScale": 1.5635179153094463,
       "rendered": {
-        "width": 775,
+        "width": 777,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1672,20 +1664,20 @@
       },
       "boundingBox": {
         "left": 109,
-        "top": 51,
-        "width": 529,
-        "height": 651
+        "top": 52,
+        "width": 528,
+        "height": 649
       },
-      "modelHeight": 667,
-      "sourceCalibration": 1.0245775729646698,
-      "groupScale": 1.43928035982009,
-      "appliedScale": 1.4746543778801844,
+      "modelHeight": 666,
+      "sourceCalibration": 1.0261941448382126,
+      "groupScale": 1.4414414414414414,
+      "appliedScale": 1.4791987673343605,
       "rendered": {
-        "width": 780,
+        "width": 781,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1697,21 +1689,21 @@
         "height": 909
       },
       "boundingBox": {
-        "left": 73,
-        "top": 66,
-        "width": 603,
-        "height": 790
+        "left": 76,
+        "top": 68,
+        "width": 599,
+        "height": 786
       },
       "modelHeight": 1000,
-      "sourceCalibration": 1.2658227848101267,
+      "sourceCalibration": 1.272264631043257,
       "groupScale": 0.96,
-      "appliedScale": 1.2151898734177216,
+      "appliedScale": 1.2213740458015268,
       "rendered": {
-        "width": 733,
+        "width": 732,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1723,21 +1715,21 @@
         "height": 1080
       },
       "boundingBox": {
-        "left": 128,
-        "top": 0,
-        "width": 824,
-        "height": 1080
+        "left": 129,
+        "top": 1,
+        "width": 822,
+        "height": 1079
       },
       "modelHeight": 1000,
-      "sourceCalibration": 0.9259259259259259,
+      "sourceCalibration": 0.9267840593141798,
       "groupScale": 0.96,
-      "appliedScale": 0.8888888888888888,
+      "appliedScale": 0.8897126969416126,
       "rendered": {
-        "width": 732,
+        "width": 731,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
         "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
@@ -1764,7 +1756,7 @@
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1776,21 +1768,21 @@
         "height": 1177
       },
       "boundingBox": {
-        "left": 37,
-        "top": 155,
-        "width": 661,
-        "height": 867
+        "left": 38,
+        "top": 156,
+        "width": 660,
+        "height": 865
       },
       "modelHeight": 1000,
-      "sourceCalibration": 1.1534025374855825,
+      "sourceCalibration": 1.1560693641618498,
       "groupScale": 0.96,
-      "appliedScale": 1.1072664359861593,
+      "appliedScale": 1.1098265895953756,
       "rendered": {
         "width": 732,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1816,7 +1808,7 @@
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
         "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
@@ -1829,22 +1821,21 @@
         "height": 1247
       },
       "boundingBox": {
-        "left": 0,
+        "left": 1,
         "top": 160,
-        "width": 736,
-        "height": 925
+        "width": 734,
+        "height": 923
       },
       "modelHeight": 887,
-      "sourceCalibration": 0.9589189189189189,
+      "sourceCalibration": 0.9609967497291441,
       "groupScale": 1.0822998872604284,
-      "appliedScale": 1.037837837837838,
+      "appliedScale": 1.0400866738894907,
       "rendered": {
-        "width": 764,
+        "width": 763,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
-        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1856,21 +1847,21 @@
         "height": 893
       },
       "boundingBox": {
-        "left": 9,
-        "top": 4,
-        "width": 718,
-        "height": 881
+        "left": 11,
+        "top": 6,
+        "width": 715,
+        "height": 878
       },
       "modelHeight": 887,
-      "sourceCalibration": 1.006810442678774,
+      "sourceCalibration": 1.010250569476082,
       "groupScale": 1.0822998872604284,
-      "appliedScale": 1.0896708286038592,
+      "appliedScale": 1.0933940774487472,
       "rendered": {
         "width": 782,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1882,9 +1873,9 @@
         "height": 939
       },
       "boundingBox": {
-        "left": 14,
+        "left": 15,
         "top": 19,
-        "width": 708,
+        "width": 707,
         "height": 887
       },
       "modelHeight": 887,
@@ -1892,11 +1883,11 @@
       "groupScale": 1.0822998872604284,
       "appliedScale": 1.0822998872604284,
       "rendered": {
-        "width": 766,
+        "width": 765,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1908,21 +1899,21 @@
         "height": 1536
       },
       "boundingBox": {
-        "left": 110,
-        "top": 163,
-        "width": 932,
-        "height": 1153
+        "left": 111,
+        "top": 165,
+        "width": 928,
+        "height": 1149
       },
-      "modelHeight": 881,
-      "sourceCalibration": 0.764093668690373,
-      "groupScale": 1.0896708286038592,
-      "appliedScale": 0.8326105810928014,
+      "modelHeight": 878,
+      "sourceCalibration": 0.7641427328111401,
+      "groupScale": 1.0933940774487472,
+      "appliedScale": 0.835509138381201,
       "rendered": {
-        "width": 776,
+        "width": 775,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1934,21 +1925,21 @@
         "height": 736
       },
       "boundingBox": {
-        "left": 91,
-        "top": 15,
-        "width": 578,
-        "height": 712
+        "left": 94,
+        "top": 16,
+        "width": 573,
+        "height": 709
       },
-      "modelHeight": 881,
-      "sourceCalibration": 1.2373595505617978,
-      "groupScale": 1.0896708286038592,
-      "appliedScale": 1.348314606741573,
+      "modelHeight": 878,
+      "sourceCalibration": 1.2383638928067702,
+      "groupScale": 1.0933940774487472,
+      "appliedScale": 1.3540197461212975,
       "rendered": {
-        "width": 779,
+        "width": 776,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1960,21 +1951,21 @@
         "height": 893
       },
       "boundingBox": {
-        "left": 9,
-        "top": 4,
-        "width": 718,
-        "height": 881
+        "left": 11,
+        "top": 6,
+        "width": 715,
+        "height": 878
       },
-      "modelHeight": 881,
+      "modelHeight": 878,
       "sourceCalibration": 1,
-      "groupScale": 1.0896708286038592,
-      "appliedScale": 1.0896708286038592,
+      "groupScale": 1.0933940774487472,
+      "appliedScale": 1.0933940774487472,
       "rendered": {
         "width": 782,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -1986,21 +1977,21 @@
         "height": 640
       },
       "boundingBox": {
-        "left": 81,
-        "top": 28,
-        "width": 477,
-        "height": 584
+        "left": 85,
+        "top": 29,
+        "width": 471,
+        "height": 583
       },
-      "modelHeight": 881,
-      "sourceCalibration": 1.5085616438356164,
-      "groupScale": 1.0896708286038592,
-      "appliedScale": 1.643835616438356,
+      "modelHeight": 878,
+      "sourceCalibration": 1.5060034305317325,
+      "groupScale": 1.0933940774487472,
+      "appliedScale": 1.646655231560892,
       "rendered": {
-        "width": 784,
+        "width": 776,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -2012,21 +2003,21 @@
         "height": 600
       },
       "boundingBox": {
-        "left": 16,
-        "top": 50,
-        "width": 368,
-        "height": 500
+        "left": 18,
+        "top": 52,
+        "width": 364,
+        "height": 496
       },
-      "modelHeight": 664,
-      "sourceCalibration": 1.328,
-      "groupScale": 1.4457831325301205,
-      "appliedScale": 1.92,
+      "modelHeight": 659,
+      "sourceCalibration": 1.3286290322580645,
+      "groupScale": 1.456752655538695,
+      "appliedScale": 1.935483870967742,
       "rendered": {
-        "width": 707,
+        "width": 705,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -2040,19 +2031,19 @@
       "boundingBox": {
         "left": 2,
         "top": 2,
-        "width": 518,
+        "width": 517,
         "height": 632
       },
-      "modelHeight": 664,
-      "sourceCalibration": 1.0506329113924051,
-      "groupScale": 1.4457831325301205,
+      "modelHeight": 659,
+      "sourceCalibration": 1.0427215189873418,
+      "groupScale": 1.456752655538695,
       "appliedScale": 1.518987341772152,
       "rendered": {
-        "width": 787,
+        "width": 785,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -2064,21 +2055,21 @@
         "height": 878
       },
       "boundingBox": {
-        "left": 59,
+        "left": 61,
         "top": 50,
-        "width": 630,
+        "width": 627,
         "height": 767
       },
-      "modelHeight": 664,
-      "sourceCalibration": 0.8657105606258149,
-      "groupScale": 1.4457831325301205,
+      "modelHeight": 659,
+      "sourceCalibration": 0.8591916558018253,
+      "groupScale": 1.456752655538695,
       "appliedScale": 1.2516297262059974,
       "rendered": {
-        "width": 789,
+        "width": 785,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -2090,21 +2081,21 @@
         "height": 687
       },
       "boundingBox": {
-        "left": 12,
-        "top": 8,
-        "width": 564,
-        "height": 664
+        "left": 13,
+        "top": 12,
+        "width": 562,
+        "height": 659
       },
-      "modelHeight": 664,
+      "modelHeight": 659,
       "sourceCalibration": 1,
-      "groupScale": 1.4457831325301205,
-      "appliedScale": 1.4457831325301205,
+      "groupScale": 1.456752655538695,
+      "appliedScale": 1.456752655538695,
       "rendered": {
-        "width": 815,
+        "width": 819,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -2121,16 +2112,16 @@
         "width": 1162,
         "height": 1440
       },
-      "modelHeight": 664,
-      "sourceCalibration": 0.46111111111111114,
-      "groupScale": 1.4457831325301205,
+      "modelHeight": 659,
+      "sourceCalibration": 0.4576388888888889,
+      "groupScale": 1.456752655538695,
       "appliedScale": 0.6666666666666666,
       "rendered": {
         "width": 775,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
         "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
@@ -2143,21 +2134,21 @@
         "height": 872
       },
       "boundingBox": {
-        "left": 74,
-        "top": 32,
-        "width": 590,
-        "height": 755
+        "left": 76,
+        "top": 33,
+        "width": 588,
+        "height": 754
       },
-      "modelHeight": 718,
-      "sourceCalibration": 0.9509933774834437,
-      "groupScale": 1.3370473537604457,
-      "appliedScale": 1.271523178807947,
+      "modelHeight": 712,
+      "sourceCalibration": 0.9442970822281167,
+      "groupScale": 1.348314606741573,
+      "appliedScale": 1.273209549071618,
       "rendered": {
-        "width": 750,
+        "width": 749,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -2169,21 +2160,21 @@
         "height": 789
       },
       "boundingBox": {
-        "left": 88,
-        "top": 38,
-        "width": 564,
-        "height": 718
+        "left": 91,
+        "top": 41,
+        "width": 555,
+        "height": 712
       },
-      "modelHeight": 718,
+      "modelHeight": 712,
       "sourceCalibration": 1,
-      "groupScale": 1.3370473537604457,
-      "appliedScale": 1.3370473537604457,
+      "groupScale": 1.348314606741573,
+      "appliedScale": 1.348314606741573,
       "rendered": {
-        "width": 754,
+        "width": 748,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -2200,16 +2191,16 @@
         "width": 518,
         "height": 641
       },
-      "modelHeight": 718,
-      "sourceCalibration": 1.1201248049921997,
-      "groupScale": 1.3370473537604457,
+      "modelHeight": 712,
+      "sourceCalibration": 1.110764430577223,
+      "groupScale": 1.348314606741573,
       "appliedScale": 1.497659906396256,
       "rendered": {
         "width": 776,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
         "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
@@ -2222,21 +2213,21 @@
         "height": 736
       },
       "boundingBox": {
-        "left": 105,
-        "top": 44,
-        "width": 527,
-        "height": 647
+        "left": 108,
+        "top": 46,
+        "width": 521,
+        "height": 644
       },
       "modelHeight": 641,
-      "sourceCalibration": 0.990726429675425,
+      "sourceCalibration": 0.9953416149068323,
       "groupScale": 1.497659906396256,
-      "appliedScale": 1.4837712519319939,
+      "appliedScale": 1.4906832298136645,
       "rendered": {
-        "width": 782,
+        "width": 777,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -2248,21 +2239,21 @@
         "height": 1104
       },
       "boundingBox": {
-        "left": 128,
-        "top": 240,
-        "width": 481,
-        "height": 622
+        "left": 130,
+        "top": 243,
+        "width": 478,
+        "height": 615
       },
       "modelHeight": 641,
-      "sourceCalibration": 1.0305466237942122,
+      "sourceCalibration": 1.0422764227642276,
       "groupScale": 1.497659906396256,
-      "appliedScale": 1.5434083601286173,
+      "appliedScale": 1.5609756097560976,
       "rendered": {
-        "width": 742,
+        "width": 746,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -2288,7 +2279,7 @@
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
         "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
@@ -2315,7 +2306,7 @@
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
         "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
@@ -2328,9 +2319,9 @@
         "height": 911
       },
       "boundingBox": {
-        "left": 0,
+        "left": 1,
         "top": 1,
-        "width": 735,
+        "width": 732,
         "height": 909
       },
       "modelHeight": 912,
@@ -2338,12 +2329,11 @@
       "groupScale": 1.0526315789473684,
       "appliedScale": 1.056105610561056,
       "rendered": {
-        "width": 776,
+        "width": 773,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
-        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -2355,22 +2345,21 @@
         "height": 1200
       },
       "boundingBox": {
-        "left": 0,
-        "top": 0,
-        "width": 968,
-        "height": 1200
+        "left": 1,
+        "top": 1,
+        "width": 966,
+        "height": 1197
       },
       "modelHeight": 912,
-      "sourceCalibration": 0.76,
+      "sourceCalibration": 0.7619047619047619,
       "groupScale": 1.0526315789473684,
-      "appliedScale": 0.8,
+      "appliedScale": 0.8020050125313283,
       "rendered": {
-        "width": 774,
+        "width": 775,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
-        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
       ]
     },
     {
@@ -2383,20 +2372,20 @@
       },
       "boundingBox": {
         "left": 0,
-        "top": 2,
+        "top": 3,
         "width": 1200,
-        "height": 1489
+        "height": 1487
       },
       "modelHeight": 912,
-      "sourceCalibration": 0.6124916051040967,
+      "sourceCalibration": 0.613315400134499,
       "groupScale": 1.0526315789473684,
-      "appliedScale": 0.6447280053727333,
+      "appliedScale": 0.6455951580363147,
       "rendered": {
-        "width": 774,
+        "width": 775,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG",
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
         "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
@@ -2409,21 +2398,129 @@
         "height": 912
       },
       "boundingBox": {
-        "left": 32,
-        "top": 40,
-        "width": 672,
-        "height": 834
+        "left": 33,
+        "top": 41,
+        "width": 670,
+        "height": 830
       },
       "modelHeight": 912,
-      "sourceCalibration": 1.0935251798561152,
+      "sourceCalibration": 1.0987951807228915,
       "groupScale": 1.0526315789473684,
-      "appliedScale": 1.1510791366906474,
+      "appliedScale": 1.1566265060240963,
       "rendered": {
-        "width": 774,
+        "width": 775,
         "height": 960
       },
       "warnings": [
-        "Fondo blanco exterior tratado; revisar contornos claros del JPG"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
+      ]
+    },
+    {
+      "file": "iphone-18-pro/iphone-18-pro-borgona.jpg",
+      "output": "iphone-18-pro/iphone-18-pro-borgona.webp",
+      "group": "iphone-18-pro",
+      "original": {
+        "width": 2880,
+        "height": 1520
+      },
+      "boundingBox": {
+        "left": 1435,
+        "top": 153,
+        "width": 956,
+        "height": 1367
+      },
+      "modelHeight": 1367,
+      "sourceCalibration": 1,
+      "groupScale": 0.7022677395757132,
+      "appliedScale": 0.7022677395757132,
+      "rendered": {
+        "width": 671,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-18-pro/iphone-18-pro-glaciar.jpg",
+      "output": "iphone-18-pro/iphone-18-pro-glaciar.webp",
+      "group": "iphone-18-pro",
+      "original": {
+        "width": 2880,
+        "height": 1520
+      },
+      "boundingBox": {
+        "left": 1435,
+        "top": 153,
+        "width": 957,
+        "height": 1367
+      },
+      "modelHeight": 1367,
+      "sourceCalibration": 1,
+      "groupScale": 0.7022677395757132,
+      "appliedScale": 0.7022677395757132,
+      "rendered": {
+        "width": 672,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-18-pro/iphone-18-pro-negro.jpg",
+      "output": "iphone-18-pro/iphone-18-pro-negro.webp",
+      "group": "iphone-18-pro",
+      "original": {
+        "width": 2880,
+        "height": 1520
+      },
+      "boundingBox": {
+        "left": 1436,
+        "top": 153,
+        "width": 955,
+        "height": 1367
+      },
+      "modelHeight": 1367,
+      "sourceCalibration": 1,
+      "groupScale": 0.7022677395757132,
+      "appliedScale": 0.7022677395757132,
+      "rendered": {
+        "width": 671,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
+      "file": "iphone-18-pro/iphone-18-pro-plateado.jpg",
+      "output": "iphone-18-pro/iphone-18-pro-plateado.webp",
+      "group": "iphone-18-pro",
+      "original": {
+        "width": 2880,
+        "height": 1520
+      },
+      "boundingBox": {
+        "left": 1435,
+        "top": 154,
+        "width": 957,
+        "height": 1366
+      },
+      "modelHeight": 1367,
+      "sourceCalibration": 1.000732064421669,
+      "groupScale": 0.7022677395757132,
+      "appliedScale": 0.7027818448023426,
+      "rendered": {
+        "width": 673,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     }
   ],

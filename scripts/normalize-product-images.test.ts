@@ -59,7 +59,7 @@ test('wide variants constrain the entire group without cropping or distortion', 
   for (const result of report.results) assert.equal(result.rendered.width / result.rendered.height, result.boundingBox.width / result.boundingBox.height);
 });
 
-test('corrupt, empty and colliding inputs do not prevent other files from processing', async () => {
+test('corrupt and empty inputs do not prevent processing; collisions prefer the least compressed source', async () => {
   const options = await fixture();
   await writeFile(path.join(options.inputDir, 'broken.png'), 'invalid');
   await writeFile(path.join(options.inputDir, 'empty.png'), await sharp({ create: { width: 10, height: 10, channels: 4, background: '#00000000' } }).png().toBuffer());
@@ -68,9 +68,10 @@ test('corrupt, empty and colliding inputs do not prevent other files from proces
   await writeFile(path.join(options.inputDir, 'duplicate.png'), valid);
   await writeFile(path.join(options.inputDir, 'duplicate.webp'), await sharp(valid).webp().toBuffer());
   const report = await normalizeDirectory(options);
-  assert.equal(report.errors.length, 4);
-  assert.equal(report.results.length, 1);
-  assert.equal(report.results[0].output, 'valid.webp');
+  assert.equal(report.errors.length, 2);
+  assert.equal(report.results.length, 2);
+  assert.deepEqual(report.results.map(result => result.file), ['duplicate.png', 'valid.png']);
+  assert.deepEqual(report.results.map(result => result.output), ['duplicate.webp', 'valid.webp']);
 });
 
 test('alpha bounds preserve faint pixels and edge-touching content', () => {

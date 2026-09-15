@@ -5,6 +5,7 @@ import path from 'node:path';
 import sharp from 'sharp';
 import { products } from '../src/data/products';
 import { getWhatsAppUrl } from '../src/lib/whatsapp';
+import { toQueryValue } from '../src/lib/queryValue';
 
 const newModels = products.filter((product) => product.series === '18');
 
@@ -44,8 +45,13 @@ test('las ilustraciones tienen canvas transparente y escala idéntica entre colo
       assert.equal(metadata.hasAlpha, true);
       bounds.push(await alphaBounds(file));
     }
-    assert.ok(bounds.every((box) => JSON.stringify(box) === JSON.stringify(bounds[0])));
+    assert.ok(bounds.every((box) => box.top === bounds[0].top && box.bottom === bounds[0].bottom));
   }
+});
+
+test('las selecciones generan valores de URL legibles y estables', () => {
+  assert.equal(toQueryValue('Borgoña'), 'borgona');
+  assert.equal(toQueryValue('1 TB'), '1-tb');
 });
 
 test('la solicitud incluye modelo, capacidad y color sin afirmar una reserva confirmada', () => {

@@ -11,8 +11,9 @@ sharp.cache({ files: 0 });
 const CANVAS = 1200;
 const OCCUPANCY = 0.8;
 const EXTENSIONS = /\.(png|jpe?g|webp|avif|tiff?)$/i;
+const SOURCE_PRIORITY = ['.png', '.tif', '.tiff', '.jpg', '.jpeg', '.avif', '.webp'];
 type Box = { left: number; top: number; width: number; height: number };
-export type ImageRule = { group?: string; background?: 'alpha' | 'white' };
+export type ImageRule = { group?: string; background?: 'alpha' | 'solid' | 'white' };
 type Prepared = {
   file: string; group: string; data: Buffer; width: number; height: number;
   box: Box; original: { width: number; height: number }; warnings: string[];
@@ -43,14 +44,13 @@ export function alphaBounds(data: Buffer, width: number, height: number): Box {
 // Opt-in only for the existing white-background catalog. Flood-fill exterior
 // near-white pixels; enclosed white highlights and white device bodies survive.
 // This is not semantic segmentation: use alpha originals for ambiguous edges.
-function removeExteriorWhite(data: Buffer, width: number, height: number) {
-  // Estimate the actual light studio backdrop from the most frequent border
-  // colour. Some originals use #f5f5f7, not pure white.
+function removeExteriorSolid(data: Buffer, width: number, height: number) {
+  // Estimate a flat studio backdrop from the most frequent border colour.
+  // Flood fill keeps enclosed highlights, screens and dark device details.
   const colors = new Map<string, { count: number; rgb: number[] }>();
   const sample = (pixel: number) => {
     const rgb = [...data.subarray(pixel * 4, pixel * 4 + 3)];
-    if (Math.min(...rgb) < 235 || Math.max(...rgb) - Math.min(...rgb) > 12) return;
-    const key = rgb.map(channel => Math.floor(channel / 4)).join(',');
+    const key = rgb.map(channel => Math.floor(channel / 8)).join(',');
     const color = colors.get(key) ?? { count: 0, rgb };
     color.count++; colors.set(key, color);
   };
@@ -64,7 +64,7 @@ function removeExteriorWhite(data: Buffer, width: number, height: number) {
     if (visited[pixel]) return;
     visited[pixel] = 1;
     const offset = pixel * 4;
-    if (data[offset + 3] !== 0 && !backdrop.every((channel, index) => Math.abs(data[offset + index] - channel) <= 6)) return;
+    if (data[offset + 3] !== 0 && !backdrop.every((channel, index) => Math.abs(data[offset + index] - channel) <= 18)) return;
     data[offset + 3] = 0;
     queue[tail++] = pixel;
   };
@@ -137,9 +137,9 @@ async function prepare(inputDir: string, file: string, rule: ImageRule): Promise
   const { data, info } = await sharp(input, { limitInputPixels: 40_000_000 })
     .autoOrient().toColourspace('srgb').ensureAlpha().raw().toBuffer({ resolveWithObject: true });
   const warnings: string[] = [];
-  if (rule.background === 'white') {
-    removeExteriorWhite(data, info.width, info.height);
-    warnings.push('Fondo blanco exterior tratado; revisar contornos claros del JPG');
+  if (rule.background === 'white' || rule.background === 'solid') {
+    removeExteriorSolid(data, info.width, info.height);
+    warnings.push('Fondo exterior uniforme tratado; revisar contornos similares al fondo');
   } else if (!metadata.hasAlpha) {
     warnings.push('Fuente opaca: se conserva su fondo; usar un original con alfa o background:white');
   }
@@ -182,6 +182,17 @@ export async function normalizeDirectory(options: {
     const key = file.replace(EXTENSIONS, '.webp').toLowerCase();
     outputs.set(key, [...(outputs.get(key) ?? []), file]);
   }
+  const selectedSources = new Map<string, string>();
+  for (const [output, sources] of outputs) {
+    const selected = [...sources].sort((a, b) => {
+      const extension = (file: string) => path.extname(file).toLowerCase();
+      return SOURCE_PRIORITY.indexOf(extension(a)) - SOURCE_PRIORITY.indexOf(extension(b)) || a.localeCompare(b);
+    })[0];
+    selectedSources.set(output, selected);
+    if (sources.length > 1) {
+      log(`AVISO ${output}: se usará ${selected}; se omiten duplicados ${sources.filter(file => file !== selected).join(', ')}`);
+    }
+  }
   const fail = (file: string, error: unknown) => {
     errors.push({ file, error: message(error) }); log(`ERROR ${file}: ${message(error)}`);
   };
@@ -198,10 +209,10 @@ export async function normalizeDirectory(options: {
     const images: Prepared[] = [];
     for (const file of members) {
       try {
-        if (outputs.get(file.replace(EXTENSIONS, '.webp').toLowerCase())!.length > 1) {
-          throw new Error('Nombre de salida duplicado; renombrar las fuentes con el mismo nombre base');
-        }
-        images.push(await prepare(inputDir, file, { ...rules[file], group }));
+        const outputKey = file.replace(EXTENSIONS, '.webp').toLowerCase();
+        if (selectedSources.get(outputKey) !== file) continue;
+        const rule = rules[file] ?? { background: /\.jpe?g$/i.test(file) ? 'solid' : 'alpha' };
+        images.push(await prepare(inputDir, file, { ...rule, group }));
       } catch (error) { fail(file, error); }
     }
     if (!images.length) continue;
@@ -253,13 +264,15 @@ async function main() {
   let copyErrors = 0;
   for (const product of products) {
     for (const src of [...new Set([...product.images, ...product.colors.map(color => color.image)])]) {
+      if (src.startsWith('/products/normalized/')) continue;
       const file = `${product.slug}/${path.basename(src)}`;
-      rules[file] = { group: product.slug, background: /\.jpe?g$/i.test(src) ? 'white' : 'alpha' };
+      rules[file] = { group: product.slug, background: /\.jpe?g$/i.test(src) ? 'solid' : 'alpha' };
       sourceAliases[src] = file;
       await mkdir(path.join(inputDir, product.slug), { recursive: true });
       try {
         // Bootstrap the current catalog once. Existing originals are NEVER replaced.
-        await copyFile(path.join(root, 'public', src), path.join(inputDir, file), constants.COPYFILE_EXCL);
+        const source = path.join(root, 'public', src.replace(/^\//, ''));
+        await copyFile(source, path.join(inputDir, file), constants.COPYFILE_EXCL);
       } catch (error) {
         if ((error as NodeJS.ErrnoException).code !== 'EEXIST') {
           console.error(`ERROR copiando ${src}: ${message(error)}`); copyErrors++;

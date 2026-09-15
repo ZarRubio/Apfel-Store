@@ -12,6 +12,7 @@ const footerLinks = {
       { name: 'iPhone 18 Pro', href: '/iphone/iphone-18-pro' },
       { name: 'iPhone 16 Pro Max', href: '/iphone/iphone-16-pro-max' },
       { name: 'Todos los modelos', href: '/productos' },
+      { name: 'Comparar modelos', href: '/comparar' },
       { name: 'Ofertas', href: '/ofertas' },
     ],
   },
@@ -26,7 +27,7 @@ const footerLinks = {
   soporte: {
     label: 'Soporte',
     links: [
-      { name: 'Preguntas frecuentes', href: '/#faq' },
+      { name: 'Preguntas frecuentes', href: '/#preguntas' },
       { name: 'Consultar garantía y condiciones', href: '/contacto' },
       { name: 'Consultar opciones de entrega', href: '/contacto' },
     ],
