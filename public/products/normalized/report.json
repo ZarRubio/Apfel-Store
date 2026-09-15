@@ -2416,6 +2416,214 @@
       ]
     },
     {
+      "file": "iphone-18-pro-apple/iphone-18-pro-borgona.jpg",
+      "output": "iphone-18-pro-apple/iphone-18-pro-borgona.webp",
+      "group": "iphone-18-pro-apple",
+      "original": {
+        "width": 1200,
+        "height": 630
+      },
+      "boundingBox": {
+        "left": 456,
+        "top": 140,
+        "width": 289,
+        "height": 348
+      },
+      "modelHeight": 348,
+      "sourceCalibration": 1,
+      "groupScale": 2.7586206896551726,
+      "appliedScale": 2.7586206896551726,
+      "rendered": {
+        "width": 797,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
+      ]
+    },
+    {
+      "file": "iphone-18-pro-apple/iphone-18-pro-glaciar.jpg",
+      "output": "iphone-18-pro-apple/iphone-18-pro-glaciar.webp",
+      "group": "iphone-18-pro-apple",
+      "original": {
+        "width": 1200,
+        "height": 630
+      },
+      "boundingBox": {
+        "left": 456,
+        "top": 140,
+        "width": 288,
+        "height": 348
+      },
+      "modelHeight": 348,
+      "sourceCalibration": 1,
+      "groupScale": 2.7586206896551726,
+      "appliedScale": 2.7586206896551726,
+      "rendered": {
+        "width": 794,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
+      ]
+    },
+    {
+      "file": "iphone-18-pro-apple/iphone-18-pro-negro.jpg",
+      "output": "iphone-18-pro-apple/iphone-18-pro-negro.webp",
+      "group": "iphone-18-pro-apple",
+      "original": {
+        "width": 1200,
+        "height": 630
+      },
+      "boundingBox": {
+        "left": 456,
+        "top": 140,
+        "width": 289,
+        "height": 348
+      },
+      "modelHeight": 348,
+      "sourceCalibration": 1,
+      "groupScale": 2.7586206896551726,
+      "appliedScale": 2.7586206896551726,
+      "rendered": {
+        "width": 797,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
+      ]
+    },
+    {
+      "file": "iphone-18-pro-apple/iphone-18-pro-plateado.jpg",
+      "output": "iphone-18-pro-apple/iphone-18-pro-plateado.webp",
+      "group": "iphone-18-pro-apple",
+      "original": {
+        "width": 1200,
+        "height": 630
+      },
+      "boundingBox": {
+        "left": 456,
+        "top": 140,
+        "width": 288,
+        "height": 348
+      },
+      "modelHeight": 348,
+      "sourceCalibration": 1,
+      "groupScale": 2.7586206896551726,
+      "appliedScale": 2.7586206896551726,
+      "rendered": {
+        "width": 794,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
+      ]
+    },
+    {
+      "file": "iphone-18-pro-max-apple/iphone-18-pro-max-borgona.jpg",
+      "output": "iphone-18-pro-max-apple/iphone-18-pro-max-borgona.webp",
+      "group": "iphone-18-pro-max-apple",
+      "original": {
+        "width": 1200,
+        "height": 630
+      },
+      "boundingBox": {
+        "left": 445,
+        "top": 109,
+        "width": 310,
+        "height": 379
+      },
+      "modelHeight": 379,
+      "sourceCalibration": 1,
+      "groupScale": 2.532981530343008,
+      "appliedScale": 2.532981530343008,
+      "rendered": {
+        "width": 785,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
+      ]
+    },
+    {
+      "file": "iphone-18-pro-max-apple/iphone-18-pro-max-glaciar.jpg",
+      "output": "iphone-18-pro-max-apple/iphone-18-pro-max-glaciar.webp",
+      "group": "iphone-18-pro-max-apple",
+      "original": {
+        "width": 1200,
+        "height": 630
+      },
+      "boundingBox": {
+        "left": 445,
+        "top": 109,
+        "width": 310,
+        "height": 379
+      },
+      "modelHeight": 379,
+      "sourceCalibration": 1,
+      "groupScale": 2.532981530343008,
+      "appliedScale": 2.532981530343008,
+      "rendered": {
+        "width": 785,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
+      ]
+    },
+    {
+      "file": "iphone-18-pro-max-apple/iphone-18-pro-max-negro.jpg",
+      "output": "iphone-18-pro-max-apple/iphone-18-pro-max-negro.webp",
+      "group": "iphone-18-pro-max-apple",
+      "original": {
+        "width": 1200,
+        "height": 630
+      },
+      "boundingBox": {
+        "left": 445,
+        "top": 109,
+        "width": 310,
+        "height": 379
+      },
+      "modelHeight": 379,
+      "sourceCalibration": 1,
+      "groupScale": 2.532981530343008,
+      "appliedScale": 2.532981530343008,
+      "rendered": {
+        "width": 785,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
+      ]
+    },
+    {
+      "file": "iphone-18-pro-max-apple/iphone-18-pro-max-plateado.jpg",
+      "output": "iphone-18-pro-max-apple/iphone-18-pro-max-plateado.webp",
+      "group": "iphone-18-pro-max-apple",
+      "original": {
+        "width": 1200,
+        "height": 630
+      },
+      "boundingBox": {
+        "left": 445,
+        "top": 109,
+        "width": 310,
+        "height": 379
+      },
+      "modelHeight": 379,
+      "sourceCalibration": 1,
+      "groupScale": 2.532981530343008,
+      "appliedScale": 2.532981530343008,
+      "rendered": {
+        "width": 785,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
+      ]
+    },
+    {
       "file": "iphone-18-pro/iphone-18-pro-borgona.jpg",
       "output": "iphone-18-pro/iphone-18-pro-borgona.webp",
       "group": "iphone-18-pro",

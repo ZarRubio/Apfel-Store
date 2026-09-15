@@ -115,7 +115,8 @@ const iphone18Colors = [
 
 function iphone18Product(max: boolean): Product {
   const slug = max ? 'iphone-18-pro-max' : 'iphone-18-pro';
-  const images = iphone18Colors.map((color) => `/products/normalized/${slug}/${slug}-${color.slug}.webp`);
+  const mediaSlug = max ? 'iphone-18-pro-max-apple' : 'iphone-18-pro-apple';
+  const images = iphone18Colors.map((color) => `/products/normalized/${mediaSlug}/${slug}-${color.slug}.webp`);
   return {
     id: slug,
     slug,
@@ -131,7 +132,7 @@ function iphone18Product(max: boolean): Product {
     featured: true,
     new: true,
     reservationOnly: true,
-    illustrativeImages: true,
+    illustrativeImages: false,
     images,
     colors: iphone18Colors.map((color, index) => ({ name: color.name, hex: color.hex, image: images[index] })),
     storage: ['256 GB', '512 GB', '1 TB', '2 TB'].map((capacity) => ({ capacity, price: null })),

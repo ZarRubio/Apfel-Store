@@ -33,7 +33,7 @@ test('la serie 18 ofrece las variantes anunciadas sin inventar precios', () => {
   }
 });
 
-test('las ilustraciones tienen canvas transparente y escala idéntica entre colores', async () => {
+test('las fotografías tienen canvas transparente y escala idéntica entre colores', async () => {
   for (const product of newModels) {
     const bounds = [];
     for (const color of product.colors) {
