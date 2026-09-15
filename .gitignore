@@ -1,11 +1,40 @@
-.sites-runtime/
-.env
-.env.*
-!.env.example
+# Dependencies
 node_modules/
+.pnp
+.pnp.js
+
+# Testing & Artifacts
+artifacts/
+coverage/
+
+# Next.js build output
 .next/
 out/
 dist/
-artifacts/
-.DS_Store
+.sites-runtime/
+
+# Production & Environments
+.env
+.env.*
+!.env.example
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Debug logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# OS & Editor files
+.DS_Store
+*.pem
+Thumbs.db
+.vscode/
+.idea/
+
+# Local raw import folders
+iPhone_18_Pro_Imagenes_Apple/
+images/

@@ -9,6 +9,17 @@ export function getProductImage(src: string) {
   return images[src] ?? src;
 }
 
+export function getDefaultProductColor(product: Product) {
+  if (product.defaultColor) {
+    const found = product.colors.find(
+      (c) => c.name.toLowerCase() === product.defaultColor!.toLowerCase()
+    );
+    if (found) return found;
+  }
+  return product.colors[0];
+}
+
 export function getCardImage(product: Product) {
-  return getProductImage(product.colors[0]?.image ?? product.images[0]);
+  const defaultColor = getDefaultProductColor(product);
+  return getProductImage(defaultColor?.image ?? product.images[0]);
 }

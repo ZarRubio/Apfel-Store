@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import type { Product } from '@/types/product';
 import { ProductCard } from '@/components/product/ProductCard';
@@ -27,7 +27,7 @@ export function CatalogBrowser({ products }: { products: Product[] }) {
       return sort === 'low' ? a.price - b.price : b.price - a.price;
     }
     if (sort === 'new') return Number(b.series) - Number(a.series);
-    return Number(Boolean(b.featured)) - Number(Boolean(a.featured));
+    return 0;
   });
 
   function updateFilter(name: string, value: string) {

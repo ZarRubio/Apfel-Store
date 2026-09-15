@@ -6,6 +6,7 @@ import sharp from 'sharp';
 import { products } from '../src/data/products';
 import { getWhatsAppUrl } from '../src/lib/whatsapp';
 import { toQueryValue } from '../src/lib/queryValue';
+import { getCardImage } from '../src/lib/productImage';
 
 const newModels = products.filter((product) => product.series === '18');
 
@@ -27,6 +28,8 @@ test('la serie 18 ofrece las variantes anunciadas sin inventar precios', () => {
   for (const product of newModels) {
     assert.equal(product.price, null);
     assert.equal(product.reservationOnly, true);
+    assert.equal(product.defaultColor, 'Borgoña');
+    assert.match(getCardImage(product), /borgona/);
     assert.deepEqual(product.colors.map((color) => color.name), ['Negro', 'Plateado', 'Glaciar', 'Borgoña']);
     assert.deepEqual(product.storage.map((item) => item.capacity), ['256 GB', '512 GB', '1 TB', '2 TB']);
     assert.ok(product.storage.every((item) => item.price === null));

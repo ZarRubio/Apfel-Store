@@ -3,12 +3,19 @@ import { Suspense } from 'react';
 import { CompareBrowser } from '@/components/catalog/CompareBrowser';
 import { getProducts } from '@/lib/products';
 
-export const metadata: Metadata = { title: 'Comparar iPhone', description: 'Compara modelos, capacidades y características de los iPhone de Apfel Store.' };
+export const metadata: Metadata = {
+  title: 'Comparar iPhone | Apfel Store',
+  description: 'Compara modelos de iPhone lado a lado: pantalla, procesador A-Series, cámaras, zoom óptico, batería y precios en Apfel Store.',
+};
 
 export default async function ComparePage() {
   const products = await getProducts();
-  return <main id="main-content" tabIndex={-1}>
-    <section className="page-header container compare-header"><span className="eyebrow">COMPARA MODELOS</span><h1>Encuentra las<br /><em>diferencias.</em></h1><p>Elige dos modelos para revisar sus características principales lado a lado.</p></section>
-    <section className="section container compare-section"><Suspense fallback={<p role="status">Preparando comparación…</p>}><CompareBrowser products={products} /></Suspense></section>
-  </main>;
+
+  return (
+    <main id="main-content" tabIndex={-1} className="container" style={{ paddingTop: '32px' }}>
+      <Suspense fallback={<p role="status" style={{ padding: '40px 0', textAlign: 'center' }}>Cargando comparador…</p>}>
+        <CompareBrowser products={products} />
+      </Suspense>
+    </main>
+  );
 }

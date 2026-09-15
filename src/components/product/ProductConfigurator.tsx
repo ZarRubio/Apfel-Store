@@ -13,7 +13,13 @@ export function ProductConfigurator({ product }: { product: Product }) {
   const params = new URLSearchParams(search);
   const requestedColor = params.get('color');
   const requestedStorage = params.get('capacidad');
-  const colorIndex = Math.max(0, product.colors.findIndex(item => toQueryValue(item.name) === requestedColor));
+  const defaultColorIndex = product.defaultColor
+    ? Math.max(0, product.colors.findIndex(item => item.name.toLowerCase() === product.defaultColor!.toLowerCase()))
+    : 0;
+  const matchedColorIndex = requestedColor
+    ? product.colors.findIndex(item => toQueryValue(item.name) === requestedColor)
+    : -1;
+  const colorIndex = matchedColorIndex >= 0 ? matchedColorIndex : defaultColorIndex;
   const storageIndex = Math.max(0, product.storage.findIndex(item => toQueryValue(item.capacity) === requestedStorage));
   const color = product.colors[colorIndex];
   const storage = product.storage[storageIndex];

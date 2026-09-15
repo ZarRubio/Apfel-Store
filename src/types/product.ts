@@ -33,5 +33,6 @@ export interface Product {
   offer?: boolean;
   reservationOnly?: boolean;
   illustrativeImages?: boolean;
+  defaultColor?: string;
   specifications?: ProductSpecification[];
 }
