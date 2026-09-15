@@ -1,7 +1,58 @@
 import { getWhatsAppUrl } from '@/lib/whatsapp';
 
-const faqs = [['¿Cómo compro mi iPhone?', 'Elige un modelo, selecciona su color y capacidad y pulsa “Consultar por WhatsApp”. Un asesor confirmará la disponibilidad, el precio final y las condiciones de pago y entrega antes de que realices tu compra.'], ['¿Qué diferencia hay entre sellado y de exhibición?', 'Sellado identifica un equipo sin abrir. Un equipo de exhibición ha estado expuesto o se ha utilizado para demostración. Solicita fotografías reales, salud de batería, estado físico, accesorios incluidos y cobertura de garantía.'], ['¿Qué garantía tiene mi equipo?', 'La cobertura puede variar según el equipo, su origen y su condición. Solicita al asesor el plazo disponible y qué cubre para la unidad elegida.'], ['¿Cómo coordino el pago y la entrega?', 'El pago y la entrega se coordinan directamente por WhatsApp. Indica tu ciudad o distrito para confirmar cobertura, costo y plazo de envío.'], ['¿Los precios y colores están confirmados?', 'Esta vista previa utiliza una selección del catálogo como referencia. El precio final, la disponibilidad y los detalles del equipo se confirman antes de comprar.']];
+const faqs = [
+  {
+    q: '¿Cómo compro mi iPhone en Apfel Store?',
+    a: 'Elige tu modelo en el catálogo o comparador, pulsa "Consultar por WhatsApp" y uno de nuestros asesores te responderá en minutos. Te enviaremos fotos del equipo exacto, salud de batería, precio de referencia y coordinaremos el método de pago y entrega que más te acomode.',
+  },
+  {
+    q: '¿Cuál es la diferencia entre un equipo sellado y uno de exhibición?',
+    a: 'Un equipo sellado viene en su caja original de fábrica sin abrir, con 0 ciclos de carga y accesorios sin usar. Un equipo de exhibición es una unidad que ha estado en vitrina o demostración comercial: se encuentra en condición cosmética sobresaliente (9.5/10 a 10/10), con batería saludable (85% a 100%), 100% operativo y a un precio significativamente más accesible.',
+  },
+  {
+    q: '¿Qué garantía incluye mi compra?',
+    a: 'Todos nuestros equipos incluyen garantía escrita de tienda que cubre defectos técnicos o de funcionamiento, además de soporte postventa directo para resolver cualquier duda con tu configuración o migración de datos.',
+  },
+  {
+    q: '¿Hacen entregas en Lima y envíos a provincia?',
+    a: 'Sí. En Lima realizamos entregas en horas previa coordinación en tu domicilio, oficina o punto de encuentro seguro. Para provincias trabajamos con Olva Courier y Shalom, despachando paquetes asegurados con número de remito y seguimiento en tiempo real.',
+  },
+  {
+    q: '¿Puedo dar mi iPhone actual como parte de pago?',
+    a: 'Sí. Puedes enviarnos fotos de tu equipo actual, porcentaje de batería y modelo por WhatsApp para darte una tasación inmediata y descontarla del valor de tu próximo iPhone.',
+  },
+];
 
 export function FaqSection() {
-  return <section id="preguntas" className="faq-section section container"><div className="faq-intro"><span className="eyebrow">TODO CLARO, DESDE EL INICIO</span><h2>Antes de elegir.</h2><p>Las respuestas a tus primeras preguntas.</p><a className="text-link" href={getWhatsAppUrl()} target="_blank" rel="noreferrer">¿Tienes otra duda? ↗</a></div><div className="faq-list">{faqs.map(([question, answer]) => <details key={question}><summary>{question}<span className="faq-plus" aria-hidden="true" /></summary><div className="faq-answer"><p>{answer}</p></div></details>)}</div></section>;
+  return (
+    <section id="preguntas" className="faq-section section" aria-labelledby="faq-heading">
+      <div className="container faq-container">
+        <div className="faq-intro">
+          <span className="eyebrow">TODO CLARO DESDE EL INICIO</span>
+          <h2 id="faq-heading">Preguntas frecuentes.</h2>
+          <p>Resolvemos tus principales dudas sobre garantía, estado de equipos y entregas.</p>
+          <div className="faq-cta-box">
+            <span>¿Tienes otra consulta específica?</span>
+            <a className="button button-dark faq-btn" href={getWhatsAppUrl()} target="_blank" rel="noreferrer">
+              Consultar a un asesor <span>↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div className="faq-list">
+          {faqs.map((item, index) => (
+            <details key={index} className="faq-item">
+              <summary className="faq-question">
+                <span>{item.q}</span>
+                <span className="faq-plus" aria-hidden="true" />
+              </summary>
+              <div className="faq-answer">
+                <p>{item.a}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
