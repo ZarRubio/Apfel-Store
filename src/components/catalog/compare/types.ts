@@ -24,6 +24,6 @@ export interface SpecRowDef {
 
 export interface SpecGroupDef {
   category: string;
-  icon: string;
+  icon: 'specifications' | 'configuration' | 'purchase';
   rows: SpecRowDef[];
 }

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { ChevronLeftIcon, ChevronRightIcon } from '@/components/icons/UiIcons';
 
 const AUTOPLAY_DELAY = 6000;
 
@@ -104,9 +105,9 @@ export function CustomerDeliveries() {
       <div className="deliveries-toolbar">
         <p><span>{String(activeSlide + 1).padStart(2, '0')}</span> / {String(deliverySlots.length).padStart(2, '0')} · {userPaused ? 'en pausa' : 'avance automático'}</p>
         <div className="deliveries-controls" aria-label="Controles del carrusel de entregas">
-          <button type="button" onClick={() => goToSlide(activeSlide - 1)} disabled={!canGoBack} aria-label="Ver entrega anterior">←</button>
+          <button type="button" onClick={() => goToSlide(activeSlide - 1)} disabled={!canGoBack} aria-label="Ver entrega anterior"><ChevronLeftIcon /></button>
           <button type="button" onClick={() => setUserPaused((paused) => !paused)} aria-label={userPaused ? 'Reanudar carrusel de entregas' : 'Pausar carrusel de entregas'} aria-pressed={userPaused}>{userPaused ? '▶' : 'Ⅱ'}</button>
-          <button type="button" onClick={() => goToSlide(activeSlide + 1)} disabled={!canGoForward} aria-label="Ver entrega siguiente">→</button>
+          <button type="button" onClick={() => goToSlide(activeSlide + 1)} disabled={!canGoForward} aria-label="Ver entrega siguiente"><ChevronRightIcon /></button>
         </div>
       </div>
 

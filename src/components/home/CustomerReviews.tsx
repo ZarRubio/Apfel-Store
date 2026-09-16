@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { ChevronLeftIcon, ChevronRightIcon } from '@/components/icons/UiIcons';
 
 type ReviewSample = {
   name: string;
@@ -117,9 +118,9 @@ export function CustomerReviews() {
       <div className="reviews-toolbar">
         <p><span>{String(activeReview + 1).padStart(2, '0')}</span> / {String(reviewSamples.length).padStart(2, '0')} · {userPaused ? 'en pausa' : 'avance automático'}</p>
         <div className="reviews-controls" aria-label="Controles del carrusel de reseñas">
-          <button type="button" onClick={() => goToReview(activeReview - 1)} disabled={!canGoBack} aria-label="Ver reseña anterior">←</button>
+          <button type="button" onClick={() => goToReview(activeReview - 1)} disabled={!canGoBack} aria-label="Ver reseña anterior"><ChevronLeftIcon /></button>
           <button type="button" onClick={() => setUserPaused((paused) => !paused)} aria-label={userPaused ? 'Reanudar carrusel de reseñas' : 'Pausar carrusel de reseñas'} aria-pressed={userPaused}>{userPaused ? '▶' : 'Ⅱ'}</button>
-          <button type="button" onClick={() => goToReview(activeReview + 1)} disabled={!canGoForward} aria-label="Ver reseña siguiente">→</button>
+          <button type="button" onClick={() => goToReview(activeReview + 1)} disabled={!canGoForward} aria-label="Ver reseña siguiente"><ChevronRightIcon /></button>
         </div>
       </div>
 

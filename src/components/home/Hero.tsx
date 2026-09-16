@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import type { Product } from '@/types/product';
 import { getProductImage } from '@/lib/productImage';
+import { ChevronRightIcon } from '@/components/icons/UiIcons';
 
 const COLOR_CHANGE_DELAY = 4500;
 
@@ -45,8 +46,6 @@ export function Hero({ product }: { product: Product }) {
 
   return <section
     className="hero-section legacy-hero iphone18-hero hero-animated"
-    onMouseEnter={() => setInteractionPaused(true)}
-    onMouseLeave={() => setInteractionPaused(false)}
     onFocusCapture={() => setInteractionPaused(true)}
     onBlurCapture={(event) => {
       if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setInteractionPaused(false);
@@ -57,7 +56,7 @@ export function Hero({ product }: { product: Product }) {
       <span className="eyebrow hero-enter hero-enter-1">NUEVA SERIE · SOLICITUDES DE RESERVA</span>
       <h1 className="hero-enter hero-enter-2">iPhone 18 Pro.<br /><em>Haz espacio<br className="mobile-break" /> para más.</em></h1>
       <p className="hero-enter hero-enter-3">Conoce los nuevos Pro y Pro Max. Elige el color y la capacidad que prefieres; te ayudamos a confirmar los detalles.</p>
-      <div className="hero-actions hero-enter hero-enter-4"><Link className="button button-light" href={`/iphone/${product.slug}`}>Solicitar reserva <span>↗</span></Link><Link className="text-link hero-secondary" href="/productos?serie=18">Explorar la serie 18 ↗</Link></div>
+      <div className="hero-actions hero-enter hero-enter-4"><Link className="button button-light" href={`/iphone/${product.slug}`}>Solicitar reserva <span><ChevronRightIcon /></span></Link><Link className="text-link hero-secondary" href="/productos?serie=18">Explorar la serie 18 <ChevronRightIcon /></Link></div>
       <span className="hero-reservation-note hero-enter hero-enter-5">Precio, disponibilidad y condiciones por confirmar.</span>
     </div>
     <div className="legacy-hero-product hero-enter hero-product-enter">
@@ -76,7 +75,7 @@ export function Hero({ product }: { product: Product }) {
           </motion.div>
         </AnimatePresence>
       </Link>
-      <div className="hero-color-picker" role="group" aria-label="Colores del iPhone 18 Pro Max">
+      <div className="hero-color-picker" role="group" aria-label="Colores del iPhone 18 Pro Max" onMouseEnter={() => setInteractionPaused(true)} onMouseLeave={() => setInteractionPaused(false)}>
         {colors.map((option, index) => <button
           key={option.name}
           type="button"

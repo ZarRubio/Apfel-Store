@@ -5,6 +5,7 @@ import { getProductImage } from '@/lib/productImage';
 import { getWhatsAppUrl } from '@/lib/whatsapp';
 import type { CompareProduct } from './types';
 import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
+import { ChevronRightIcon, XCircleIcon } from '@/components/icons/UiIcons';
 
 interface ProductGroup {
   series: string;
@@ -49,7 +50,7 @@ export function CompareDeviceCard({
           onClick={() => onRemove(index)}
           aria-label={`Quitar ${product.name} de la comparación`}
         >
-          <span aria-hidden="true">×</span> Quitar
+          <XCircleIcon /> Quitar
         </button>}
       </div>
       <select
@@ -127,7 +128,7 @@ export function CompareDeviceCard({
         <WhatsAppIcon /> {product.reservationOnly ? 'Consultar reserva' : 'Consultar por WhatsApp'} <span aria-hidden="true">↗</span>
       </a>
       <Link className="compare-btn-secondary" href={`/iphone/${product.slug}`}>
-        Ver ficha completa <span aria-hidden="true">↗</span>
+        Ver ficha completa <ChevronRightIcon />
       </Link>
     </div>
   </article>;

@@ -1,5 +1,12 @@
 import { SPEC_GROUPS, rowHasDifference } from './compareData';
 import type { CompareProduct } from './types';
+import { SmartphoneIcon, TagIcon, ToolIcon } from '@/components/icons/UiIcons';
+
+function GroupIcon({ icon }: { icon: 'specifications' | 'configuration' | 'purchase' }) {
+  if (icon === 'configuration') return <ToolIcon />;
+  if (icon === 'purchase') return <TagIcon />;
+  return <SmartphoneIcon />;
+}
 
 interface CompareSpecTablesProps {
   products: CompareProduct[];
@@ -21,7 +28,7 @@ export function CompareSpecTables({ products, onlyDifferences }: CompareSpecTabl
       const headingId = `compare-group-${groupIndex}`;
       return <section key={group.category} className="compare-spec-group" aria-labelledby={headingId}>
         <div className="compare-group-title-bar">
-          <h3 id={headingId}><span aria-hidden="true">{group.icon}</span>{group.category}</h3>
+          <h3 id={headingId}><GroupIcon icon={group.icon} />{group.category}</h3>
         </div>
         <div className="compare-table-wrap-outer" tabIndex={0} role="region" aria-label={`${group.category}; desplaza horizontalmente si es necesario`}>
           <table className="compare-table-detailed">

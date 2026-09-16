@@ -21,7 +21,7 @@ export function getVerifiedSpec(product: CompareProduct, label: string): string 
 export const SPEC_GROUPS: SpecGroupDef[] = [
   {
     category: 'Especificaciones verificadas',
-    icon: '📱',
+    icon: 'specifications',
     rows: [
       { id: 'display', label: 'Pantalla', getValue: (product) => getVerifiedSpec(product, 'Pantalla') },
       { id: 'processor', label: 'Procesador', getValue: (product) => getVerifiedSpec(product, 'Procesador') },
@@ -32,7 +32,7 @@ export const SPEC_GROUPS: SpecGroupDef[] = [
   },
   {
     category: 'Configuración disponible',
-    icon: '⚙️',
+    icon: 'configuration',
     rows: [
       { id: 'storage', label: 'Capacidades', getValue: (product) => product.storage.map((item) => item.capacity).join(', ') || 'Por confirmar' },
       { id: 'colors', label: 'Colores', getValue: (product) => product.colors.map((color) => color.name).join(', ') || 'Por confirmar' },
@@ -40,7 +40,7 @@ export const SPEC_GROUPS: SpecGroupDef[] = [
   },
   {
     category: 'Precio y compra',
-    icon: '🏷️',
+    icon: 'purchase',
     rows: [
       {
         id: 'price',

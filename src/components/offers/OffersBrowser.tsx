@@ -7,6 +7,7 @@ import { ProductCard } from '@/components/product/ProductCard';
 import { getWhatsAppUrl } from '@/lib/whatsapp';
 import { replaceLocationSearch, useLocationSearch } from '@/lib/useLocationSearch';
 import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
+import { ShieldIcon, SparklesIcon, TruckIcon } from '@/components/icons/UiIcons';
 
 export function OffersBrowser({ products }: { products: Product[] }) {
   const search = useLocationSearch();
@@ -55,7 +56,7 @@ export function OffersBrowser({ products }: { products: Product[] }) {
         <div className="offers-hero-glow" aria-hidden="true" />
         <div className="offers-hero-content">
           <div className="offers-hero-badge">
-            <span className="spark">⚡</span> Oportunidades Especiales · Stock Limitado
+            <span className="spark"><SparklesIcon /></span> Oportunidades Especiales · Stock Limitado
           </div>
           <h1>
             Tu próximo iPhone con descuento real.
@@ -66,14 +67,14 @@ export function OffersBrowser({ products }: { products: Product[] }) {
           </p>
           <div className="offers-perks-row">
             <div className="offers-perk-item">
-              <div className="offers-perk-icon" aria-hidden="true">🛡️</div>
+              <div className="offers-perk-icon"><ShieldIcon /></div>
               <div className="offers-perk-text">
                 <strong>Garantía Total</strong>
                 <span>Respaldo y soporte de Apfel</span>
               </div>
             </div>
             <div className="offers-perk-item">
-              <div className="offers-perk-icon" aria-hidden="true">⚡</div>
+              <div className="offers-perk-icon"><TruckIcon /></div>
               <div className="offers-perk-text">
                 <strong>Entrega Inmediata</strong>
                 <span>Lima en horas y provincias seguro</span>

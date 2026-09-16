@@ -35,7 +35,8 @@
 .catalog-launch h2 { margin:7px 0 9px; font-size:clamp(25px,3vw,38px); letter-spacing:-.04em; }
 .catalog-launch p { max-width:570px; margin:0; color:var(--muted); line-height:1.5; }
 .catalog-launch-links { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:10px; }
-.catalog-launch-links a { display:inline-flex; align-items:center; min-height:44px; padding:0 18px; border:1px solid #c8c9cf; border-radius:999px; background:#fff; color:#202127; font-size:13px; font-weight:600; white-space:nowrap; transition:border-color 160ms ease,transform 160ms var(--ease-ui-out); }
+.catalog-launch-links a { display:inline-flex; align-items:center; gap:7px; min-height:44px; padding:0 18px; border:1px solid #c8c9cf; border-radius:999px; background:#fff; color:#202127; font-size:13px; font-weight:600; white-space:nowrap; transition:border-color 160ms ease,transform 160ms var(--ease-ui-out); }
+.catalog-launch-links .ui-icon { width:16px; height:16px; }
 .catalog-launch-links a:focus-visible { outline:2px solid #2563eb; outline-offset:2px; }
 @media(hover:hover) and (pointer:fine) { .catalog-launch-links a:hover { border-color:#72747d; transform:translateY(-2px); } }
 @media(max-width:900px) {

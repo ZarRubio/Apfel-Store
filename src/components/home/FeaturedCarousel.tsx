@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
 import type { Product } from '@/types/product';
 import { ProductCard } from '@/components/product/ProductCard';
+import { ChevronLeftIcon, ChevronRightIcon } from '@/components/icons/UiIcons';
 
 export function FeaturedCarousel({ products }: { products: Product[] }) {
   const reduceMotion = useReducedMotion();
@@ -39,6 +40,6 @@ export function FeaturedCarousel({ products }: { products: Product[] }) {
         transition={{ duration: reduceMotion ? 0.2 : 0.45, delay: reduceMotion ? 0 : Math.min(index, 4) * 0.05, ease: [0.23, 1, 0.32, 1] }}
       ><ProductCard product={product} sizes="(max-width: 640px) 90vw, (max-width: 900px) 46vw, 32vw" /></motion.div>)}
     </div>
-    <div className="carousel-controls"><span className="carousel-status">{products.length} modelos destacados</span><div><button type="button" aria-label="Productos anteriores" aria-controls="featured-products" disabled={edges.start} onClick={() => move(-1)}>←</button><button type="button" aria-label="Productos siguientes" aria-controls="featured-products" disabled={edges.end} onClick={() => move(1)}>→</button></div></div>
+    <div className="carousel-controls"><span className="carousel-status">{products.length} modelos destacados</span><div><button type="button" aria-label="Productos anteriores" aria-controls="featured-products" disabled={edges.start} onClick={() => move(-1)}><ChevronLeftIcon /></button><button type="button" aria-label="Productos siguientes" aria-controls="featured-products" disabled={edges.end} onClick={() => move(1)}><ChevronRightIcon /></button></div></div>
   </section>;
 }

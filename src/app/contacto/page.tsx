@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getWhatsAppUrl } from '@/lib/whatsapp';
 import { SocialLinks } from '@/components/social/SocialLinks';
 import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
+import { ClockIcon, MailIcon, MapPinIcon, SocialIcon } from '@/components/icons/UiIcons';
 
 const email = 'apfelstorepe@gmail.com';
 
@@ -24,7 +25,7 @@ export default function ContactPage() {
           <WhatsAppIcon /> Escribir por WhatsApp <span aria-hidden="true">↗</span>
         </a>
         <a className="contact-email-link" href={`mailto:${email}`}>
-          Enviar un correo <span aria-hidden="true">↗</span>
+          <MailIcon /> Enviar un correo <span aria-hidden="true">↗</span>
         </a>
       </div>
     </section>
@@ -43,22 +44,22 @@ export default function ContactPage() {
           <small>Iniciar conversación <span aria-hidden="true">↗</span></small>
         </a>
         <a className="contact-detail-card" href={`mailto:${email}`}>
-          <span>Correo electrónico</span>
+          <span className="contact-channel-label"><MailIcon /> Correo electrónico</span>
           <strong>{email}</strong>
           <small>Redactar correo <span aria-hidden="true">↗</span></small>
         </a>
         <div className="contact-detail-card">
-          <span>Horario de atención</span>
+          <span className="contact-channel-label"><ClockIcon /> Horario de atención</span>
           <strong>24 horas</strong>
           <small>Todos los días</small>
         </div>
         <div className="contact-detail-card">
-          <span>Ubicación</span>
+          <span className="contact-channel-label"><MapPinIcon /> Ubicación</span>
           <strong>Lima, Perú</strong>
           <small>Entregas coordinadas según disponibilidad</small>
         </div>
         <div className="contact-detail-card contact-social-card">
-          <span>Redes sociales</span>
+          <span className="contact-channel-label"><SocialIcon /> Redes sociales</span>
           <strong>Estamos preparando nuestros perfiles</strong>
           <SocialLinks label="Próximas redes sociales de Apfel Store" />
         </div>

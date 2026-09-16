@@ -2,6 +2,7 @@
 
 import type { Product } from '@/types/product';
 import { ProductCard } from '@/components/product/ProductCard';
+import { ChevronRightIcon, SearchIcon, XCircleIcon } from '@/components/icons/UiIcons';
 import { replaceLocationSearch, useLocationSearch } from '@/lib/useLocationSearch';
 
 export function CatalogBrowser({ products }: { products: Product[] }) {
@@ -45,7 +46,7 @@ export function CatalogBrowser({ products }: { products: Product[] }) {
 
   return <div>
     <div className="catalog-controls">
-      <label className="catalog-search"><span>Buscar un modelo</span><input name="q" type="search" value={query} placeholder="Ejemplo: iPhone 15 Pro…" autoComplete="off" onChange={(event) => updateFilter('q', event.target.value)} /></label>
+      <label className="catalog-search"><span>Buscar un modelo</span><span className="catalog-search-field"><SearchIcon /><input name="q" type="search" value={query} placeholder="Ejemplo: iPhone 15 Pro…" autoComplete="off" onChange={(event) => updateFilter('q', event.target.value)} /></span></label>
       <div className={hasKnownAvailability ? 'filter-group' : 'filter-group filters-unverified'}>
         <label>Serie<select name="serie" value={series} onChange={(event) => updateFilter('serie', event.target.value)}><option value="all">Todas las series</option>{seriesOptions.map((value) => <option key={value} value={value}>iPhone {value}</option>)}</select></label>
         {hasKnownAvailability && <label>Disponibilidad<select name="disponibilidad" value={availability} onChange={(event) => updateFilter('disponibilidad', event.target.value)}><option value="all">Todos los modelos</option><option value="available">Disponible</option><option value="unavailable">Agotado</option></select></label>}
@@ -55,8 +56,8 @@ export function CatalogBrowser({ products }: { products: Product[] }) {
     </div>
     <div className="catalog-toolbar">
       <p className="result-count" role="status" aria-atomic="true"><strong>{filtered.length}</strong> {filtered.length === 1 ? 'modelo' : 'modelos'}{activeFilters > 0 ? ` de ${products.length}` : ' para elegir'}</p>
-      {activeFilters > 0 && <button className="clear-filters" type="button" onClick={clearFilters}>Limpiar filtros ({activeFilters}) <span aria-hidden="true">×</span></button>}
+      {activeFilters > 0 && <button className="clear-filters" type="button" onClick={clearFilters}>Limpiar filtros ({activeFilters}) <XCircleIcon /></button>}
     </div>
-    {filtered.length > 0 ? <div className="product-grid">{filtered.map((product) => <ProductCard key={product.id} product={product} />)}</div> : <div className="empty-state"><span className="eyebrow">PRUEBA OTRA COMBINACIÓN</span><h2>No hay modelos con estos filtros.</h2><p>Prueba con otra serie o elimina los filtros para ver toda la colección.</p><button className="button button-dark" type="button" onClick={clearFilters}>Ver todos los modelos <span aria-hidden="true">↗</span></button></div>}
+    {filtered.length > 0 ? <div className="product-grid">{filtered.map((product) => <ProductCard key={product.id} product={product} />)}</div> : <div className="empty-state"><span className="eyebrow">PRUEBA OTRA COMBINACIÓN</span><h2>No hay modelos con estos filtros.</h2><p>Prueba con otra serie o elimina los filtros para ver toda la colección.</p><button className="button button-dark" type="button" onClick={clearFilters}>Ver todos los modelos <span><ChevronRightIcon /></span></button></div>}
   </div>;
 }

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import type { Product } from '@/types/product';
 import { formatPrice } from '@/lib/formatPrice';
 import { getCardImage } from '@/lib/productImage';
+import { ChevronRightIcon, SparklesIcon } from '@/components/icons/UiIcons';
 
 export function ProductCard({ product, sizes = '(max-width: 560px) 100vw, (max-width: 900px) 50vw, 25vw' }: { product: Product; sizes?: string }) {
   const hasOffer = product.offer && product.price !== null && product.previousPrice !== undefined && product.previousPrice > product.price;
@@ -15,7 +16,7 @@ export function ProductCard({ product, sizes = '(max-width: 560px) 100vw, (max-w
         <Image src={getCardImage(product)} alt={product.illustrativeImages ? `Ilustración referencial de ${product.name}` : product.name} fill sizes={sizes} />
         {hasOffer && (
           <span className="offer-floating-tag">
-            <span className="offer-tag-icon">⚡</span> -{percent}%
+            <span className="offer-tag-icon" aria-hidden="true"><SparklesIcon /></span> -{percent}%
           </span>
         )}
       </span>
@@ -52,7 +53,7 @@ export function ProductCard({ product, sizes = '(max-width: 560px) 100vw, (max-w
         <span className="swatches" aria-label={`Colores disponibles: ${product.colors.map(color => color.name).join(', ')}`}>{product.colors.map((color) => <span key={color.name} aria-hidden="true" style={{ backgroundColor: color.hex }} />)}</span>
       </div>
       {product.illustrativeImages && <span className="product-art-note">Imagen ilustrativa</span>}
-      <span className="card-cta">{product.reservationOnly ? 'Elegir y solicitar reserva' : hasOffer ? 'Aprovechar oferta' : 'Ver detalles'} <span aria-hidden="true">↗</span></span>
+      <span className="card-cta">{product.reservationOnly ? 'Elegir y solicitar reserva' : hasOffer ? 'Aprovechar oferta' : 'Ver detalles'} <ChevronRightIcon /></span>
       </div>
     </Link>
   </article>;

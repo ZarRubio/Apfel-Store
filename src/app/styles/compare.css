@@ -70,6 +70,7 @@
   gap: 6px;
   white-space: nowrap;
 }
+.compare-presets-label .ui-icon { width:17px; height:17px; }
 
 .compare-preset-pill {
   appearance: none;
@@ -267,6 +268,7 @@
   background: #f0f0f2;
   color: #1d1d1f;
 }
+.compare-remove-button .ui-icon { width:16px; height:16px; }
 
 .compare-select-element {
   appearance: none;
@@ -521,9 +523,17 @@
 }
 
 .compare-highlight-icon {
-  font-size: 1.5rem;
+  width:40px;
+  height:40px;
+  display:grid;
+  place-items:center;
+  border-radius:12px;
+  background:#f0f1f4;
+  color:#4d4f58;
   margin-bottom: 4px;
 }
+.compare-highlight-icon .ui-icon { width:23px; height:23px; }
+.compare-btn-secondary .ui-icon { width:16px; height:16px; }
 
 .compare-highlight-label {
   font-size: 0.75rem;
@@ -596,6 +606,7 @@
   align-items: center;
   gap: 10px;
 }
+.compare-group-title-bar h3 .ui-icon { width:20px; height:20px; color:#555761; }
 
 .compare-table-detailed {
   width: 100%;

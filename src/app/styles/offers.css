@@ -59,6 +59,7 @@
   animation: fire-flicker 1.8s ease-in-out infinite;
   font-size: 12px;
 }
+.offer-tag-icon .ui-icon { width:13px; height:13px; }
 
 /* Animated Offer Badge in Badge Row */
 .badge-offer-pulse {

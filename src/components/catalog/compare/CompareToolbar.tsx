@@ -1,4 +1,5 @@
 import { COMPARE_PRESETS } from './compareData';
+import { SparklesIcon } from '@/components/icons/UiIcons';
 
 interface CompareToolbarProps {
   selectedSlugs: string[];
@@ -19,7 +20,7 @@ export function CompareToolbar({
 }: CompareToolbarProps) {
   return <>
     <div className="compare-presets-wrap" aria-label="Comparaciones populares">
-      <span className="compare-presets-label"><span aria-hidden="true">⚡</span> Comparaciones populares:</span>
+      <span className="compare-presets-label"><SparklesIcon /> Comparaciones populares:</span>
       {COMPARE_PRESETS.map((preset) => {
         const isActive = preset.slugs.length === selectedSlugs.length
           && preset.slugs.every((slug, index) => slug === selectedSlugs[index]);
