@@ -1,7 +1,7 @@
 import type { Product } from '@/types/product';
 import { formatPrice } from '@/lib/formatPrice';
 
-const WHATSAPP_BASE_URL = 'https://wa.me/51921078492';
+const WHATSAPP_BASE_URL = 'https://api.whatsapp.com/send?phone=51921078492';
 
 type WhatsAppProduct = Pick<Product, 'name' | 'storage' | 'defaultColor' | 'colors'>;
 
@@ -32,5 +32,5 @@ export function getWhatsAppUrl(options: WhatsAppUrlOptions = {}) {
       ? getProductMessage(options.product, options.capacity, options.color)
       : DEFAULT_MESSAGE);
 
-  return `${WHATSAPP_BASE_URL}?text=${encodeURIComponent(message)}`;
+  return `${WHATSAPP_BASE_URL}&text=${encodeURIComponent(message)}`;
 }

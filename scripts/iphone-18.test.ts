@@ -61,7 +61,7 @@ test('WhatsApp conserva el mensaje UTF-8 exacto y lo codifica una sola vez', () 
   const expected = '👋 Hola Apfel Store, me interesa este equipo.\n\n📱 Modelo: iPhone 18 Pro Max\n💾 Capacidad: 1 TB\n🎨 Color: Borgoña\n💰 Precio de referencia: Por confirmar\n\n✅ ¿Podrían confirmar precio final, disponibilidad, garantía y entrega?';
   const generated = getWhatsAppUrl({ product: newModels[0], capacity: '1 TB', color: 'Borgoña' });
 
-  assert.equal(generated, `https://wa.me/51921078492?text=${encodeURIComponent(expected)}`);
+  assert.equal(generated, `https://api.whatsapp.com/send?phone=51921078492&text=${encodeURIComponent(expected)}`);
   assert.equal(new URL(generated).searchParams.get('text'), expected);
   assert.match(generated, /%F0%9F%91%8B/);
   assert.doesNotMatch(generated, /%25F0%259F/);
