@@ -1,15 +1,27 @@
 'use client';
 
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { useEffect, useMemo } from 'react';
+import { motion, AnimatePresence, useReducedMotion } from 'motion/react';
 import type { Product } from '@/types/product';
 import { ProductCard } from '@/components/product/ProductCard';
 import { getWhatsAppUrl } from '@/lib/whatsapp';
+import { replaceLocationSearch, useLocationSearch } from '@/lib/useLocationSearch';
 
 export function OffersBrowser({ products }: { products: Product[] }) {
-  const [selectedSeries, setSelectedSeries] = useState<string>('all');
+  const search = useLocationSearch();
+  const params = useMemo(() => new URLSearchParams(search), [search]);
+  const reduceMotion = useReducedMotion();
+  const availableSeries = useMemo(() => ['all', ...new Set(products.map((product) => product.series))], [products]);
+  const requestedSeries = params.get('serie') ?? 'all';
+  const selectedSeries = availableSeries.includes(requestedSeries) ? requestedSeries : 'all';
 
-  const availableSeries = ['all', ...new Set(products.map((p) => p.series))];
+  useEffect(() => {
+    if (requestedSeries !== 'all' && !availableSeries.includes(requestedSeries)) {
+      const nextParams = new URLSearchParams(params.toString());
+      nextParams.delete('serie');
+      replaceLocationSearch(nextParams);
+    }
+  }, [availableSeries, params, requestedSeries]);
 
   const filtered = selectedSeries === 'all'
     ? products
@@ -23,14 +35,21 @@ export function OffersBrowser({ products }: { products: Product[] }) {
     return max;
   }, 0);
 
+  function selectSeries(series: string) {
+    const nextParams = new URLSearchParams(params.toString());
+    if (series === 'all') nextParams.delete('serie');
+    else nextParams.set('serie', series);
+    replaceLocationSearch(nextParams);
+  }
+
   return (
     <div className="offers-page-content">
       {/* Animated Hero Banner */}
       <motion.div
         className="offers-hero-banner"
-        initial={{ opacity: 0, y: 20 }}
+        initial={reduceMotion ? false : { opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        transition={reduceMotion ? { duration: 0 } : { duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       >
         <div className="offers-hero-glow" aria-hidden="true" />
         <div className="offers-hero-content">
@@ -72,7 +91,7 @@ export function OffersBrowser({ products }: { products: Product[] }) {
 
       {/* Filter Tabs */}
       <div className="offers-filter-bar">
-        <div className="offers-tab-group" role="tablist" aria-label="Filtrar por serie">
+        <div className="offers-tab-group" role="group" aria-label="Filtrar por serie">
           {availableSeries.map((series) => {
             const count = series === 'all' ? products.length : products.filter((p) => p.series === series).length;
             const label = series === 'all' ? 'Todas las ofertas' : `Serie ${series}`;
@@ -81,10 +100,9 @@ export function OffersBrowser({ products }: { products: Product[] }) {
               <button
                 key={series}
                 type="button"
-                role="tab"
-                aria-selected={isActive}
+                aria-pressed={isActive}
                 className={`offers-tab-button ${isActive ? 'active' : ''}`}
-                onClick={() => setSelectedSeries(series)}
+                onClick={() => selectSeries(series)}
               >
                 {label} ({count})
               </button>
@@ -97,21 +115,21 @@ export function OffersBrowser({ products }: { products: Product[] }) {
       </div>
 
       {/* Product Grid with AnimatePresence */}
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait" initial={!reduceMotion}>
         <motion.div
           key={selectedSeries}
           className="product-grid"
-          initial={{ opacity: 0, y: 14 }}
+          initial={reduceMotion ? false : { opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.35 }}
+          exit={reduceMotion ? undefined : { opacity: 0, y: -10 }}
+          transition={{ duration: reduceMotion ? 0 : 0.35 }}
         >
           {filtered.map((product, index) => (
             <motion.div
               key={product.id}
-              initial={{ opacity: 0, y: 20 }}
+              initial={reduceMotion ? false : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.45, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
+              transition={reduceMotion ? { duration: 0 } : { duration: 0.45, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
             >
               <ProductCard product={product} />
             </motion.div>
@@ -123,8 +141,9 @@ export function OffersBrowser({ products }: { products: Product[] }) {
       <motion.div
         className="contact-band"
         style={{ marginTop: '70px', borderRadius: '16px' }}
-        initial={{ opacity: 0 }}
+        initial={reduceMotion ? false : { opacity: 0 }}
         whileInView={{ opacity: 1 }}
+        transition={{ duration: reduceMotion ? 0 : 0.35 }}
         viewport={{ once: true }}
       >
         <div>
@@ -145,4 +164,3 @@ export function OffersBrowser({ products }: { products: Product[] }) {
     </div>
   );
 }
-

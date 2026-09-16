@@ -68,8 +68,8 @@ export function Footer() {
                 className="wordmark-mark"
                 src="/images/brand/apfel-logo.jpg"
                 alt=""
-                width={42}
-                height={42}
+                width={58}
+                height={58}
               />
               <span>
                 Apfel <b>STORE</b>

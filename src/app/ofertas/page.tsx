@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import { getOfferProducts } from '@/lib/products';
 import { OffersBrowser } from '@/components/offers/OffersBrowser';
+import '../styles/offers-page.css';
 
 export const metadata: Metadata = {
-  title: 'Ofertas Especiales | Apfel Store',
-  description: 'Descuentos exclusivos en modelos seleccionados de iPhone. Stock limitado con garantía completa en Apfel Store.',
+  title: 'Ofertas especiales',
+  description: 'Consulta precios de referencia y disponibilidad de modelos seleccionados de iPhone en Apfel Store.',
 };
 
 export default async function OffersPage() {

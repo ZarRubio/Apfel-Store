@@ -2,7 +2,9 @@ import { site } from '@/constants/site';
 import type { Product } from '@/types/product';
 import { formatPrice } from '@/lib/formatPrice';
 
-export function getWhatsAppUrl(product?: Product, capacity?: string, color?: string) {
+type WhatsAppProduct = Pick<Product, 'name' | 'storage' | 'defaultColor' | 'colors' | 'reservationOnly'>;
+
+export function getWhatsAppUrl(product?: WhatsAppProduct, capacity?: string, color?: string) {
   const selectedCapacity = product?.storage.find((item) => item.capacity === capacity) ?? product?.storage[0];
   const defaultColorName = product?.defaultColor ?? product?.colors[0]?.name;
   const message = product && selectedCapacity
