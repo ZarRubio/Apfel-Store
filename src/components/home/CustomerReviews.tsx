@@ -27,11 +27,16 @@ const reviewSamples: ReviewSample[] = [
 ];
 
 export function CustomerReviews() {
+  const sectionRef = useRef<HTMLElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const [activeReview, setActiveReview] = useState(0);
   const [canGoBack, setCanGoBack] = useState(false);
   const [canGoForward, setCanGoForward] = useState(true);
-  const [isPaused, setIsPaused] = useState(false);
+  const [userPaused, setUserPaused] = useState(false);
+  const [hovered, setHovered] = useState(false);
+  const [focusWithin, setFocusWithin] = useState(false);
+  const [isInView, setIsInView] = useState(false);
+  const [documentVisible, setDocumentVisible] = useState(true);
 
   const goToReview = (index: number) => {
     const track = trackRef.current;
@@ -69,19 +74,35 @@ export function CustomerReviews() {
   }, []);
 
   useEffect(() => {
-    if (isPaused || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const section = sectionRef.current;
+    if (!section) return;
+    const observer = new IntersectionObserver(([entry]) => setIsInView(entry.isIntersecting), { threshold: .2 });
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const updateVisibility = () => setDocumentVisible(document.visibilityState === 'visible');
+    updateVisibility();
+    document.addEventListener('visibilitychange', updateVisibility);
+    return () => document.removeEventListener('visibilitychange', updateVisibility);
+  }, []);
+
+  useEffect(() => {
+    if (userPaused || hovered || focusWithin || !isInView || !documentVisible || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const timer = window.setTimeout(() => goToReview(canGoForward ? activeReview + 1 : 0), AUTOPLAY_DELAY);
     return () => window.clearTimeout(timer);
-  }, [activeReview, canGoForward, isPaused]);
+  }, [activeReview, canGoForward, documentVisible, focusWithin, hovered, isInView, userPaused]);
 
   return <section
+    ref={sectionRef}
     className="reviews-section section"
     aria-labelledby="reviews-title"
-    onMouseEnter={() => setIsPaused(true)}
-    onMouseLeave={() => setIsPaused(false)}
-    onFocusCapture={() => setIsPaused(true)}
+    onMouseEnter={() => setHovered(true)}
+    onMouseLeave={() => setHovered(false)}
+    onFocusCapture={() => setFocusWithin(true)}
     onBlurCapture={(event) => {
-      if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setIsPaused(false);
+      if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setFocusWithin(false);
     }}
   >
     <div className="container">
@@ -94,9 +115,10 @@ export function CustomerReviews() {
       </div>
 
       <div className="reviews-toolbar">
-        <p><span>{String(activeReview + 1).padStart(2, '0')}</span> / {String(reviewSamples.length).padStart(2, '0')} · avance automático</p>
+        <p><span>{String(activeReview + 1).padStart(2, '0')}</span> / {String(reviewSamples.length).padStart(2, '0')} · {userPaused ? 'en pausa' : 'avance automático'}</p>
         <div className="reviews-controls" aria-label="Controles del carrusel de reseñas">
           <button type="button" onClick={() => goToReview(activeReview - 1)} disabled={!canGoBack} aria-label="Ver reseña anterior">←</button>
+          <button type="button" onClick={() => setUserPaused((paused) => !paused)} aria-label={userPaused ? 'Reanudar carrusel de reseñas' : 'Pausar carrusel de reseñas'} aria-pressed={userPaused}>{userPaused ? '▶' : 'Ⅱ'}</button>
           <button type="button" onClick={() => goToReview(activeReview + 1)} disabled={!canGoForward} aria-label="Ver reseña siguiente">→</button>
         </div>
       </div>

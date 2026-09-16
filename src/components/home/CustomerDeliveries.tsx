@@ -14,11 +14,16 @@ const deliverySlots = [
 ];
 
 export function CustomerDeliveries() {
+  const sectionRef = useRef<HTMLElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const [activeSlide, setActiveSlide] = useState(0);
   const [canGoBack, setCanGoBack] = useState(false);
   const [canGoForward, setCanGoForward] = useState(true);
-  const [isPaused, setIsPaused] = useState(false);
+  const [userPaused, setUserPaused] = useState(false);
+  const [hovered, setHovered] = useState(false);
+  const [focusWithin, setFocusWithin] = useState(false);
+  const [isInView, setIsInView] = useState(false);
+  const [documentVisible, setDocumentVisible] = useState(true);
 
   const goToSlide = (index: number) => {
     const track = trackRef.current;
@@ -56,19 +61,35 @@ export function CustomerDeliveries() {
   }, []);
 
   useEffect(() => {
-    if (isPaused || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const section = sectionRef.current;
+    if (!section) return;
+    const observer = new IntersectionObserver(([entry]) => setIsInView(entry.isIntersecting), { threshold: .2 });
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const updateVisibility = () => setDocumentVisible(document.visibilityState === 'visible');
+    updateVisibility();
+    document.addEventListener('visibilitychange', updateVisibility);
+    return () => document.removeEventListener('visibilitychange', updateVisibility);
+  }, []);
+
+  useEffect(() => {
+    if (userPaused || hovered || focusWithin || !isInView || !documentVisible || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const timer = window.setTimeout(() => goToSlide(canGoForward ? activeSlide + 1 : 0), AUTOPLAY_DELAY);
     return () => window.clearTimeout(timer);
-  }, [activeSlide, canGoForward, isPaused]);
+  }, [activeSlide, canGoForward, documentVisible, focusWithin, hovered, isInView, userPaused]);
 
   return <section
+    ref={sectionRef}
     className="deliveries-section section"
     aria-labelledby="deliveries-title"
-    onMouseEnter={() => setIsPaused(true)}
-    onMouseLeave={() => setIsPaused(false)}
-    onFocusCapture={() => setIsPaused(true)}
+    onMouseEnter={() => setHovered(true)}
+    onMouseLeave={() => setHovered(false)}
+    onFocusCapture={() => setFocusWithin(true)}
     onBlurCapture={(event) => {
-      if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setIsPaused(false);
+      if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setFocusWithin(false);
     }}
   >
     <div className="container">
@@ -81,9 +102,10 @@ export function CustomerDeliveries() {
       </div>
 
       <div className="deliveries-toolbar">
-        <p><span>{String(activeSlide + 1).padStart(2, '0')}</span> / {String(deliverySlots.length).padStart(2, '0')} · avance automático</p>
+        <p><span>{String(activeSlide + 1).padStart(2, '0')}</span> / {String(deliverySlots.length).padStart(2, '0')} · {userPaused ? 'en pausa' : 'avance automático'}</p>
         <div className="deliveries-controls" aria-label="Controles del carrusel de entregas">
           <button type="button" onClick={() => goToSlide(activeSlide - 1)} disabled={!canGoBack} aria-label="Ver entrega anterior">←</button>
+          <button type="button" onClick={() => setUserPaused((paused) => !paused)} aria-label={userPaused ? 'Reanudar carrusel de entregas' : 'Pausar carrusel de entregas'} aria-pressed={userPaused}>{userPaused ? '▶' : 'Ⅱ'}</button>
           <button type="button" onClick={() => goToSlide(activeSlide + 1)} disabled={!canGoForward} aria-label="Ver entrega siguiente">→</button>
         </div>
       </div>
