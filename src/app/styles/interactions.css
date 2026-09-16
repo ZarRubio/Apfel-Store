@@ -3,6 +3,11 @@
   --ease-ui-out:cubic-bezier(.23,1,.32,1);
 }
 .site-header { background:#f7f7f5f2; }
+.whatsapp-icon { width:18px; height:18px; display:block; flex:none; fill:currentColor; }
+.whatsapp-link,.whatsapp-text-link { display:inline-flex; align-items:center; gap:7px; }
+.whatsapp-link .whatsapp-icon { width:17px; height:17px; }
+.contact-channel-label { display:inline-flex!important; align-items:center; gap:7px; }
+.contact-channel-label .whatsapp-icon { width:17px; height:17px; }
 .desktop-nav a { transition:color 160ms ease,border-color 160ms ease; }
 .whatsapp-link { display:inline-flex; align-items:center; gap:4px; min-height:44px; transition:color 160ms ease; }
 .whatsapp-link span { transition:transform 180ms var(--ease-ui-out); }

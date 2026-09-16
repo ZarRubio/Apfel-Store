@@ -1,4 +1,68 @@
 import type { Metadata } from 'next';
 import { getWhatsAppUrl } from '@/lib/whatsapp';
-export const metadata: Metadata = { title: 'Contacto', description: 'Conversa con Apfel Store por WhatsApp.' };
-export default function ContactPage() { return <main id="main-content" tabIndex={-1}><section className="page-header container"><span className="eyebrow">HABLEMOS</span><h1>Tu próximo iPhone<br /><em>empieza aquí.</em></h1><p>Cuéntanos qué buscas y un asesor te ayudará a encontrar la configuración correcta.</p><a className="button button-dark" data-event="whatsapp_click" href={getWhatsAppUrl()} target="_blank" rel="noreferrer">Abrir WhatsApp ↗</a></section><section className="section container contact-grid"><div><span className="eyebrow">HORARIOS</span><h2>Atención<br />personalizada.</h2></div><div className="contact-details"><div><span>WhatsApp</span><strong>+51 921 078 492</strong></div><div><span>Ubicación</span><strong>Lima, Perú</strong></div><div><span>Horario</span><strong>Lunes a sábado · 9:00 a 19:00</strong></div></div></section></main>; }
+import { SocialLinks } from '@/components/social/SocialLinks';
+import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
+
+const email = 'apfelstorepe@gmail.com';
+
+export const metadata: Metadata = {
+  title: 'Contacto',
+  description: 'Contacta con Apfel Store por WhatsApp o correo. Atención disponible las 24 horas.',
+};
+
+export default function ContactPage() {
+  return <main id="main-content" tabIndex={-1}>
+    <section className="page-header container contact-hero">
+      <span className="eyebrow">CONTÁCTANOS</span>
+      <h1>
+        Estamos para ayudarte.
+        <em>Las 24 horas.</em>
+      </h1>
+      <p>Cuéntanos qué modelo, capacidad o color buscas. Te ayudaremos a revisar las opciones disponibles y resolver tus dudas.</p>
+      <div className="contact-actions">
+        <a className="button button-dark" data-event="whatsapp_click" href={getWhatsAppUrl()} target="_blank" rel="noreferrer">
+          <WhatsAppIcon /> Escribir por WhatsApp <span aria-hidden="true">↗</span>
+        </a>
+        <a className="contact-email-link" href={`mailto:${email}`}>
+          Enviar un correo <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section className="section container contact-grid" aria-labelledby="contact-options-title">
+      <div className="contact-intro">
+        <span className="eyebrow">CANALES DE ATENCIÓN</span>
+        <h2 id="contact-options-title">Elige cómo conversar.</h2>
+        <p>Atendemos consultas todos los días. La disponibilidad, precios y condiciones se confirman directamente con un asesor.</p>
+      </div>
+
+      <div className="contact-details">
+        <a className="contact-detail-card" href={getWhatsAppUrl()} target="_blank" rel="noreferrer" data-event="whatsapp_click">
+          <span className="contact-channel-label"><WhatsAppIcon /> WhatsApp</span>
+          <strong>+51 921 078 492</strong>
+          <small>Iniciar conversación <span aria-hidden="true">↗</span></small>
+        </a>
+        <a className="contact-detail-card" href={`mailto:${email}`}>
+          <span>Correo electrónico</span>
+          <strong>{email}</strong>
+          <small>Redactar correo <span aria-hidden="true">↗</span></small>
+        </a>
+        <div className="contact-detail-card">
+          <span>Horario de atención</span>
+          <strong>24 horas</strong>
+          <small>Todos los días</small>
+        </div>
+        <div className="contact-detail-card">
+          <span>Ubicación</span>
+          <strong>Lima, Perú</strong>
+          <small>Entregas coordinadas según disponibilidad</small>
+        </div>
+        <div className="contact-detail-card contact-social-card">
+          <span>Redes sociales</span>
+          <strong>Estamos preparando nuestros perfiles</strong>
+          <SocialLinks label="Próximas redes sociales de Apfel Store" />
+        </div>
+      </div>
+    </section>
+  </main>;
+}

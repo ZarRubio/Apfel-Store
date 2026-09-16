@@ -13,6 +13,20 @@
 .footer-tagline { color:#909097; font-size:14px; line-height:1.65; max-width:280px; margin:0 0 20px; }
 .footer-location { display:flex; align-items:center; gap:7px; color:#6e6e76; font-size:13px; }
 .footer-location svg { flex-shrink:0; }
+.footer-socials { display:grid; gap:10px; margin-top:22px; }
+.footer-socials-label { color:#909097; font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; }
+.social-links { display:flex; flex-wrap:wrap; gap:8px; }
+.social-link { min-height:36px; display:inline-flex; align-items:center; gap:7px; padding:6px 9px; border:1px solid var(--border); border-radius:999px; color:var(--foreground); font-size:12px; }
+.social-link.is-pending { cursor:default; }
+.social-mark { width:24px; height:24px; display:grid; place-items:center; flex:none; border-radius:50%; background:#111113; color:#fff; }
+.social-mark svg { width:15px; height:15px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+.social-mark svg path { fill:currentColor; stroke:none; }
+.social-mark svg path.social-icon-stroke { fill:none; stroke:currentColor; }
+.social-mark svg .social-icon-fill { fill:currentColor; stroke:none; }
+.social-link small { color:var(--muted); font-size:9px; text-transform:uppercase; }
+.footer-socials .social-link { border-color:#ffffff20; color:#c8c8cd; }
+.footer-socials .social-mark { background:#f0f0f2; color:#111113; }
+.footer-socials .social-link small { color:#6e6e76; }
 .footer-nav { display:flex; flex-direction:column; }
 .footer-label { color:#fff; font-size:11px; font-weight:700; letter-spacing:.15em; text-transform:uppercase; margin:0 0 20px; }
 .footer-link-list { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:14px; }
@@ -35,17 +49,46 @@
 /* Shared brand lockup: keep the name horizontal and give the mark more presence. */
 .nav-inner { height:82px; }
 .wordmark { display:inline-flex; align-items:center; gap:12px; flex:none; white-space:nowrap; }
-.wordmark>span { display:inline-flex; align-items:baseline; gap:7px; white-space:nowrap; }
-.wordmark b { display:inline; margin:0; font-size:.34em; font-weight:700; letter-spacing:.22em; line-height:1; text-align:left; }
+.wordmark>span { display:inline-flex; align-items:baseline; gap:10px; white-space:nowrap; }
+.wordmark b { display:inline; margin:0; font-family:inherit; font-size:1em; font-weight:700; letter-spacing:-.04em; line-height:1; text-align:left; }
 .wordmark-mark { width:52px; height:52px; flex:none; }
 .footer-wordmark .wordmark-mark { width:58px; height:58px; }
 
 @media(max-width:560px) {
   .nav-inner { height:70px; gap:14px; }
   .wordmark { gap:9px; font-size:20px; }
-  .wordmark>span { gap:5px; }
+  .wordmark>span { gap:7px; }
   .wordmark-mark { width:42px; height:42px; }
   .footer-wordmark .wordmark-mark { width:52px; height:52px; }
+}
+
+/* Contact page */
+.contact-hero h1 { max-width:900px; }
+.contact-hero h1 em { display:block; }
+.contact-hero p { max-width:620px; }
+.contact-actions { display:flex; align-items:center; gap:22px; flex-wrap:wrap; margin-top:28px; }
+.contact-email-link { min-height:44px; display:inline-flex; align-items:center; gap:8px; padding:0 4px; border-bottom:1px solid currentColor; font-size:14px; font-weight:700; }
+.contact-intro { position:sticky; top:120px; }
+.contact-intro h2 { max-width:480px; }
+.contact-intro p { max-width:430px; margin-top:22px; color:var(--muted); font-size:16px; line-height:1.65; }
+.contact-details { gap:14px; }
+.contact-details .contact-detail-card { min-width:0; display:grid; gap:8px; padding:24px; border:1px solid var(--border); border-radius:14px; background:var(--surface); transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease; }
+a.contact-detail-card:hover { border-color:#b9bac0; box-shadow:0 12px 30px #1919190d; transform:translateY(-2px); }
+.contact-detail-card>span { color:var(--muted); font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+.contact-detail-card strong { overflow-wrap:anywhere; font-family:var(--display); font-size:clamp(20px,2.4vw,28px); letter-spacing:-.03em; }
+.contact-detail-card small { color:var(--muted); font-size:13px; }
+.contact-social-card { grid-column:1 / -1; }
+.contact-social-card .social-links { margin-top:6px; }
+.contact-social-card .social-link>span { color:inherit; font-size:inherit; letter-spacing:normal; text-transform:none; }
+.contact-social-card .social-mark { color:#fff; }
+
+@media(max-width:900px) {
+  .contact-intro { position:static; }
+}
+
+@media(max-width:560px) {
+  .contact-actions { align-items:flex-start; flex-direction:column; gap:14px; }
+  .contact-details .contact-detail-card { padding:20px; }
 }
 .page-header { padding:100px 0 45px; } .page-header h1 { font-size:clamp(58px, 8vw, 104px); margin:25px 0 18px; } .page-header p { max-width:480px; color:var(--muted); font-size:17px; line-height:1.6; } .catalog-toolbar { display:flex; justify-content:space-between; align-items:end; gap:20px; border-bottom:1px solid var(--border); padding-bottom:20px; margin-bottom:35px; } .filter-group { display:flex; align-items:end; gap:18px; flex-wrap:wrap; } .filter-group label { display:grid; gap:7px; color:var(--muted); font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; } .filter-group select { min-width:125px; border:1px solid var(--border); background:var(--surface); color:var(--foreground); padding:10px; font-size:13px; text-transform:none; letter-spacing:0; } .check-filter { display:flex!important; align-items:center; grid-template-columns:auto auto; text-transform:none!important; letter-spacing:0!important; padding-bottom:10px; } .check-filter input { accent-color:var(--accent); } .result-count { color:var(--muted); font-size:12px; white-space:nowrap; } .empty-state { min-height:300px; display:grid; place-items:center; align-content:center; gap:20px; background:var(--surface); text-align:center; } .empty-state h2 { font-size:34px; } .button-dark { background:var(--primary); color:#fff; } .full-button { width:100%; justify-content:center; margin-top:20px; }
 .catalog-results-title { font-size:28px; margin-top:12px; } .catalog-controls { border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:18px 0; margin-bottom:35px; }

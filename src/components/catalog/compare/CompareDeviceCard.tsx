@@ -4,6 +4,7 @@ import { formatPrice } from '@/lib/formatPrice';
 import { getProductImage } from '@/lib/productImage';
 import { getWhatsAppUrl } from '@/lib/whatsapp';
 import type { CompareProduct } from './types';
+import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
 
 interface ProductGroup {
   series: string;
@@ -118,12 +119,12 @@ export function CompareDeviceCard({
     <div className="compare-card-actions">
       <a
         className="compare-btn-primary"
-        href={getWhatsAppUrl(product, undefined, activeColorName)}
+        href={getWhatsAppUrl({ product, color: activeColorName })}
         target="_blank"
         rel="noreferrer"
         data-event="whatsapp_compare_click"
       >
-        {product.reservationOnly ? 'Consultar reserva' : 'Consultar por WhatsApp'} <span aria-hidden="true">↗</span>
+        <WhatsAppIcon /> {product.reservationOnly ? 'Consultar reserva' : 'Consultar por WhatsApp'} <span aria-hidden="true">↗</span>
       </a>
       <Link className="compare-btn-secondary" href={`/iphone/${product.slug}`}>
         Ver ficha completa <span aria-hidden="true">↗</span>

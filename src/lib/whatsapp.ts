@@ -1,16 +1,36 @@
-import { site } from '@/constants/site';
 import type { Product } from '@/types/product';
 import { formatPrice } from '@/lib/formatPrice';
 
-type WhatsAppProduct = Pick<Product, 'name' | 'storage' | 'defaultColor' | 'colors' | 'reservationOnly'>;
+const WHATSAPP_BASE_URL = 'https://wa.me/51921078492';
 
-export function getWhatsAppUrl(product?: WhatsAppProduct, capacity?: string, color?: string) {
-  const selectedCapacity = product?.storage.find((item) => item.capacity === capacity) ?? product?.storage[0];
-  const defaultColorName = product?.defaultColor ?? product?.colors[0]?.name;
-  const message = product && selectedCapacity
-    ? product.reservationOnly
-      ? `Hola Apfel Store, quisiera solicitar una reserva de:\n${product.name}\n${selectedCapacity.capacity}\nColor ${color ?? defaultColorName}\n\n¿Podrían confirmar precio final, disponibilidad en Perú, condiciones de reserva, garantía y entrega? Entiendo que la solicitud no confirma la reserva hasta recibir su respuesta.`
-      : `Hola Apfel Store, me interesa:\n${product.name}\n${selectedCapacity.capacity}\nColor ${color ?? defaultColorName}\nPrecio de referencia: ${formatPrice(selectedCapacity.price!)}\n\n¿Podrían confirmar precio final, disponibilidad, garantía y entrega?`
-    : 'Hola Apfel Store, quisiera asesoría para elegir mi próximo iPhone.';
-  return `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(message)}`;
+type WhatsAppProduct = Pick<Product, 'name' | 'storage' | 'defaultColor' | 'colors'>;
+
+interface WhatsAppUrlOptions {
+  product?: WhatsAppProduct;
+  capacity?: string;
+  color?: string;
+  message?: string;
+}
+
+const DEFAULT_MESSAGE = '👋 Hola Apfel Store.\n\n📱 Quisiera asesoría para elegir mi próximo iPhone. ¿Podrían ayudarme?';
+
+function getProductMessage(product: WhatsAppProduct, capacity?: string, color?: string) {
+  const selectedCapacity = product.storage.find((item) => item.capacity === capacity) ?? product.storage[0];
+  if (!selectedCapacity) return DEFAULT_MESSAGE;
+
+  const selectedColor = color ?? product.defaultColor ?? product.colors[0]?.name ?? 'Por confirmar';
+  const referencePrice = selectedCapacity.price === null
+    ? 'Por confirmar'
+    : formatPrice(selectedCapacity.price);
+
+  return `👋 Hola Apfel Store, me interesa este equipo.\n\n📱 Modelo: ${product.name}\n💾 Capacidad: ${selectedCapacity.capacity}\n🎨 Color: ${selectedColor}\n💰 Precio de referencia: ${referencePrice}\n\n✅ ¿Podrían confirmar precio final, disponibilidad, garantía y entrega?`;
+}
+
+export function getWhatsAppUrl(options: WhatsAppUrlOptions = {}) {
+  const message = options.message
+    ?? (options.product
+      ? getProductMessage(options.product, options.capacity, options.color)
+      : DEFAULT_MESSAGE);
+
+  return `${WHATSAPP_BASE_URL}?text=${encodeURIComponent(message)}`;
 }

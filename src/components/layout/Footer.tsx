@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { getWhatsAppUrl } from '@/lib/whatsapp';
+import { SocialLinks } from '@/components/social/SocialLinks';
+import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
 
 const currentYear = new Date().getFullYear();
 
@@ -20,13 +22,13 @@ const footerLinks = {
     label: 'Empresa',
     links: [
       { name: 'Nosotros', href: '/nosotros' },
-      { name: 'Blog', href: '/blog' },
       { name: 'Contacto', href: '/contacto' },
     ],
   },
   soporte: {
     label: 'Soporte',
     links: [
+      { name: 'Servicio técnico', href: '/servicio-tecnico' },
       { name: 'Preguntas frecuentes', href: '/#preguntas' },
       { name: 'Consultar garantía y condiciones', href: '/contacto' },
       { name: 'Consultar opciones de entrega', href: '/contacto' },
@@ -53,7 +55,7 @@ export function Footer() {
             rel="noreferrer"
             data-event="whatsapp_click"
           >
-            Escríbenos por WhatsApp <span>↗</span>
+            <WhatsAppIcon /> Escríbenos por WhatsApp <span aria-hidden="true">↗</span>
           </a>
         </div>
       </div>
@@ -72,7 +74,7 @@ export function Footer() {
                 height={58}
               />
               <span>
-                Apfel <b>STORE</b>
+                <span>APFEL</span><b>STORE</b>
               </span>
             </Link>
             <p className="footer-tagline">
@@ -95,6 +97,10 @@ export function Footer() {
                 <circle cx="12" cy="10" r="3" />
               </svg>
               <span>Lima, Perú</span>
+            </div>
+            <div className="footer-socials">
+              <span className="footer-socials-label">Síguenos</span>
+              <SocialLinks label="Redes sociales de Apfel Store" />
             </div>
           </div>
 

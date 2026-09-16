@@ -72,7 +72,7 @@ export function HomeBentoGrid() {
           </p>
           <a
             className="bento-link"
-            href={getWhatsAppUrl(undefined, undefined, undefined)}
+            href={getWhatsAppUrl()}
             target="_blank"
             rel="noreferrer"
             data-event="whatsapp_tradein_click"

@@ -1,0 +1,21 @@
+.service-hero { padding:100px 0; background:#111113; color:#fff; }
+.service-hero-inner { display:grid; grid-template-columns:1.25fr .75fr; gap:80px; align-items:end; }
+.service-hero h1 { max-width:800px; margin:24px 0 0; font-size:clamp(52px,7vw,92px); }
+.service-hero-copy { display:grid; justify-items:start; gap:22px; }
+.service-hero-copy p { margin:0; color:#c8c8cd; font-size:17px; line-height:1.65; }
+.service-status { display:inline-flex; align-items:center; gap:9px; padding:8px 12px; border:1px solid #ffffff2e; border-radius:999px; color:#e5e5e8; font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+.service-status>span { width:7px; height:7px; border-radius:50%; background:#c5c7cc; }
+.service-pending .section-heading>p { max-width:350px; color:var(--muted); font-size:14px; line-height:1.6; }
+.service-pending-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+.service-pending-card { min-height:270px; padding:28px; border:1px solid var(--border); border-radius:14px; background:var(--surface); }
+.service-pending-card>span { color:var(--muted); font-family:var(--display); font-size:13px; }
+.service-pending-card h3 { margin:70px 0 12px; font-size:25px; }
+.service-pending-card p { margin:0; color:var(--muted); font-size:14px; line-height:1.65; }
+
+@media(max-width:800px) {
+  .service-hero { padding:70px 0; }
+  .service-hero-inner { grid-template-columns:1fr; gap:42px; }
+  .service-pending-grid { grid-template-columns:1fr; }
+  .service-pending-card { min-height:auto; }
+  .service-pending-card h3 { margin-top:38px; }
+}

@@ -9,6 +9,7 @@ import { CompareSpecTables } from './compare/CompareSpecTables';
 import { CompareToolbar } from './compare/CompareToolbar';
 import { SPEC_GROUPS, rowHasDifference } from './compare/compareData';
 import type { CompareProduct } from './compare/types';
+import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
 
 const MAX_PRODUCTS = 3;
 const MIN_PRODUCTS = 2;
@@ -163,7 +164,7 @@ export function CompareBrowser({ products }: { products: CompareProduct[] }) {
         <p>Consulta disponibilidad, condición, garantía, precio final y entrega del modelo que te interesa antes de reservar.</p>
       </div>
       <a className="compare-advisor-btn" href={getWhatsAppUrl()} target="_blank" rel="noreferrer" data-event="whatsapp_compare_advisor">
-        Consultar por WhatsApp <span aria-hidden="true">↗</span>
+        <WhatsAppIcon /> Consultar por WhatsApp <span aria-hidden="true">↗</span>
       </a>
     </aside>
   </div>;

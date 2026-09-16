@@ -6,6 +6,7 @@ import type { Product } from '@/types/product';
 import { ProductCard } from '@/components/product/ProductCard';
 import { getWhatsAppUrl } from '@/lib/whatsapp';
 import { replaceLocationSearch, useLocationSearch } from '@/lib/useLocationSearch';
+import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
 
 export function OffersBrowser({ products }: { products: Product[] }) {
   const search = useLocationSearch();
@@ -79,7 +80,7 @@ export function OffersBrowser({ products }: { products: Product[] }) {
               </div>
             </div>
             <div className="offers-perk-item">
-              <div className="offers-perk-icon" aria-hidden="true">💬</div>
+              <div className="offers-perk-icon" aria-hidden="true"><WhatsAppIcon /></div>
               <div className="offers-perk-text">
                 <strong>Atención 1 a 1</strong>
                 <span>Fotos y videos del equipo exacto</span>
@@ -158,7 +159,7 @@ export function OffersBrowser({ products }: { products: Product[] }) {
           rel="noreferrer"
           data-event="whatsapp_click"
         >
-          Conversar con un asesor <span>↗</span>
+          <WhatsAppIcon /> Conversar con un asesor <span aria-hidden="true">↗</span>
         </a>
       </motion.div>
     </div>

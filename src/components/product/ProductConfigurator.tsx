@@ -4,6 +4,7 @@ import Image from 'next/image';
 import type { Product } from '@/types/product';
 import { formatPrice } from '@/lib/formatPrice';
 import { getWhatsAppUrl } from '@/lib/whatsapp';
+import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
 import { getProductImage } from '@/lib/productImage';
 import { toQueryValue } from '@/lib/queryValue';
 import { replaceLocationSearch, useLocationSearch } from '@/lib/useLocationSearch';
@@ -26,7 +27,7 @@ export function ProductConfigurator({ product }: { product: Product }) {
   const reservation = product.reservationOnly === true;
   const imageIndex = Math.max(0, product.images.indexOf(color.image));
   const selectedImage = getProductImage(color.image);
-  const whatsappUrl = getWhatsAppUrl(product, storage.capacity, color.name);
+  const whatsappUrl = getWhatsAppUrl({ product, capacity: storage.capacity, color: color.name });
   const price = storage.price === null ? 'Por confirmar' : formatPrice(storage.price);
 
   function updateSelection(name: 'color' | 'capacidad', value: string) {
@@ -51,9 +52,9 @@ export function ProductConfigurator({ product }: { product: Product }) {
       <fieldset className="selector"><legend>Color: <b>{color.name}</b></legend><div className="color-selector">{product.colors.map((item, index) => <button key={item.name} type="button" className={colorIndex === index ? 'color-choice selected' : 'color-choice'} style={{ '--swatch': item.hex } as React.CSSProperties} onClick={() => updateSelection('color', item.name)} aria-label={item.name} aria-pressed={colorIndex === index}><span /></button>)}</div></fieldset>
       <fieldset className="selector"><legend>Capacidad</legend><div className="storage-selector">{product.storage.map((item, index) => <button key={item.capacity} type="button" className={storageIndex === index ? 'storage-choice selected' : 'storage-choice'} onClick={() => updateSelection('capacidad', item.capacity)} aria-pressed={storageIndex === index}><b>{item.capacity}</b><span>{item.price === null ? 'Por confirmar' : formatPrice(item.price)}</span></button>)}</div></fieldset>
       <p className={product.available === true ? 'availability' : 'availability unavailable'}><span /> {reservation ? 'Reserva sujeta a confirmación' : product.available === true ? 'Disponible para coordinar' : product.available === false ? 'No disponible temporalmente' : 'Disponibilidad por confirmar'}</p>
-      <a className="button button-dark full-button" data-event="whatsapp_click" data-product-id={product.id} href={whatsappUrl} target="_blank" rel="noreferrer">{reservation ? 'Solicitar reserva por WhatsApp ↗' : product.available === true ? 'Consultar por WhatsApp ↗' : 'Consultar disponibilidad ↗'}</a>
+      <a className="button button-dark full-button" data-event="whatsapp_click" data-product-id={product.id} href={whatsappUrl} target="_blank" rel="noreferrer"><WhatsAppIcon /> {reservation ? 'Solicitar reserva por WhatsApp' : product.available === true ? 'Consultar por WhatsApp' : 'Consultar disponibilidad'} <span aria-hidden="true">↗</span></a>
       <p className="purchase-note">{reservation ? 'Tu mensaje solicita una reserva; un asesor deberá confirmar precio, disponibilidad, condiciones, garantía y entrega antes de cualquier pago.' : 'Un asesor confirmará disponibilidad, precio final y opciones de entrega antes del pago.'}</p>
     </div>
-    <div className="mobile-buy-bar"><span>{price}</span><a className="button button-dark" data-event="whatsapp_click" data-product-id={product.id} href={whatsappUrl} target="_blank" rel="noreferrer">{reservation ? 'Solicitar reserva ↗' : 'WhatsApp ↗'}</a></div>
+    <div className="mobile-buy-bar"><span>{price}</span><a className="button button-dark" data-event="whatsapp_click" data-product-id={product.id} href={whatsappUrl} target="_blank" rel="noreferrer"><WhatsAppIcon /> {reservation ? 'Solicitar reserva' : 'WhatsApp'} <span aria-hidden="true">↗</span></a></div>
   </div>;
 }

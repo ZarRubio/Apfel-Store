@@ -57,12 +57,18 @@ test('las selecciones generan valores de URL legibles y estables', () => {
   assert.equal(toQueryValue('1 TB'), '1-tb');
 });
 
-test('la solicitud incluye modelo, capacidad y color sin afirmar una reserva confirmada', () => {
-  const url = new URL(getWhatsAppUrl(newModels[0], '1 TB', 'Borgoña'));
-  const message = url.searchParams.get('text') ?? '';
-  assert.match(message, /iPhone 18 Pro Max/);
-  assert.match(message, /1 TB/);
-  assert.match(message, /Borgoña/);
-  assert.match(message, /no confirma la reserva/);
-  assert.doesNotMatch(message, /Precio de referencia/);
+test('WhatsApp conserva el mensaje UTF-8 exacto y lo codifica una sola vez', () => {
+  const expected = '👋 Hola Apfel Store, me interesa este equipo.\n\n📱 Modelo: iPhone 18 Pro Max\n💾 Capacidad: 1 TB\n🎨 Color: Borgoña\n💰 Precio de referencia: Por confirmar\n\n✅ ¿Podrían confirmar precio final, disponibilidad, garantía y entrega?';
+  const generated = getWhatsAppUrl({ product: newModels[0], capacity: '1 TB', color: 'Borgoña' });
+
+  assert.equal(generated, `https://wa.me/51921078492?text=${encodeURIComponent(expected)}`);
+  assert.equal(new URL(generated).searchParams.get('text'), expected);
+  assert.match(generated, /%F0%9F%91%8B/);
+  assert.doesNotMatch(generated, /%25F0%259F/);
+});
+
+test('WhatsApp preserva tildes, eñe, signos y saltos de línea en mensajes personalizados', () => {
+  const expected = '👋 Atención en Perú y España.\n¿Podrían enviarme información?';
+  const generated = getWhatsAppUrl({ message: expected });
+  assert.equal(new URL(generated).searchParams.get('text'), expected);
 });
