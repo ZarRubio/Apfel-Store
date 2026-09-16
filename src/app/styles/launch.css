@@ -46,16 +46,16 @@
 @media(max-width:640px) {
   .catalog-launch { flex-direction:column; align-items:flex-start; padding:25px; gap:20px; }
   .catalog-launch-links { justify-content:flex-start; }
-  .iphone18-hero { min-height:790px; }
+  .iphone18-hero { min-height:790px; padding-bottom:76px; }
   .iphone18-hero .legacy-hero-copy { width:100%; }
   .iphone18-hero h1 { font-size:clamp(47px,10vw,66px); }
   .iphone18-hero .legacy-hero-copy p { margin-inline:auto; max-width:390px; }
   .iphone18-hero .hero-secondary { display:inline-flex; margin-left:0; }
   .iphone18-hero .hero-actions { flex-wrap:wrap; gap:6px 18px; }
-  .iphone18-hero .legacy-hero-product { position:relative; top:auto; right:auto; width:100%; height:350px; margin:16px auto 0; }
-  .iphone18-hero .legacy-hero-product>a { width:min(100%,430px); margin:0; }
+  .iphone18-hero .legacy-hero-product { position:relative; top:auto; right:auto; width:100%; height:350px; margin:16px auto 28px; }
+  .iphone18-hero .legacy-hero-product>a { width:min(94%,404px); margin:0; }
   .iphone18-hero .legacy-watermark { top:45px; left:8%; font-size:130px; }
-  .iphone18-hero .legacy-product-caption { margin-top:-22px; font-size:11px; }
+  .iphone18-hero .legacy-product-caption { display:none; }
   .iphone18-hero .legacy-product-caption strong { font-size:12px; }
   .hero-color-picker { bottom:33px; padding:7px 10px; gap:7px; }
   .hero-color-picker button { width:26px; height:26px; }

@@ -121,3 +121,20 @@ test('detects off-white backgrounds and ignores detached labels; keeps both phon
   assert.deepEqual(report.results[0].boundingBox, { left: 50, top: 30, width: 90, height: 120 });
   assert.equal(report.results[0].rendered.height, 960);
 });
+
+test('preserves a near-white phone edge across mixed white studio backdrops', async () => {
+  const options = await fixture();
+  const outer = await sharp({ create: { width: 92, height: 172, channels: 4, background: '#c8c8caff' } }).png().toBuffer();
+  const inner = await sharp({ create: { width: 80, height: 160, channels: 4, background: '#f1f1f2ff' } }).png().toBuffer();
+  const input = await sharp({ create: { width: 260, height: 260, channels: 4, background: '#f5f5f7ff' } })
+    .composite([
+      { input: await sharp({ create: { width: 18, height: 260, channels: 4, background: '#ffffffff' } }).png().toBuffer(), left: 0, top: 0 },
+      { input: outer, left: 84, top: 42 },
+      { input: inner, left: 90, top: 48 },
+    ]).png().toBuffer();
+  await writeFile(path.join(options.inputDir, 'silver-phone.png'), input);
+  const report = await normalizeDirectory({ ...options, rules: { 'silver-phone.png': { background: 'solid' } } });
+  assert.deepEqual(report.results[0].boundingBox, { left: 84, top: 42, width: 92, height: 172 });
+  const { data, info } = await sharp(path.join(options.outputDir, 'silver-phone.webp')).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+  assert.ok(data[(600 * info.width + 600) * 4 + 3] > 0);
+});

@@ -11,17 +11,17 @@
         "height": 768
       },
       "boundingBox": {
-        "left": 150,
+        "left": 149,
         "top": 46,
-        "width": 480,
+        "width": 481,
         "height": 662
       },
-      "modelHeight": 922,
-      "sourceCalibration": 1.392749244712991,
-      "groupScale": 1.0412147505422993,
+      "modelHeight": 924,
+      "sourceCalibration": 1.3957703927492446,
+      "groupScale": 1.0389610389610389,
       "appliedScale": 1.448640483383686,
       "rendered": {
-        "width": 695,
+        "width": 697,
         "height": 959
       },
       "warnings": [
@@ -37,21 +37,22 @@
         "height": 932
       },
       "boundingBox": {
-        "left": 7,
-        "top": 5,
-        "width": 670,
-        "height": 922
+        "left": 5,
+        "top": 4,
+        "width": 674,
+        "height": 924
       },
-      "modelHeight": 922,
+      "modelHeight": 924,
       "sourceCalibration": 1,
-      "groupScale": 1.0412147505422993,
-      "appliedScale": 1.0401301518438177,
+      "groupScale": 1.0389610389610389,
+      "appliedScale": 1.0378787878787878,
       "rendered": {
-        "width": 697,
+        "width": 700,
         "height": 959
       },
       "warnings": [
-        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
     {
@@ -65,15 +66,15 @@
       "boundingBox": {
         "left": 352,
         "top": 102,
-        "width": 495,
+        "width": 496,
         "height": 685
       },
-      "modelHeight": 922,
-      "sourceCalibration": 1.345985401459854,
-      "groupScale": 1.0412147505422993,
+      "modelHeight": 924,
+      "sourceCalibration": 1.3489051094890512,
+      "groupScale": 1.0389610389610389,
       "appliedScale": 1.4,
       "rendered": {
-        "width": 693,
+        "width": 694,
         "height": 959
       },
       "warnings": [
@@ -91,15 +92,15 @@
       "boundingBox": {
         "left": 0,
         "top": 1,
-        "width": 735,
+        "width": 736,
         "height": 1038
       },
-      "modelHeight": 922,
-      "sourceCalibration": 0.8882466281310212,
-      "groupScale": 1.0412147505422993,
+      "modelHeight": 924,
+      "sourceCalibration": 0.8901734104046243,
+      "groupScale": 1.0389610389610389,
       "appliedScale": 0.9238921001926782,
       "rendered": {
-        "width": 679,
+        "width": 680,
         "height": 959
       },
       "warnings": [
@@ -116,18 +117,18 @@
         "height": 814
       },
       "boundingBox": {
-        "left": 164,
+        "left": 163,
         "top": 106,
-        "width": 500,
-        "height": 670
+        "width": 501,
+        "height": 671
       },
-      "modelHeight": 781,
-      "sourceCalibration": 1.1656716417910449,
-      "groupScale": 1.229193341869398,
-      "appliedScale": 1.4313432835820896,
+      "modelHeight": 784,
+      "sourceCalibration": 1.1684053651266766,
+      "groupScale": 1.2244897959183674,
+      "appliedScale": 1.4307004470938898,
       "rendered": {
-        "width": 716,
-        "height": 959
+        "width": 717,
+        "height": 960
       },
       "warnings": [
         "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
@@ -142,18 +143,18 @@
         "height": 1000
       },
       "boundingBox": {
-        "left": 125,
-        "top": 201,
-        "width": 585,
-        "height": 781
+        "left": 122,
+        "top": 200,
+        "width": 590,
+        "height": 784
       },
-      "modelHeight": 781,
+      "modelHeight": 784,
       "sourceCalibration": 1,
-      "groupScale": 1.229193341869398,
-      "appliedScale": 1.2279129321382842,
+      "groupScale": 1.2244897959183674,
+      "appliedScale": 1.2244897959183674,
       "rendered": {
-        "width": 718,
-        "height": 959
+        "width": 722,
+        "height": 960
       },
       "warnings": [
         "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
@@ -168,18 +169,18 @@
         "height": 870
       },
       "boundingBox": {
-        "left": 114,
-        "top": 175,
-        "width": 508,
-        "height": 680
+        "left": 112,
+        "top": 174,
+        "width": 512,
+        "height": 681
       },
-      "modelHeight": 781,
-      "sourceCalibration": 1.1485294117647058,
-      "groupScale": 1.229193341869398,
-      "appliedScale": 1.410294117647059,
+      "modelHeight": 784,
+      "sourceCalibration": 1.1512481644640236,
+      "groupScale": 1.2244897959183674,
+      "appliedScale": 1.4096916299559472,
       "rendered": {
-        "width": 716,
-        "height": 959
+        "width": 722,
+        "height": 960
       },
       "warnings": [
         "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
@@ -196,16 +197,16 @@
       "boundingBox": {
         "left": 120,
         "top": 174,
-        "width": 932,
+        "width": 933,
         "height": 1250
       },
-      "modelHeight": 781,
-      "sourceCalibration": 0.6248,
-      "groupScale": 1.229193341869398,
-      "appliedScale": 0.7672,
+      "modelHeight": 784,
+      "sourceCalibration": 0.6272,
+      "groupScale": 1.2244897959183674,
+      "appliedScale": 0.768,
       "rendered": {
-        "width": 715,
-        "height": 959
+        "width": 717,
+        "height": 960
       },
       "warnings": [
         "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
@@ -220,17 +221,17 @@
         "height": 1024
       },
       "boundingBox": {
-        "left": 148,
+        "left": 146,
         "top": 16,
-        "width": 727,
+        "width": 732,
         "height": 992
       },
-      "modelHeight": 898,
-      "sourceCalibration": 0.905241935483871,
-      "groupScale": 1.069042316258352,
+      "modelHeight": 901,
+      "sourceCalibration": 0.9082661290322581,
+      "groupScale": 1.065482796892342,
       "appliedScale": 0.967741935483871,
       "rendered": {
-        "width": 704,
+        "width": 708,
         "height": 960
       },
       "warnings": [
@@ -246,17 +247,17 @@
         "height": 940
       },
       "boundingBox": {
-        "left": 170,
+        "left": 168,
         "top": 110,
-        "width": 600,
+        "width": 603,
         "height": 722
       },
-      "modelHeight": 898,
-      "sourceCalibration": 1.2437673130193905,
-      "groupScale": 1.069042316258352,
+      "modelHeight": 901,
+      "sourceCalibration": 1.2479224376731302,
+      "groupScale": 1.065482796892342,
       "appliedScale": 1.3296398891966759,
       "rendered": {
-        "width": 798,
+        "width": 802,
         "height": 960
       },
       "warnings": [
@@ -272,17 +273,17 @@
         "height": 1200
       },
       "boundingBox": {
-        "left": 173,
+        "left": 168,
         "top": 151,
-        "width": 656,
-        "height": 898
+        "width": 661,
+        "height": 899
       },
-      "modelHeight": 898,
-      "sourceCalibration": 1,
-      "groupScale": 1.069042316258352,
-      "appliedScale": 1.069042316258352,
+      "modelHeight": 901,
+      "sourceCalibration": 1.0022246941045607,
+      "groupScale": 1.065482796892342,
+      "appliedScale": 1.067853170189099,
       "rendered": {
-        "width": 701,
+        "width": 706,
         "height": 960
       },
       "warnings": [
@@ -298,17 +299,17 @@
         "height": 874
       },
       "boundingBox": {
-        "left": 278,
+        "left": 277,
         "top": 55,
-        "width": 540,
+        "width": 541,
         "height": 739
       },
-      "modelHeight": 898,
-      "sourceCalibration": 1.2151556156968877,
-      "groupScale": 1.069042316258352,
+      "modelHeight": 901,
+      "sourceCalibration": 1.219215155615697,
+      "groupScale": 1.065482796892342,
       "appliedScale": 1.2990527740189446,
       "rendered": {
-        "width": 701,
+        "width": 703,
         "height": 960
       },
       "warnings": [
@@ -324,17 +325,17 @@
         "height": 1200
       },
       "boundingBox": {
-        "left": 172,
-        "top": 151,
-        "width": 656,
-        "height": 898
+        "left": 168,
+        "top": 150,
+        "width": 662,
+        "height": 901
       },
-      "modelHeight": 898,
+      "modelHeight": 901,
       "sourceCalibration": 1,
-      "groupScale": 1.069042316258352,
-      "appliedScale": 1.069042316258352,
+      "groupScale": 1.065482796892342,
+      "appliedScale": 1.065482796892342,
       "rendered": {
-        "width": 701,
+        "width": 705,
         "height": 960
       },
       "warnings": [
@@ -350,17 +351,17 @@
         "height": 1200
       },
       "boundingBox": {
-        "left": 261,
+        "left": 260,
         "top": 136,
-        "width": 678,
-        "height": 928
+        "width": 680,
+        "height": 929
       },
-      "modelHeight": 898,
-      "sourceCalibration": 0.9676724137931034,
-      "groupScale": 1.069042316258352,
-      "appliedScale": 1.0344827586206897,
+      "modelHeight": 901,
+      "sourceCalibration": 0.9698600645855759,
+      "groupScale": 1.065482796892342,
+      "appliedScale": 1.0333692142088267,
       "rendered": {
-        "width": 701,
+        "width": 703,
         "height": 960
       },
       "warnings": [
@@ -376,17 +377,17 @@
         "height": 1112
       },
       "boundingBox": {
-        "left": 173,
-        "top": 162,
-        "width": 594,
-        "height": 812
+        "left": 170,
+        "top": 160,
+        "width": 598,
+        "height": 815
       },
       "modelHeight": 808,
-      "sourceCalibration": 0.9950738916256158,
+      "sourceCalibration": 0.9914110429447853,
       "groupScale": 1.188118811881188,
-      "appliedScale": 1.1822660098522169,
+      "appliedScale": 1.177914110429448,
       "rendered": {
-        "width": 702,
+        "width": 704,
         "height": 960
       },
       "warnings": [
@@ -402,17 +403,17 @@
         "height": 736
       },
       "boundingBox": {
-        "left": 66,
-        "top": 15,
-        "width": 607,
-        "height": 690
+        "left": 65,
+        "top": 14,
+        "width": 608,
+        "height": 692
       },
       "modelHeight": 808,
-      "sourceCalibration": 1.1710144927536232,
+      "sourceCalibration": 1.1676300578034682,
       "groupScale": 1.188118811881188,
-      "appliedScale": 1.391304347826087,
+      "appliedScale": 1.3872832369942196,
       "rendered": {
-        "width": 845,
+        "width": 843,
         "height": 960
       },
       "warnings": [
@@ -428,9 +429,9 @@
         "height": 1112
       },
       "boundingBox": {
-        "left": 175,
+        "left": 174,
         "top": 208,
-        "width": 591,
+        "width": 594,
         "height": 808
       },
       "modelHeight": 808,
@@ -438,7 +439,7 @@
       "groupScale": 1.188118811881188,
       "appliedScale": 1.188118811881188,
       "rendered": {
-        "width": 702,
+        "width": 706,
         "height": 960
       },
       "warnings": [
@@ -454,17 +455,17 @@
         "height": 768
       },
       "boundingBox": {
-        "left": 125,
+        "left": 124,
         "top": 0,
-        "width": 560,
-        "height": 764
+        "width": 563,
+        "height": 766
       },
       "modelHeight": 808,
-      "sourceCalibration": 1.057591623036649,
+      "sourceCalibration": 1.0548302872062663,
       "groupScale": 1.188118811881188,
-      "appliedScale": 1.256544502617801,
+      "appliedScale": 1.2532637075718016,
       "rendered": {
-        "width": 704,
+        "width": 706,
         "height": 960
       },
       "warnings": [
@@ -481,17 +482,17 @@
         "height": 1200
       },
       "boundingBox": {
-        "left": 170,
-        "top": 151,
-        "width": 658,
-        "height": 898
+        "left": 168,
+        "top": 150,
+        "width": 662,
+        "height": 899
       },
-      "modelHeight": 898,
+      "modelHeight": 899,
       "sourceCalibration": 1,
-      "groupScale": 1.069042316258352,
-      "appliedScale": 1.069042316258352,
+      "groupScale": 1.067853170189099,
+      "appliedScale": 1.067853170189099,
       "rendered": {
-        "width": 703,
+        "width": 707,
         "height": 960
       },
       "warnings": [
@@ -507,21 +508,22 @@
         "height": 1500
       },
       "boundingBox": {
-        "left": 1,
-        "top": 2,
-        "width": 1095,
-        "height": 1495
+        "left": 0,
+        "top": 0,
+        "width": 1096,
+        "height": 1498
       },
-      "modelHeight": 898,
-      "sourceCalibration": 0.6006688963210702,
-      "groupScale": 1.069042316258352,
-      "appliedScale": 0.6421404682274248,
+      "modelHeight": 899,
+      "sourceCalibration": 0.6001335113484646,
+      "groupScale": 1.067853170189099,
+      "appliedScale": 0.6408544726301736,
       "rendered": {
-        "width": 703,
+        "width": 702,
         "height": 960
       },
       "warnings": [
-        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
     {
@@ -538,9 +540,9 @@
         "width": 444,
         "height": 606
       },
-      "modelHeight": 898,
-      "sourceCalibration": 1.481848184818482,
-      "groupScale": 1.069042316258352,
+      "modelHeight": 899,
+      "sourceCalibration": 1.4834983498349834,
+      "groupScale": 1.067853170189099,
       "appliedScale": 1.5841584158415842,
       "rendered": {
         "width": 703,
@@ -562,15 +564,15 @@
       "boundingBox": {
         "left": 32,
         "top": 6,
-        "width": 669,
-        "height": 880
+        "width": 672,
+        "height": 881
       },
-      "modelHeight": 898,
-      "sourceCalibration": 1.0204545454545455,
-      "groupScale": 1.069042316258352,
-      "appliedScale": 1.0909090909090908,
+      "modelHeight": 899,
+      "sourceCalibration": 1.0204313280363224,
+      "groupScale": 1.067853170189099,
+      "appliedScale": 1.0896708286038592,
       "rendered": {
-        "width": 730,
+        "width": 732,
         "height": 960
       },
       "warnings": [
@@ -586,9 +588,9 @@
         "height": 1500
       },
       "boundingBox": {
-        "left": 1,
+        "left": 0,
         "top": 1,
-        "width": 1101,
+        "width": 1102,
         "height": 1497
       },
       "modelHeight": 1200,
@@ -596,7 +598,7 @@
       "groupScale": 0.8,
       "appliedScale": 0.6412825651302605,
       "rendered": {
-        "width": 706,
+        "width": 707,
         "height": 960
       },
       "warnings": [
@@ -614,16 +616,16 @@
       },
       "boundingBox": {
         "left": 144,
-        "top": 17,
+        "top": 16,
         "width": 712,
-        "height": 967
+        "height": 968
       },
       "modelHeight": 1200,
-      "sourceCalibration": 1.2409513960703207,
+      "sourceCalibration": 1.2396694214876034,
       "groupScale": 0.8,
-      "appliedScale": 0.9927611168562565,
+      "appliedScale": 0.9917355371900827,
       "rendered": {
-        "width": 707,
+        "width": 706,
         "height": 960
       },
       "warnings": [
@@ -641,15 +643,15 @@
       "boundingBox": {
         "left": 24,
         "top": 22,
-        "width": 647,
-        "height": 878
+        "width": 648,
+        "height": 879
       },
       "modelHeight": 1200,
-      "sourceCalibration": 1.366742596810934,
+      "sourceCalibration": 1.3651877133105803,
       "groupScale": 0.8,
-      "appliedScale": 1.0933940774487472,
+      "appliedScale": 1.0921501706484642,
       "rendered": {
-        "width": 707,
+        "width": 708,
         "height": 960
       },
       "warnings": [
@@ -666,16 +668,16 @@
       },
       "boundingBox": {
         "left": 0,
-        "top": 1,
+        "top": 0,
         "width": 1200,
-        "height": 1630
+        "height": 1631
       },
       "modelHeight": 1200,
-      "sourceCalibration": 0.7361963190184049,
+      "sourceCalibration": 0.7357449417535254,
       "groupScale": 0.8,
-      "appliedScale": 0.588957055214724,
+      "appliedScale": 0.5885959534028203,
       "rendered": {
-        "width": 707,
+        "width": 706,
         "height": 960
       },
       "warnings": [
@@ -692,21 +694,22 @@
         "height": 600
       },
       "boundingBox": {
-        "left": 80,
-        "top": 1,
-        "width": 440,
-        "height": 594
+        "left": 79,
+        "top": 0,
+        "width": 441,
+        "height": 598
       },
       "modelHeight": 1200,
-      "sourceCalibration": 2.0202020202020203,
+      "sourceCalibration": 2.0066889632107023,
       "groupScale": 0.8,
-      "appliedScale": 1.6161616161616161,
+      "appliedScale": 1.605351170568562,
       "rendered": {
-        "width": 711,
+        "width": 708,
         "height": 960
       },
       "warnings": [
-        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
     {
@@ -718,9 +721,9 @@
         "height": 1200
       },
       "boundingBox": {
-        "left": 158,
+        "left": 154,
         "top": 0,
-        "width": 884,
+        "width": 889,
         "height": 1200
       },
       "modelHeight": 1200,
@@ -728,7 +731,7 @@
       "groupScale": 0.8,
       "appliedScale": 0.8,
       "rendered": {
-        "width": 707,
+        "width": 711,
         "height": 960
       },
       "warnings": [
@@ -745,17 +748,17 @@
         "height": 646
       },
       "boundingBox": {
-        "left": 4,
-        "top": 4,
-        "width": 497,
-        "height": 636
+        "left": 2,
+        "top": 3,
+        "width": 500,
+        "height": 637
       },
       "modelHeight": 726,
-      "sourceCalibration": 1.1415094339622642,
+      "sourceCalibration": 1.139717425431711,
       "groupScale": 1.322314049586777,
-      "appliedScale": 1.509433962264151,
+      "appliedScale": 1.5070643642072215,
       "rendered": {
-        "width": 750,
+        "width": 754,
         "height": 960
       },
       "warnings": [
@@ -771,17 +774,17 @@
         "height": 1000
       },
       "boundingBox": {
-        "left": 205,
-        "top": 95,
-        "width": 591,
-        "height": 806
+        "left": 203,
+        "top": 94,
+        "width": 594,
+        "height": 809
       },
       "modelHeight": 726,
-      "sourceCalibration": 0.9007444168734491,
+      "sourceCalibration": 0.8974042027194067,
       "groupScale": 1.322314049586777,
-      "appliedScale": 1.1910669975186103,
+      "appliedScale": 1.1866501854140914,
       "rendered": {
-        "width": 704,
+        "width": 705,
         "height": 960
       },
       "warnings": [
@@ -824,17 +827,17 @@
         "height": 755
       },
       "boundingBox": {
-        "left": 98,
-        "top": 17,
-        "width": 526,
-        "height": 681
+        "left": 96,
+        "top": 15,
+        "width": 529,
+        "height": 684
       },
       "modelHeight": 726,
-      "sourceCalibration": 1.066079295154185,
+      "sourceCalibration": 1.0614035087719298,
       "groupScale": 1.322314049586777,
-      "appliedScale": 1.4096916299559472,
+      "appliedScale": 1.4035087719298245,
       "rendered": {
-        "width": 741,
+        "width": 742,
         "height": 960
       },
       "warnings": [
@@ -851,20 +854,21 @@
       },
       "boundingBox": {
         "left": 1,
-        "top": 1,
-        "width": 1134,
-        "height": 1497
+        "top": 0,
+        "width": 1135,
+        "height": 1499
       },
       "modelHeight": 1378,
-      "sourceCalibration": 0.9205076820307281,
+      "sourceCalibration": 0.9192795196797865,
       "groupScale": 0.6966618287373004,
-      "appliedScale": 0.6412825651302605,
+      "appliedScale": 0.6404269513008672,
       "rendered": {
         "width": 727,
         "height": 960
       },
       "warnings": [
-        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
     {
@@ -876,9 +880,9 @@
         "height": 664
       },
       "boundingBox": {
-        "left": 1,
+        "left": 0,
         "top": 0,
-        "width": 521,
+        "width": 522,
         "height": 664
       },
       "modelHeight": 1378,
@@ -886,7 +890,7 @@
       "groupScale": 0.6966618287373004,
       "appliedScale": 1.4457831325301205,
       "rendered": {
-        "width": 753,
+        "width": 755,
         "height": 960
       },
       "warnings": [
@@ -903,17 +907,17 @@
         "height": 1200
       },
       "boundingBox": {
-        "left": 121,
-        "top": 100,
-        "width": 758,
-        "height": 1000
+        "left": 120,
+        "top": 99,
+        "width": 759,
+        "height": 1003
       },
       "modelHeight": 1378,
-      "sourceCalibration": 1.378,
+      "sourceCalibration": 1.3738783649052841,
       "groupScale": 0.6966618287373004,
-      "appliedScale": 0.96,
+      "appliedScale": 0.9571286141575274,
       "rendered": {
-        "width": 728,
+        "width": 726,
         "height": 960
       },
       "warnings": [
@@ -956,16 +960,16 @@
       },
       "boundingBox": {
         "left": 176,
-        "top": 111,
-        "width": 384,
-        "height": 522
+        "top": 109,
+        "width": 385,
+        "height": 527
       },
-      "modelHeight": 996,
-      "sourceCalibration": 1.9080459770114941,
-      "groupScale": 0.963855421686747,
-      "appliedScale": 1.839080459770115,
+      "modelHeight": 998,
+      "sourceCalibration": 1.8937381404174574,
+      "groupScale": 0.9619238476953907,
+      "appliedScale": 1.8216318785578747,
       "rendered": {
-        "width": 706,
+        "width": 701,
         "height": 960
       },
       "warnings": [
@@ -981,21 +985,22 @@
         "height": 1000
       },
       "boundingBox": {
-        "left": 1,
+        "left": 0,
         "top": 1,
-        "width": 734,
+        "width": 735,
         "height": 998
       },
-      "modelHeight": 996,
-      "sourceCalibration": 0.9979959919839679,
-      "groupScale": 0.963855421686747,
+      "modelHeight": 998,
+      "sourceCalibration": 1,
+      "groupScale": 0.9619238476953907,
       "appliedScale": 0.9619238476953907,
       "rendered": {
-        "width": 706,
+        "width": 707,
         "height": 960
       },
       "warnings": [
-        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
     {
@@ -1007,17 +1012,17 @@
         "height": 779
       },
       "boundingBox": {
-        "left": 26,
+        "left": 25,
         "top": 35,
-        "width": 522,
-        "height": 708
+        "width": 525,
+        "height": 709
       },
-      "modelHeight": 996,
-      "sourceCalibration": 1.4067796610169492,
-      "groupScale": 0.963855421686747,
-      "appliedScale": 1.3559322033898304,
+      "modelHeight": 998,
+      "sourceCalibration": 1.4076163610719323,
+      "groupScale": 0.9619238476953907,
+      "appliedScale": 1.3540197461212975,
       "rendered": {
-        "width": 708,
+        "width": 711,
         "height": 960
       },
       "warnings": [
@@ -1033,17 +1038,17 @@
         "height": 600
       },
       "boundingBox": {
-        "left": 17,
-        "top": 56,
-        "width": 367,
-        "height": 488
+        "left": 16,
+        "top": 55,
+        "width": 368,
+        "height": 490
       },
-      "modelHeight": 996,
-      "sourceCalibration": 2.040983606557377,
-      "groupScale": 0.963855421686747,
-      "appliedScale": 1.9672131147540983,
+      "modelHeight": 998,
+      "sourceCalibration": 2.036734693877551,
+      "groupScale": 0.9619238476953907,
+      "appliedScale": 1.9591836734693877,
       "rendered": {
-        "width": 722,
+        "width": 721,
         "height": 960
       },
       "warnings": [
@@ -1060,16 +1065,16 @@
       },
       "boundingBox": {
         "left": 133,
-        "top": 103,
-        "width": 733,
-        "height": 996
+        "top": 102,
+        "width": 736,
+        "height": 998
       },
-      "modelHeight": 996,
+      "modelHeight": 998,
       "sourceCalibration": 1,
-      "groupScale": 0.963855421686747,
-      "appliedScale": 0.963855421686747,
+      "groupScale": 0.9619238476953907,
+      "appliedScale": 0.9619238476953907,
       "rendered": {
-        "width": 707,
+        "width": 708,
         "height": 960
       },
       "warnings": [
@@ -1090,9 +1095,9 @@
         "width": 736,
         "height": 1000
       },
-      "modelHeight": 996,
-      "sourceCalibration": 0.996,
-      "groupScale": 0.963855421686747,
+      "modelHeight": 998,
+      "sourceCalibration": 0.998,
+      "groupScale": 0.9619238476953907,
       "appliedScale": 0.96,
       "rendered": {
         "width": 707,
@@ -1113,14 +1118,14 @@
       },
       "boundingBox": {
         "left": 0,
-        "top": 1,
+        "top": 0,
         "width": 736,
-        "height": 916
+        "height": 917
       },
-      "modelHeight": 916,
+      "modelHeight": 917,
       "sourceCalibration": 1,
-      "groupScale": 1.0480349344978166,
-      "appliedScale": 1.0480349344978166,
+      "groupScale": 1.0468920392584515,
+      "appliedScale": 1.0468920392584515,
       "rendered": {
         "width": 771,
         "height": 960
@@ -1139,17 +1144,17 @@
         "height": 1200
       },
       "boundingBox": {
-        "left": 6,
+        "left": 4,
         "top": 0,
-        "width": 965,
+        "width": 967,
         "height": 1200
       },
-      "modelHeight": 916,
-      "sourceCalibration": 0.7633333333333333,
-      "groupScale": 1.0480349344978166,
+      "modelHeight": 917,
+      "sourceCalibration": 0.7641666666666667,
+      "groupScale": 1.0468920392584515,
       "appliedScale": 0.8,
       "rendered": {
-        "width": 772,
+        "width": 774,
         "height": 960
       },
       "warnings": [
@@ -1166,17 +1171,17 @@
         "height": 1041
       },
       "boundingBox": {
-        "left": 37,
-        "top": 116,
-        "width": 649,
-        "height": 809
+        "left": 35,
+        "top": 113,
+        "width": 653,
+        "height": 815
       },
-      "modelHeight": 916,
-      "sourceCalibration": 1.1322620519159456,
-      "groupScale": 1.0480349344978166,
-      "appliedScale": 1.1866501854140914,
+      "modelHeight": 917,
+      "sourceCalibration": 1.1251533742331288,
+      "groupScale": 1.0468920392584515,
+      "appliedScale": 1.177914110429448,
       "rendered": {
-        "width": 770,
+        "width": 769,
         "height": 960
       },
       "warnings": [
@@ -1195,14 +1200,14 @@
         "left": 66,
         "top": 11,
         "width": 590,
-        "height": 724
+        "height": 725
       },
-      "modelHeight": 916,
-      "sourceCalibration": 1.2651933701657458,
-      "groupScale": 1.0480349344978166,
-      "appliedScale": 1.3259668508287292,
+      "modelHeight": 917,
+      "sourceCalibration": 1.2648275862068965,
+      "groupScale": 1.0468920392584515,
+      "appliedScale": 1.3241379310344827,
       "rendered": {
-        "width": 782,
+        "width": 781,
         "height": 960
       },
       "warnings": [
@@ -1219,14 +1224,14 @@
       },
       "boundingBox": {
         "left": 38,
-        "top": 47,
-        "width": 915,
-        "height": 1129
+        "top": 46,
+        "width": 916,
+        "height": 1131
       },
-      "modelHeight": 1061,
-      "sourceCalibration": 0.9397697077059345,
-      "groupScale": 0.9048067860508954,
-      "appliedScale": 0.8503100088573959,
+      "modelHeight": 1063,
+      "sourceCalibration": 0.9398762157382847,
+      "groupScale": 0.90310442144873,
+      "appliedScale": 0.8488063660477454,
       "rendered": {
         "width": 778,
         "height": 960
@@ -1245,16 +1250,16 @@
       },
       "boundingBox": {
         "left": 108,
-        "top": 12,
-        "width": 864,
-        "height": 1061
+        "top": 11,
+        "width": 865,
+        "height": 1063
       },
-      "modelHeight": 1061,
+      "modelHeight": 1063,
       "sourceCalibration": 1,
-      "groupScale": 0.9048067860508954,
-      "appliedScale": 0.9048067860508954,
+      "groupScale": 0.90310442144873,
+      "appliedScale": 0.90310442144873,
       "rendered": {
-        "width": 782,
+        "width": 781,
         "height": 960
       },
       "warnings": [
@@ -1270,21 +1275,22 @@
         "height": 884
       },
       "boundingBox": {
-        "left": 2,
-        "top": 2,
-        "width": 726,
-        "height": 872
+        "left": 0,
+        "top": 0,
+        "width": 728,
+        "height": 876
       },
-      "modelHeight": 1061,
-      "sourceCalibration": 1.216743119266055,
-      "groupScale": 0.9048067860508954,
-      "appliedScale": 1.1009174311926606,
+      "modelHeight": 1063,
+      "sourceCalibration": 1.2134703196347032,
+      "groupScale": 0.90310442144873,
+      "appliedScale": 1.095890410958904,
       "rendered": {
-        "width": 799,
+        "width": 798,
         "height": 960
       },
       "warnings": [
-        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
     {
@@ -1299,14 +1305,14 @@
         "left": 66,
         "top": 11,
         "width": 590,
-        "height": 724
+        "height": 725
       },
-      "modelHeight": 1061,
-      "sourceCalibration": 1.4654696132596685,
-      "groupScale": 0.9048067860508954,
-      "appliedScale": 1.3259668508287292,
+      "modelHeight": 1063,
+      "sourceCalibration": 1.466206896551724,
+      "groupScale": 0.90310442144873,
+      "appliedScale": 1.3241379310344827,
       "rendered": {
-        "width": 782,
+        "width": 781,
         "height": 960
       },
       "warnings": [
@@ -1322,17 +1328,17 @@
         "height": 1536
       },
       "boundingBox": {
-        "left": 137,
-        "top": 169,
-        "width": 871,
-        "height": 1148
+        "left": 136,
+        "top": 165,
+        "width": 872,
+        "height": 1154
       },
-      "modelHeight": 1092,
-      "sourceCalibration": 0.9512195121951219,
-      "groupScale": 0.8791208791208791,
-      "appliedScale": 0.8362369337979094,
+      "modelHeight": 1096,
+      "sourceCalibration": 0.949740034662045,
+      "groupScale": 0.8759124087591241,
+      "appliedScale": 0.8318890814558059,
       "rendered": {
-        "width": 728,
+        "width": 725,
         "height": 960
       },
       "warnings": [
@@ -1349,16 +1355,16 @@
       },
       "boundingBox": {
         "left": 0,
-        "top": 2,
+        "top": 1,
         "width": 731,
-        "height": 996
+        "height": 999
       },
-      "modelHeight": 1092,
-      "sourceCalibration": 1.0963855421686748,
-      "groupScale": 0.8791208791208791,
-      "appliedScale": 0.963855421686747,
+      "modelHeight": 1096,
+      "sourceCalibration": 1.097097097097097,
+      "groupScale": 0.8759124087591241,
+      "appliedScale": 0.960960960960961,
       "rendered": {
-        "width": 705,
+        "width": 702,
         "height": 960
       },
       "warnings": [
@@ -1375,15 +1381,15 @@
         "height": 736
       },
       "boundingBox": {
-        "left": 162,
-        "top": 72,
-        "width": 448,
-        "height": 593
+        "left": 160,
+        "top": 67,
+        "width": 453,
+        "height": 600
       },
-      "modelHeight": 1092,
-      "sourceCalibration": 1.8414839797639122,
-      "groupScale": 0.8791208791208791,
-      "appliedScale": 1.6188870151770658,
+      "modelHeight": 1096,
+      "sourceCalibration": 1.8266666666666667,
+      "groupScale": 0.8759124087591241,
+      "appliedScale": 1.6,
       "rendered": {
         "width": 725,
         "height": 960
@@ -1401,17 +1407,17 @@
         "height": 793
       },
       "boundingBox": {
-        "left": 90,
-        "top": 20,
-        "width": 565,
-        "height": 736
+        "left": 89,
+        "top": 19,
+        "width": 567,
+        "height": 737
       },
-      "modelHeight": 1092,
-      "sourceCalibration": 1.483695652173913,
-      "groupScale": 0.8791208791208791,
-      "appliedScale": 1.3043478260869565,
+      "modelHeight": 1096,
+      "sourceCalibration": 1.4871099050203527,
+      "groupScale": 0.8759124087591241,
+      "appliedScale": 1.3025780189959295,
       "rendered": {
-        "width": 737,
+        "width": 739,
         "height": 960
       },
       "warnings": [
@@ -1427,21 +1433,22 @@
         "height": 1103
       },
       "boundingBox": {
-        "left": 2,
-        "top": 4,
-        "width": 826,
-        "height": 1092
+        "left": 0,
+        "top": 2,
+        "width": 831,
+        "height": 1096
       },
-      "modelHeight": 1092,
+      "modelHeight": 1096,
       "sourceCalibration": 1,
-      "groupScale": 0.8791208791208791,
-      "appliedScale": 0.8791208791208791,
+      "groupScale": 0.8759124087591241,
+      "appliedScale": 0.8759124087591241,
       "rendered": {
-        "width": 726,
+        "width": 728,
         "height": 960
       },
       "warnings": [
-        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
     {
@@ -1453,17 +1460,17 @@
         "height": 1536
       },
       "boundingBox": {
-        "left": 134,
-        "top": 156,
-        "width": 883,
-        "height": 1168
+        "left": 130,
+        "top": 153,
+        "width": 889,
+        "height": 1174
       },
-      "modelHeight": 1092,
-      "sourceCalibration": 0.934931506849315,
-      "groupScale": 0.8791208791208791,
-      "appliedScale": 0.821917808219178,
+      "modelHeight": 1096,
+      "sourceCalibration": 0.9335604770017035,
+      "groupScale": 0.8759124087591241,
+      "appliedScale": 0.817717206132879,
       "rendered": {
-        "width": 726,
+        "width": 727,
         "height": 960
       },
       "warnings": [
@@ -1506,9 +1513,9 @@
         "height": 1200
       },
       "boundingBox": {
-        "left": 142,
+        "left": 141,
         "top": 157,
-        "width": 714,
+        "width": 715,
         "height": 888
       },
       "modelHeight": 888,
@@ -1516,7 +1523,7 @@
       "groupScale": 1.0810810810810811,
       "appliedScale": 1.0810810810810811,
       "rendered": {
-        "width": 772,
+        "width": 773,
         "height": 960
       },
       "warnings": [
@@ -1533,16 +1540,16 @@
       },
       "boundingBox": {
         "left": 33,
-        "top": 41,
+        "top": 40,
         "width": 670,
-        "height": 831
+        "height": 832
       },
       "modelHeight": 888,
-      "sourceCalibration": 1.068592057761733,
+      "sourceCalibration": 1.0673076923076923,
       "groupScale": 1.0810810810810811,
-      "appliedScale": 1.1552346570397112,
+      "appliedScale": 1.1538461538461537,
       "rendered": {
-        "width": 774,
+        "width": 773,
         "height": 960
       },
       "warnings": [
@@ -1587,7 +1594,7 @@
       "boundingBox": {
         "left": 79,
         "top": 99,
-        "width": 558,
+        "width": 560,
         "height": 666
       },
       "modelHeight": 666,
@@ -1595,7 +1602,7 @@
       "groupScale": 1.4414414414414414,
       "appliedScale": 1.4414414414414414,
       "rendered": {
-        "width": 804,
+        "width": 807,
         "height": 960
       },
       "warnings": [
@@ -1611,21 +1618,22 @@
         "height": 1048
       },
       "boundingBox": {
-        "left": 1,
+        "left": 0,
         "top": 80,
-        "width": 734,
-        "height": 904
+        "width": 736,
+        "height": 905
       },
       "modelHeight": 666,
-      "sourceCalibration": 0.7367256637168141,
+      "sourceCalibration": 0.7359116022099448,
       "groupScale": 1.4414414414414414,
-      "appliedScale": 1.0619469026548674,
+      "appliedScale": 1.0607734806629834,
       "rendered": {
-        "width": 779,
+        "width": 781,
         "height": 960
       },
       "warnings": [
-        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
     {
@@ -1638,16 +1646,16 @@
       },
       "boundingBox": {
         "left": 136,
-        "top": 68,
-        "width": 497,
-        "height": 614
+        "top": 67,
+        "width": 498,
+        "height": 616
       },
       "modelHeight": 666,
-      "sourceCalibration": 1.0846905537459284,
+      "sourceCalibration": 1.0811688311688312,
       "groupScale": 1.4414414414414414,
-      "appliedScale": 1.5635179153094463,
+      "appliedScale": 1.5584415584415585,
       "rendered": {
-        "width": 777,
+        "width": 776,
         "height": 960
       },
       "warnings": [
@@ -1664,14 +1672,14 @@
       },
       "boundingBox": {
         "left": 109,
-        "top": 52,
-        "width": 528,
-        "height": 649
+        "top": 51,
+        "width": 529,
+        "height": 650
       },
       "modelHeight": 666,
-      "sourceCalibration": 1.0261941448382126,
+      "sourceCalibration": 1.0246153846153847,
       "groupScale": 1.4414414414414414,
-      "appliedScale": 1.4791987673343605,
+      "appliedScale": 1.476923076923077,
       "rendered": {
         "width": 781,
         "height": 960
@@ -1689,15 +1697,15 @@
         "height": 909
       },
       "boundingBox": {
-        "left": 76,
-        "top": 68,
-        "width": 599,
-        "height": 786
+        "left": 75,
+        "top": 67,
+        "width": 601,
+        "height": 788
       },
       "modelHeight": 1000,
-      "sourceCalibration": 1.272264631043257,
+      "sourceCalibration": 1.2690355329949239,
       "groupScale": 0.96,
-      "appliedScale": 1.2213740458015268,
+      "appliedScale": 1.218274111675127,
       "rendered": {
         "width": 732,
         "height": 960
@@ -1716,14 +1724,14 @@
       },
       "boundingBox": {
         "left": 129,
-        "top": 1,
+        "top": 0,
         "width": 822,
-        "height": 1079
+        "height": 1080
       },
       "modelHeight": 1000,
-      "sourceCalibration": 0.9267840593141798,
+      "sourceCalibration": 0.9259259259259259,
       "groupScale": 0.96,
-      "appliedScale": 0.8897126969416126,
+      "appliedScale": 0.8888888888888888,
       "rendered": {
         "width": 731,
         "height": 960
@@ -1769,16 +1777,16 @@
       },
       "boundingBox": {
         "left": 38,
-        "top": 156,
+        "top": 155,
         "width": 660,
-        "height": 865
+        "height": 867
       },
       "modelHeight": 1000,
-      "sourceCalibration": 1.1560693641618498,
+      "sourceCalibration": 1.1534025374855825,
       "groupScale": 0.96,
-      "appliedScale": 1.1098265895953756,
+      "appliedScale": 1.1072664359861593,
       "rendered": {
-        "width": 732,
+        "width": 731,
         "height": 960
       },
       "warnings": [
@@ -1821,21 +1829,22 @@
         "height": 1247
       },
       "boundingBox": {
-        "left": 1,
+        "left": 0,
         "top": 160,
-        "width": 734,
-        "height": 923
+        "width": 736,
+        "height": 925
       },
       "modelHeight": 887,
-      "sourceCalibration": 0.9609967497291441,
+      "sourceCalibration": 0.9589189189189189,
       "groupScale": 1.0822998872604284,
-      "appliedScale": 1.0400866738894907,
+      "appliedScale": 1.037837837837838,
       "rendered": {
-        "width": 763,
+        "width": 764,
         "height": 960
       },
       "warnings": [
-        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
     {
@@ -1847,17 +1856,17 @@
         "height": 893
       },
       "boundingBox": {
-        "left": 11,
-        "top": 6,
-        "width": 715,
-        "height": 878
+        "left": 10,
+        "top": 5,
+        "width": 717,
+        "height": 879
       },
       "modelHeight": 887,
-      "sourceCalibration": 1.010250569476082,
+      "sourceCalibration": 1.0091012514220705,
       "groupScale": 1.0822998872604284,
-      "appliedScale": 1.0933940774487472,
+      "appliedScale": 1.0921501706484642,
       "rendered": {
-        "width": 782,
+        "width": 783,
         "height": 960
       },
       "warnings": [
@@ -1873,9 +1882,9 @@
         "height": 939
       },
       "boundingBox": {
-        "left": 15,
+        "left": 14,
         "top": 19,
-        "width": 707,
+        "width": 708,
         "height": 887
       },
       "modelHeight": 887,
@@ -1883,7 +1892,7 @@
       "groupScale": 1.0822998872604284,
       "appliedScale": 1.0822998872604284,
       "rendered": {
-        "width": 765,
+        "width": 766,
         "height": 960
       },
       "warnings": [
@@ -1899,17 +1908,17 @@
         "height": 1536
       },
       "boundingBox": {
-        "left": 111,
-        "top": 165,
-        "width": 928,
-        "height": 1149
+        "left": 110,
+        "top": 164,
+        "width": 930,
+        "height": 1150
       },
-      "modelHeight": 878,
-      "sourceCalibration": 0.7641427328111401,
-      "groupScale": 1.0933940774487472,
-      "appliedScale": 0.835509138381201,
+      "modelHeight": 879,
+      "sourceCalibration": 0.7643478260869565,
+      "groupScale": 1.0921501706484642,
+      "appliedScale": 0.8347826086956521,
       "rendered": {
-        "width": 775,
+        "width": 776,
         "height": 960
       },
       "warnings": [
@@ -1925,17 +1934,17 @@
         "height": 736
       },
       "boundingBox": {
-        "left": 94,
-        "top": 16,
-        "width": 573,
-        "height": 709
+        "left": 91,
+        "top": 15,
+        "width": 577,
+        "height": 712
       },
-      "modelHeight": 878,
-      "sourceCalibration": 1.2383638928067702,
-      "groupScale": 1.0933940774487472,
-      "appliedScale": 1.3540197461212975,
+      "modelHeight": 879,
+      "sourceCalibration": 1.2345505617977528,
+      "groupScale": 1.0921501706484642,
+      "appliedScale": 1.348314606741573,
       "rendered": {
-        "width": 776,
+        "width": 778,
         "height": 960
       },
       "warnings": [
@@ -1951,17 +1960,17 @@
         "height": 893
       },
       "boundingBox": {
-        "left": 11,
-        "top": 6,
-        "width": 715,
-        "height": 878
+        "left": 10,
+        "top": 5,
+        "width": 717,
+        "height": 879
       },
-      "modelHeight": 878,
+      "modelHeight": 879,
       "sourceCalibration": 1,
-      "groupScale": 1.0933940774487472,
-      "appliedScale": 1.0933940774487472,
+      "groupScale": 1.0921501706484642,
+      "appliedScale": 1.0921501706484642,
       "rendered": {
-        "width": 782,
+        "width": 783,
         "height": 960
       },
       "warnings": [
@@ -1977,17 +1986,17 @@
         "height": 640
       },
       "boundingBox": {
-        "left": 85,
-        "top": 29,
-        "width": 471,
-        "height": 583
+        "left": 84,
+        "top": 28,
+        "width": 473,
+        "height": 584
       },
-      "modelHeight": 878,
-      "sourceCalibration": 1.5060034305317325,
-      "groupScale": 1.0933940774487472,
-      "appliedScale": 1.646655231560892,
+      "modelHeight": 879,
+      "sourceCalibration": 1.50513698630137,
+      "groupScale": 1.0921501706484642,
+      "appliedScale": 1.643835616438356,
       "rendered": {
-        "width": 776,
+        "width": 778,
         "height": 960
       },
       "warnings": [
@@ -2003,17 +2012,17 @@
         "height": 600
       },
       "boundingBox": {
-        "left": 18,
-        "top": 52,
-        "width": 364,
-        "height": 496
+        "left": 17,
+        "top": 51,
+        "width": 366,
+        "height": 498
       },
-      "modelHeight": 659,
-      "sourceCalibration": 1.3286290322580645,
-      "groupScale": 1.456752655538695,
-      "appliedScale": 1.935483870967742,
+      "modelHeight": 661,
+      "sourceCalibration": 1.3273092369477912,
+      "groupScale": 1.4523449319213313,
+      "appliedScale": 1.927710843373494,
       "rendered": {
-        "width": 705,
+        "width": 706,
         "height": 960
       },
       "warnings": [
@@ -2031,15 +2040,15 @@
       "boundingBox": {
         "left": 2,
         "top": 2,
-        "width": 517,
+        "width": 518,
         "height": 632
       },
-      "modelHeight": 659,
-      "sourceCalibration": 1.0427215189873418,
-      "groupScale": 1.456752655538695,
+      "modelHeight": 661,
+      "sourceCalibration": 1.0458860759493671,
+      "groupScale": 1.4523449319213313,
       "appliedScale": 1.518987341772152,
       "rendered": {
-        "width": 785,
+        "width": 787,
         "height": 960
       },
       "warnings": [
@@ -2055,17 +2064,17 @@
         "height": 878
       },
       "boundingBox": {
-        "left": 61,
+        "left": 60,
         "top": 50,
-        "width": 627,
+        "width": 629,
         "height": 767
       },
-      "modelHeight": 659,
-      "sourceCalibration": 0.8591916558018253,
-      "groupScale": 1.456752655538695,
+      "modelHeight": 661,
+      "sourceCalibration": 0.8617992177314211,
+      "groupScale": 1.4523449319213313,
       "appliedScale": 1.2516297262059974,
       "rendered": {
-        "width": 785,
+        "width": 787,
         "height": 960
       },
       "warnings": [
@@ -2082,16 +2091,16 @@
       },
       "boundingBox": {
         "left": 13,
-        "top": 12,
+        "top": 11,
         "width": 562,
-        "height": 659
+        "height": 661
       },
-      "modelHeight": 659,
+      "modelHeight": 661,
       "sourceCalibration": 1,
-      "groupScale": 1.456752655538695,
-      "appliedScale": 1.456752655538695,
+      "groupScale": 1.4523449319213313,
+      "appliedScale": 1.4523449319213313,
       "rendered": {
-        "width": 819,
+        "width": 816,
         "height": 960
       },
       "warnings": [
@@ -2112,9 +2121,9 @@
         "width": 1162,
         "height": 1440
       },
-      "modelHeight": 659,
-      "sourceCalibration": 0.4576388888888889,
-      "groupScale": 1.456752655538695,
+      "modelHeight": 661,
+      "sourceCalibration": 0.45902777777777776,
+      "groupScale": 1.4523449319213313,
       "appliedScale": 0.6666666666666666,
       "rendered": {
         "width": 775,
@@ -2134,15 +2143,15 @@
         "height": 872
       },
       "boundingBox": {
-        "left": 76,
-        "top": 33,
-        "width": 588,
-        "height": 754
+        "left": 75,
+        "top": 32,
+        "width": 589,
+        "height": 755
       },
-      "modelHeight": 712,
-      "sourceCalibration": 0.9442970822281167,
-      "groupScale": 1.348314606741573,
-      "appliedScale": 1.273209549071618,
+      "modelHeight": 715,
+      "sourceCalibration": 0.9470198675496688,
+      "groupScale": 1.3426573426573427,
+      "appliedScale": 1.271523178807947,
       "rendered": {
         "width": 749,
         "height": 960
@@ -2160,17 +2169,17 @@
         "height": 789
       },
       "boundingBox": {
-        "left": 91,
-        "top": 41,
-        "width": 555,
-        "height": 712
+        "left": 88,
+        "top": 40,
+        "width": 564,
+        "height": 715
       },
-      "modelHeight": 712,
+      "modelHeight": 715,
       "sourceCalibration": 1,
-      "groupScale": 1.348314606741573,
-      "appliedScale": 1.348314606741573,
+      "groupScale": 1.3426573426573427,
+      "appliedScale": 1.3426573426573427,
       "rendered": {
-        "width": 748,
+        "width": 757,
         "height": 960
       },
       "warnings": [
@@ -2191,9 +2200,9 @@
         "width": 518,
         "height": 641
       },
-      "modelHeight": 712,
-      "sourceCalibration": 1.110764430577223,
-      "groupScale": 1.348314606741573,
+      "modelHeight": 715,
+      "sourceCalibration": 1.1154446177847115,
+      "groupScale": 1.3426573426573427,
       "appliedScale": 1.497659906396256,
       "rendered": {
         "width": 776,
@@ -2213,17 +2222,17 @@
         "height": 736
       },
       "boundingBox": {
-        "left": 108,
-        "top": 46,
-        "width": 521,
-        "height": 644
+        "left": 106,
+        "top": 45,
+        "width": 523,
+        "height": 645
       },
       "modelHeight": 641,
-      "sourceCalibration": 0.9953416149068323,
+      "sourceCalibration": 0.993798449612403,
       "groupScale": 1.497659906396256,
-      "appliedScale": 1.4906832298136645,
+      "appliedScale": 1.4883720930232558,
       "rendered": {
-        "width": 777,
+        "width": 778,
         "height": 960
       },
       "warnings": [
@@ -2239,17 +2248,17 @@
         "height": 1104
       },
       "boundingBox": {
-        "left": 130,
-        "top": 243,
-        "width": 478,
-        "height": 615
+        "left": 128,
+        "top": 240,
+        "width": 481,
+        "height": 620
       },
       "modelHeight": 641,
-      "sourceCalibration": 1.0422764227642276,
+      "sourceCalibration": 1.0338709677419355,
       "groupScale": 1.497659906396256,
-      "appliedScale": 1.5609756097560976,
+      "appliedScale": 1.5483870967741935,
       "rendered": {
-        "width": 746,
+        "width": 745,
         "height": 960
       },
       "warnings": [
@@ -2319,9 +2328,9 @@
         "height": 911
       },
       "boundingBox": {
-        "left": 1,
+        "left": 0,
         "top": 1,
-        "width": 732,
+        "width": 734,
         "height": 909
       },
       "modelHeight": 912,
@@ -2329,11 +2338,12 @@
       "groupScale": 1.0526315789473684,
       "appliedScale": 1.056105610561056,
       "rendered": {
-        "width": 773,
+        "width": 775,
         "height": 960
       },
       "warnings": [
-        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
     {
@@ -2345,21 +2355,22 @@
         "height": 1200
       },
       "boundingBox": {
-        "left": 1,
-        "top": 1,
-        "width": 966,
-        "height": 1197
+        "left": 0,
+        "top": 0,
+        "width": 968,
+        "height": 1199
       },
       "modelHeight": 912,
-      "sourceCalibration": 0.7619047619047619,
+      "sourceCalibration": 0.7606338615512928,
       "groupScale": 1.0526315789473684,
-      "appliedScale": 0.8020050125313283,
+      "appliedScale": 0.8006672226855713,
       "rendered": {
         "width": 775,
         "height": 960
       },
       "warnings": [
-        "Fondo exterior uniforme tratado; revisar contornos similares al fondo"
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
       ]
     },
     {
@@ -2398,17 +2409,17 @@
         "height": 912
       },
       "boundingBox": {
-        "left": 33,
-        "top": 41,
-        "width": 670,
-        "height": 830
+        "left": 32,
+        "top": 40,
+        "width": 671,
+        "height": 832
       },
       "modelHeight": 912,
-      "sourceCalibration": 1.0987951807228915,
+      "sourceCalibration": 1.0961538461538463,
       "groupScale": 1.0526315789473684,
-      "appliedScale": 1.1566265060240963,
+      "appliedScale": 1.1538461538461537,
       "rendered": {
-        "width": 775,
+        "width": 774,
         "height": 960
       },
       "warnings": [
@@ -2424,9 +2435,9 @@
         "height": 630
       },
       "boundingBox": {
-        "left": 456,
+        "left": 455,
         "top": 140,
-        "width": 289,
+        "width": 290,
         "height": 348
       },
       "modelHeight": 348,
@@ -2434,7 +2445,7 @@
       "groupScale": 2.7586206896551726,
       "appliedScale": 2.7586206896551726,
       "rendered": {
-        "width": 797,
+        "width": 800,
         "height": 960
       },
       "warnings": [
@@ -2450,9 +2461,9 @@
         "height": 630
       },
       "boundingBox": {
-        "left": 456,
+        "left": 455,
         "top": 140,
-        "width": 288,
+        "width": 290,
         "height": 348
       },
       "modelHeight": 348,
@@ -2460,7 +2471,7 @@
       "groupScale": 2.7586206896551726,
       "appliedScale": 2.7586206896551726,
       "rendered": {
-        "width": 794,
+        "width": 800,
         "height": 960
       },
       "warnings": [
@@ -2476,9 +2487,9 @@
         "height": 630
       },
       "boundingBox": {
-        "left": 456,
+        "left": 455,
         "top": 140,
-        "width": 289,
+        "width": 290,
         "height": 348
       },
       "modelHeight": 348,
@@ -2486,7 +2497,7 @@
       "groupScale": 2.7586206896551726,
       "appliedScale": 2.7586206896551726,
       "rendered": {
-        "width": 797,
+        "width": 800,
         "height": 960
       },
       "warnings": [
@@ -2502,9 +2513,9 @@
         "height": 630
       },
       "boundingBox": {
-        "left": 456,
+        "left": 455,
         "top": 140,
-        "width": 288,
+        "width": 290,
         "height": 348
       },
       "modelHeight": 348,
@@ -2512,7 +2523,7 @@
       "groupScale": 2.7586206896551726,
       "appliedScale": 2.7586206896551726,
       "rendered": {
-        "width": 794,
+        "width": 800,
         "height": 960
       },
       "warnings": [
@@ -2531,14 +2542,14 @@
         "left": 445,
         "top": 109,
         "width": 310,
-        "height": 379
+        "height": 380
       },
-      "modelHeight": 379,
+      "modelHeight": 380,
       "sourceCalibration": 1,
-      "groupScale": 2.532981530343008,
-      "appliedScale": 2.532981530343008,
+      "groupScale": 2.526315789473684,
+      "appliedScale": 2.526315789473684,
       "rendered": {
-        "width": 785,
+        "width": 783,
         "height": 960
       },
       "warnings": [
@@ -2557,14 +2568,14 @@
         "left": 445,
         "top": 109,
         "width": 310,
-        "height": 379
+        "height": 380
       },
-      "modelHeight": 379,
+      "modelHeight": 380,
       "sourceCalibration": 1,
-      "groupScale": 2.532981530343008,
-      "appliedScale": 2.532981530343008,
+      "groupScale": 2.526315789473684,
+      "appliedScale": 2.526315789473684,
       "rendered": {
-        "width": 785,
+        "width": 783,
         "height": 960
       },
       "warnings": [
@@ -2583,14 +2594,14 @@
         "left": 445,
         "top": 109,
         "width": 310,
-        "height": 379
+        "height": 380
       },
-      "modelHeight": 379,
+      "modelHeight": 380,
       "sourceCalibration": 1,
-      "groupScale": 2.532981530343008,
-      "appliedScale": 2.532981530343008,
+      "groupScale": 2.526315789473684,
+      "appliedScale": 2.526315789473684,
       "rendered": {
-        "width": 785,
+        "width": 783,
         "height": 960
       },
       "warnings": [
@@ -2609,14 +2620,14 @@
         "left": 445,
         "top": 109,
         "width": 310,
-        "height": 379
+        "height": 380
       },
-      "modelHeight": 379,
+      "modelHeight": 380,
       "sourceCalibration": 1,
-      "groupScale": 2.532981530343008,
-      "appliedScale": 2.532981530343008,
+      "groupScale": 2.526315789473684,
+      "appliedScale": 2.526315789473684,
       "rendered": {
-        "width": 785,
+        "width": 783,
         "height": 960
       },
       "warnings": [
@@ -2626,33 +2637,6 @@
     {
       "file": "iphone-18-pro/iphone-18-pro-borgona.jpg",
       "output": "iphone-18-pro/iphone-18-pro-borgona.webp",
-      "group": "iphone-18-pro",
-      "original": {
-        "width": 2880,
-        "height": 1520
-      },
-      "boundingBox": {
-        "left": 1435,
-        "top": 153,
-        "width": 956,
-        "height": 1367
-      },
-      "modelHeight": 1367,
-      "sourceCalibration": 1,
-      "groupScale": 0.7022677395757132,
-      "appliedScale": 0.7022677395757132,
-      "rendered": {
-        "width": 671,
-        "height": 960
-      },
-      "warnings": [
-        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
-        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
-      ]
-    },
-    {
-      "file": "iphone-18-pro/iphone-18-pro-glaciar.jpg",
-      "output": "iphone-18-pro/iphone-18-pro-glaciar.webp",
       "group": "iphone-18-pro",
       "original": {
         "width": 2880,
@@ -2678,6 +2662,33 @@
       ]
     },
     {
+      "file": "iphone-18-pro/iphone-18-pro-glaciar.jpg",
+      "output": "iphone-18-pro/iphone-18-pro-glaciar.webp",
+      "group": "iphone-18-pro",
+      "original": {
+        "width": 2880,
+        "height": 1520
+      },
+      "boundingBox": {
+        "left": 1434,
+        "top": 153,
+        "width": 958,
+        "height": 1367
+      },
+      "modelHeight": 1367,
+      "sourceCalibration": 1,
+      "groupScale": 0.7022677395757132,
+      "appliedScale": 0.7022677395757132,
+      "rendered": {
+        "width": 673,
+        "height": 960
+      },
+      "warnings": [
+        "Fondo exterior uniforme tratado; revisar contornos similares al fondo",
+        "El contenido toca el borde de la fuente; no se reconstruyen partes ausentes"
+      ]
+    },
+    {
       "file": "iphone-18-pro/iphone-18-pro-negro.jpg",
       "output": "iphone-18-pro/iphone-18-pro-negro.webp",
       "group": "iphone-18-pro",
@@ -2686,9 +2697,9 @@
         "height": 1520
       },
       "boundingBox": {
-        "left": 1436,
+        "left": 1442,
         "top": 153,
-        "width": 955,
+        "width": 890,
         "height": 1367
       },
       "modelHeight": 1367,
@@ -2696,7 +2707,7 @@
       "groupScale": 0.7022677395757132,
       "appliedScale": 0.7022677395757132,
       "rendered": {
-        "width": 671,
+        "width": 625,
         "height": 960
       },
       "warnings": [

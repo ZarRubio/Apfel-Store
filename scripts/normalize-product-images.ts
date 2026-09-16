@@ -56,7 +56,19 @@ function removeExteriorSolid(data: Buffer, width: number, height: number) {
   };
   for (let x = 0; x < width; x++) { sample(x); sample((height - 1) * width + x); }
   for (let y = 0; y < height; y++) { sample(y * width); sample(y * width + width - 1); }
-  const backdrop = [...colors.values()].sort((a, b) => b.count - a.count)[0]?.rgb ?? [255, 255, 255];
+  const borderPixels = width * 2 + height * 2;
+  // JPEG exports may have both an off-white studio area and pure-white side
+  // gutters. Treat the dominant border clusters as separate backdrops with a
+  // tight tolerance. A single broad tolerance can leak through a silver
+  // device edge and erase the product itself.
+  const backdrops = [...colors.values()]
+    .sort((a, b) => b.count - a.count)
+    .filter(color => color.count >= borderPixels * 0.04)
+    .slice(0, 4)
+    .map(color => color.rgb);
+  if (!backdrops.length) backdrops.push([255, 255, 255]);
+  const matchesBackdrop = (offset: number) => backdrops.some(backdrop =>
+    backdrop.every((channel, index) => Math.abs(data[offset + index] - channel) <= 8));
   const visited = new Uint8Array(width * height);
   const queue = new Uint32Array(width * height);
   let head = 0, tail = 0;
@@ -64,7 +76,7 @@ function removeExteriorSolid(data: Buffer, width: number, height: number) {
     if (visited[pixel]) return;
     visited[pixel] = 1;
     const offset = pixel * 4;
-    if (data[offset + 3] !== 0 && !backdrop.every((channel, index) => Math.abs(data[offset + index] - channel) <= 18)) return;
+    if (data[offset + 3] !== 0 && !matchesBackdrop(offset)) return;
     data[offset + 3] = 0;
     queue[tail++] = pixel;
   };
