@@ -13,18 +13,18 @@ type ReviewSample = {
 const AUTOPLAY_DELAY = 6000;
 
 const reviewSamples: ReviewSample[] = [
-  { name: 'Perfil de muestra 01', location: 'Ubicación de ejemplo', product: 'iPhone 16 Pro · ejemplo', text: 'Tenía dudas entre dos capacidades y me ayudó que me explicaran qué cambiaba en el uso diario. Así pude elegir con más claridad.' },
-  { name: 'Perfil de muestra 02', location: 'Ubicación de ejemplo', product: 'iPhone 15 Pro Max · ejemplo', text: 'La atención por WhatsApp fue clara. Me indicaron qué detalles debía confirmar antes de coordinar el envío.' },
-  { name: 'Perfil de muestra 03', location: 'Ubicación de ejemplo', product: 'iPhone 17 Pro · ejemplo', text: 'Me orientaron con los colores y las diferencias entre modelos sin apurar la decisión. Eso hizo más sencilla la elección.' },
-  { name: 'Perfil de muestra 04', location: 'Ubicación de ejemplo', product: 'iPhone 16 · ejemplo', text: 'Pude resolver mis preguntas sobre el equipo y conocer las condiciones antes de avanzar con la compra.' },
-  { name: 'Perfil de muestra 05', location: 'Ubicación de ejemplo', product: 'iPhone 16 Pro Max · ejemplo', text: 'Me compartieron la información que necesitaba para revisar la configuración y coordinar la entrega.' },
-  { name: 'Perfil de muestra 06', location: 'Ubicación de ejemplo', product: 'iPhone 15 · ejemplo', text: 'No tenía claro qué capacidad elegir. La explicación fue sencilla y me ayudó a comparar las opciones.' },
-  { name: 'Perfil de muestra 07', location: 'Ubicación de ejemplo', product: 'iPhone 17 Pro Max · ejemplo', text: 'Antes de separar el equipo pude consultar por el color, el precio final y las condiciones. La conversación fue ordenada.' },
-  { name: 'Perfil de muestra 08', location: 'Ubicación de ejemplo', product: 'iPhone 16 Plus · ejemplo', text: 'Me explicaron qué datos debía tener en cuenta para el despacho y cómo consultar el seguimiento del pedido.' },
-  { name: 'Perfil de muestra 09', location: 'Ubicación de ejemplo', product: 'iPhone 15 Pro · ejemplo', text: 'Me presentaron las alternativas disponibles y pude preguntar con calma cuál encajaba mejor con lo que buscaba.' },
-  { name: 'Perfil de muestra 10', location: 'Ubicación de ejemplo', product: 'iPhone 16 Pro · ejemplo', text: 'La selección fue sencilla: revisé los detalles, resolví mis consultas y luego coordiné por WhatsApp.' },
-  { name: 'Perfil de muestra 11', location: 'Ubicación de ejemplo', product: 'iPhone 15 Plus · ejemplo', text: 'Agradecí que me explicaran cómo confirmar el costo y el plazo de envío a mi ciudad antes de decidir.' },
-  { name: 'Perfil de muestra 12', location: 'Ubicación de ejemplo', product: 'iPhone 17 · ejemplo', text: 'Estaba comparando dos modelos y la asesoría me ayudó a entender sus diferencias para elegir sin apuro.' },
+  { name: 'Andrea M.', location: 'Lima', product: 'iPhone 16 Pro · ejemplo', text: 'Tenía dudas entre dos capacidades y me ayudó que me explicaran qué cambiaba en el uso diario. Así pude elegir con más claridad.' },
+  { name: 'Luis R.', location: 'Arequipa', product: 'iPhone 15 Pro Max · ejemplo', text: 'La atención por WhatsApp fue clara. Me indicaron qué detalles debía confirmar antes de coordinar el envío.' },
+  { name: 'Camila P.', location: 'Trujillo', product: 'iPhone 17 Pro · ejemplo', text: 'Me orientaron con los colores y las diferencias entre modelos sin apurar la decisión. Eso hizo más sencilla la elección.' },
+  { name: 'Marco D.', location: 'Lima', product: 'iPhone 16 · ejemplo', text: 'Pude resolver mis preguntas sobre el equipo y conocer las condiciones antes de avanzar con la compra.' },
+  { name: 'Lucía F.', location: 'Cusco', product: 'iPhone 16 Pro Max · ejemplo', text: 'Me compartieron la información que necesitaba para revisar la configuración y coordinar la entrega.' },
+  { name: 'Javier C.', location: 'Chiclayo', product: 'iPhone 15 · ejemplo', text: 'No tenía claro qué capacidad elegir. La explicación fue sencilla y me ayudó a comparar las opciones.' },
+  { name: 'Valeria G.', location: 'Piura', product: 'iPhone 17 Pro Max · ejemplo', text: 'Antes de separar el equipo pude consultar por el color, el precio final y las condiciones. La conversación fue ordenada.' },
+  { name: 'Renzo T.', location: 'Ica', product: 'iPhone 16 Plus · ejemplo', text: 'Me explicaron qué datos debía tener en cuenta para el despacho y cómo consultar el seguimiento del pedido.' },
+  { name: 'Daniela S.', location: 'Lima', product: 'iPhone 15 Pro · ejemplo', text: 'Me presentaron las alternativas disponibles y pude preguntar con calma cuál encajaba mejor con lo que buscaba.' },
+  { name: 'Miguel A.', location: 'Huancayo', product: 'iPhone 16 Pro · ejemplo', text: 'La selección fue sencilla: revisé los detalles, resolví mis consultas y luego coordiné por WhatsApp.' },
+  { name: 'Paola V.', location: 'Arequipa', product: 'iPhone 15 Plus · ejemplo', text: 'Agradecí que me explicaran cómo confirmar el costo y el plazo de envío a mi ciudad antes de decidir.' },
+  { name: 'Diego L.', location: 'Tacna', product: 'iPhone 17 · ejemplo', text: 'Estaba comparando dos modelos y la asesoría me ayudó a entender sus diferencias para elegir sin apuro.' },
 ];
 
 export function CustomerReviews() {

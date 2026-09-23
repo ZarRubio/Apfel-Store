@@ -20,8 +20,8 @@ function SocialIcon({ name }: { name: 'instagram' | 'tiktok' | 'facebook' }) {
 export function SocialLinks({ label = 'Redes sociales' }: { label?: string }) {
   return <div className="social-links" aria-label={label}>
     {socialNetworks.map((network) => (
-      <a key={network.name} className="social-link" href={network.href} target="_blank" rel="noreferrer">
-        <span className="social-mark"><SocialIcon name={network.icon} /></span>
+      <a key={network.name} className="social-link" href={network.href} target="_blank" rel="noreferrer" aria-label={`Visitar ${network.name} de Apfel Store`}>
+        <span className={`social-mark social-mark--${network.icon}`}><SocialIcon name={network.icon} /></span>
         <span>{network.name}</span>
       </a>
     ))}
