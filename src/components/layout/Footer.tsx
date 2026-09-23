@@ -190,7 +190,7 @@ export function Footer() {
           <div className="footer-legal">
             <span>© {currentYear} Apfel Store. Todos los derechos reservados.</span>
             <span className="footer-separator" aria-hidden="true">·</span>
-            <span>Precios y disponibilidad por confirmar.</span>
+            <span>Precios referenciales. Consulta disponibilidad, garantía y entrega con un asesor.</span>
           </div>
         </div>
       </div>

@@ -26,7 +26,7 @@ export const SPEC_GROUPS: SpecGroupDef[] = [
       { id: 'display', label: 'Pantalla', getValue: (product) => getVerifiedSpec(product, 'Pantalla') },
       { id: 'processor', label: 'Procesador', getValue: (product) => getVerifiedSpec(product, 'Procesador') },
       { id: 'camera', label: 'Cámara', getValue: (product) => getVerifiedSpec(product, 'Cámara') },
-      { id: 'battery', label: 'Batería', getValue: (product) => getVerifiedSpec(product, 'Batería') },
+      { id: 'battery', label: 'Autonomía', getValue: (product) => getVerifiedSpec(product, 'Autonomía') },
       { id: 'connectivity', label: 'Conectividad', getValue: (product) => getVerifiedSpec(product, 'Conectividad') },
     ],
   },

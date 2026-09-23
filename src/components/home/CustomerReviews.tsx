@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useEffect, useRef, useState } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@/components/icons/UiIcons';
@@ -13,18 +13,18 @@ type ReviewSample = {
 const AUTOPLAY_DELAY = 6000;
 
 const reviewSamples: ReviewSample[] = [
-  { name: 'María P.', location: 'Lima', product: 'iPhone 16 Pro', text: 'Me ayudaron a comparar capacidades y colores con calma. La coordinación por WhatsApp fue clara desde el inicio.' },
-  { name: 'Diego R.', location: 'Arequipa', product: 'iPhone 15 Pro Max', text: 'Consulté por un modelo específico y resolvieron mis dudas antes de coordinar el envío a mi ciudad.' },
-  { name: 'Valeria M.', location: 'Trujillo', product: 'iPhone 17 Pro', text: 'Me explicaron las opciones disponibles y pude elegir la configuración que mejor se ajustaba a lo que necesitaba.' },
-  { name: 'Carlos A.', location: 'Lima', product: 'iPhone 16', text: 'La atención fue rápida y recibí la información del equipo antes de confirmar la compra y la entrega.' },
-  { name: 'Luciana G.', location: 'Cusco', product: 'iPhone 16 Pro Max', text: 'Me enviaron los detalles para revisar el equipo y pude seguir la coordinación del despacho por WhatsApp.' },
-  { name: 'Jorge S.', location: 'Chiclayo', product: 'iPhone 15', text: 'Tenía dudas sobre la capacidad y me orientaron con una explicación sencilla. Todo quedó coordinado en el mismo chat.' },
-  { name: 'Andrea C.', location: 'Lima', product: 'iPhone 17 Pro Max', text: 'Pude confirmar color, capacidad y condiciones antes de separar el equipo. La atención fue muy ordenada.' },
-  { name: 'Renato V.', location: 'Piura', product: 'iPhone 16 Plus', text: 'La comunicación durante el envío fue constante y tuve a la mano los datos necesarios para hacer seguimiento.' },
-  { name: 'Camila F.', location: 'Ica', product: 'iPhone 15 Pro', text: 'Me mostraron las alternativas disponibles y resolvieron cada consulta antes de coordinar la compra.' },
-  { name: 'Sebastián L.', location: 'Lima', product: 'iPhone 16 Pro', text: 'El proceso fue directo: elegí la configuración, confirmé los detalles y coordinamos la entrega por WhatsApp.' },
-  { name: 'Fernanda T.', location: 'Huancayo', product: 'iPhone 15 Plus', text: 'Me explicaron cómo se realizaría el despacho y recibí los datos necesarios para seguir el pedido hasta mi ciudad.' },
-  { name: 'Alonso M.', location: 'Lima', product: 'iPhone 17', text: 'Comparé dos modelos con ayuda del asesor y pude decidir sin apuros. La comunicación fue rápida y sencilla.' },
+  { name: 'Perfil de muestra 01', location: 'Ubicación de ejemplo', product: 'iPhone 16 Pro · ejemplo', text: 'Tenía dudas entre dos capacidades y me ayudó que me explicaran qué cambiaba en el uso diario. Así pude elegir con más claridad.' },
+  { name: 'Perfil de muestra 02', location: 'Ubicación de ejemplo', product: 'iPhone 15 Pro Max · ejemplo', text: 'La atención por WhatsApp fue clara. Me indicaron qué detalles debía confirmar antes de coordinar el envío.' },
+  { name: 'Perfil de muestra 03', location: 'Ubicación de ejemplo', product: 'iPhone 17 Pro · ejemplo', text: 'Me orientaron con los colores y las diferencias entre modelos sin apurar la decisión. Eso hizo más sencilla la elección.' },
+  { name: 'Perfil de muestra 04', location: 'Ubicación de ejemplo', product: 'iPhone 16 · ejemplo', text: 'Pude resolver mis preguntas sobre el equipo y conocer las condiciones antes de avanzar con la compra.' },
+  { name: 'Perfil de muestra 05', location: 'Ubicación de ejemplo', product: 'iPhone 16 Pro Max · ejemplo', text: 'Me compartieron la información que necesitaba para revisar la configuración y coordinar la entrega.' },
+  { name: 'Perfil de muestra 06', location: 'Ubicación de ejemplo', product: 'iPhone 15 · ejemplo', text: 'No tenía claro qué capacidad elegir. La explicación fue sencilla y me ayudó a comparar las opciones.' },
+  { name: 'Perfil de muestra 07', location: 'Ubicación de ejemplo', product: 'iPhone 17 Pro Max · ejemplo', text: 'Antes de separar el equipo pude consultar por el color, el precio final y las condiciones. La conversación fue ordenada.' },
+  { name: 'Perfil de muestra 08', location: 'Ubicación de ejemplo', product: 'iPhone 16 Plus · ejemplo', text: 'Me explicaron qué datos debía tener en cuenta para el despacho y cómo consultar el seguimiento del pedido.' },
+  { name: 'Perfil de muestra 09', location: 'Ubicación de ejemplo', product: 'iPhone 15 Pro · ejemplo', text: 'Me presentaron las alternativas disponibles y pude preguntar con calma cuál encajaba mejor con lo que buscaba.' },
+  { name: 'Perfil de muestra 10', location: 'Ubicación de ejemplo', product: 'iPhone 16 Pro · ejemplo', text: 'La selección fue sencilla: revisé los detalles, resolví mis consultas y luego coordiné por WhatsApp.' },
+  { name: 'Perfil de muestra 11', location: 'Ubicación de ejemplo', product: 'iPhone 15 Plus · ejemplo', text: 'Agradecí que me explicaran cómo confirmar el costo y el plazo de envío a mi ciudad antes de decidir.' },
+  { name: 'Perfil de muestra 12', location: 'Ubicación de ejemplo', product: 'iPhone 17 · ejemplo', text: 'Estaba comparando dos modelos y la asesoría me ayudó a entender sus diferencias para elegir sin apuro.' },
 ];
 
 export function CustomerReviews() {
@@ -112,7 +112,7 @@ export function CustomerReviews() {
           <span className="eyebrow">RESEÑAS Y VALORACIONES</span>
           <h2 id="reviews-title">Lo que dicen de la experiencia.</h2>
         </div>
-        <p><strong>Vista previa.</strong> Estas 12 opiniones muestran el formato final. Deben sustituirse por testimonios verificados antes de publicar.</p>
+        <p><strong>Textos ficticios de demostración.</strong> No corresponden a clientes, compras ni calificaciones reales. Reemplázalos por opiniones auténticas antes de publicar.</p>
       </div>
 
       <div className="reviews-toolbar">
@@ -125,18 +125,18 @@ export function CustomerReviews() {
       </div>
 
       <div ref={trackRef} className="reviews-carousel" aria-label="Reseñas de clientes" aria-live="off">
-        {reviewSamples.map((review, index) => <article key={`${review.name}-${review.product}`} className="review-card">
+        {reviewSamples.map((review) => <article key={`${review.name}-${review.product}`} className="review-card">
           <div className="review-card-body">
             <div className="review-card-top">
-              <span className="review-stars" aria-label="Ejemplo de valoración de 5 sobre 5">★★★★★</span>
-              <span className="review-sample-badge">Muestra {String(index + 1).padStart(2, '0')}</span>
+              <span className="review-stars" aria-label="Estrellas de demostración; no representan calificaciones reales">★★★★★</span>
+              <span className="review-sample-badge">Texto de ejemplo</span>
             </div>
             <blockquote>“{review.text}”</blockquote>
             <footer>
               <span className="review-avatar" aria-hidden="true">{review.name.charAt(0)}</span>
               <div>
                 <strong>{review.name} · {review.location}</strong>
-                <span>{review.product} · contenido de muestra</span>
+                <span>{review.product} · contenido de demostración</span>
               </div>
             </footer>
           </div>

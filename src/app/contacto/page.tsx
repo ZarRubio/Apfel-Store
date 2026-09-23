@@ -60,7 +60,7 @@ export default function ContactPage() {
         </div>
         <div className="contact-detail-card contact-social-card">
           <span className="contact-channel-label"><SocialIcon /> Redes sociales</span>
-          <strong>Estamos preparando nuestros perfiles</strong>
+          <strong>Síguenos en redes</strong>
           <SocialLinks label="Próximas redes sociales de Apfel Store" />
         </div>
       </div>

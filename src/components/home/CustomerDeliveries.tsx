@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useEffect, useRef, useState } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@/components/icons/UiIcons';
@@ -97,9 +97,9 @@ export function CustomerDeliveries() {
       <div className="deliveries-heading">
         <div>
           <span className="eyebrow">ENTREGAS APFEL STORE</span>
-          <h2 id="deliveries-title">Momentos reales, clientes reales.</h2>
+          <h2 id="deliveries-title">Un espacio para tus próximas entregas.</h2>
         </div>
-        <p><strong>Sección preparada.</strong> Cada espacio se reemplazará por una fotografía autorizada del cliente al recibir su equipo.</p>
+        <p><strong>Vista previa del carrusel.</strong> Estas tarjetas son espacios de muestra; agrega fotos de entregas reales con autorización antes de publicar.</p>
       </div>
 
       <div className="deliveries-toolbar">

@@ -35,4 +35,5 @@ export interface Product {
   illustrativeImages?: boolean;
   defaultColor?: string;
   specifications?: ProductSpecification[];
+  specificationsSource?: string;
 }

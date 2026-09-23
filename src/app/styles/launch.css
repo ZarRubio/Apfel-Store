@@ -1,4 +1,4 @@
-/* iPhone 18 launch: distinct visual treatment without changing existing card geometry. */
+﻿/* iPhone 18 launch: distinct visual treatment without changing existing card geometry. */
 .iphone18-hero { background:radial-gradient(ellipse at 78% 48%,#292b34 0%,#141416 54%,#101012 100%); }
 .iphone18-hero .legacy-hero-copy { width:49%; }
 .iphone18-hero h1 { font-size:clamp(56px,6.2vw,92px); line-height:1.02; }
@@ -71,3 +71,6 @@
   .hero-color-picker button,.hero-color-picker button>span { transition-duration:0ms; }
 }
 @keyframes hero-fade { from { opacity:0; } to { opacity:1; } }
+
+@media(hover:none) { .hero-color-picker button { width:44px; height:44px; } }
+.hero-color-picker strong { font-size:11px; }

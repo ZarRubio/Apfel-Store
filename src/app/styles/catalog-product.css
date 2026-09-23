@@ -11,7 +11,7 @@ h1,h2,h3 { text-wrap:balance; }
 .eyebrow { color:var(--muted); font-size:.75rem; }
 :where(.hero-section,.cta-section,.contact-band,.spec-section,.site-footer) .eyebrow { color:var(--silver); }
 .page-header em { color:#66666e; }
-.preview-bar { height:auto; min-height:28px; padding:6px 16px; text-align:center; font-size:.75rem; }
+
 .desktop-nav a { padding:12px 0; border-bottom:2px solid transparent; }
 .desktop-nav a[aria-current=page] { color:var(--foreground); border-bottom-color:currentColor; }
 .mobile-nav[hidden] { display:none; }
@@ -78,7 +78,7 @@ h1,h2,h3 { text-wrap:balance; }
 .availability.unavailable span { background:var(--muted); }
 .detail-price strong,.product-card strong,.mobile-buy-bar>span { font-variant-numeric:tabular-nums; }
 .site-footer .muted { color:#909097; }
-@media(max-width:900px) { .footer-grid { grid-template-columns:1.5fr 1fr 1fr; } .footer-nav:last-child { grid-column:1 / -1; } .footer-nav:last-child .footer-link-list { flex-direction:row; flex-wrap:wrap; gap:8px 20px; } }
+
 @media(max-width:900px) {
   .product-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
   .featured-carousel-slide { flex-basis:calc((100% - 18px) / 2); }
@@ -93,7 +93,7 @@ h1,h2,h3 { text-wrap:balance; }
   .filter-group { gap:16px 12px; }
   .catalog-toolbar { gap:8px; }
   .mobile-nav { max-height:calc(100dvh - 100px); overflow-y:auto; gap:4px; }
-  .mobile-buy-bar { padding-bottom:calc(12px + env(safe-area-inset-bottom)); }
+   .mobile-buy-bar { min-height:64px; padding-bottom:calc(12px + env(safe-area-inset-bottom)); }
   body:has(.mobile-buy-bar) { padding-bottom:calc(88px + env(safe-area-inset-bottom)); }
   html:has(.mobile-buy-bar) { scroll-padding-bottom:110px; }
   .legacy-hero-copy p,.editorial-copy p { font-size:1rem; }
@@ -107,3 +107,5 @@ h1,h2,h3 { text-wrap:balance; }
   .product-card:hover,.product-card:hover .product-card-image img { transform:none; }
 }
 
+
+.spec-source-link { display:inline-flex; align-items:center; gap:8px; min-height:44px; margin-top:28px; color:#e7e7eb; font-size:.9rem; text-decoration:underline; text-underline-offset:4px; }

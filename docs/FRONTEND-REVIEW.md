@@ -1,19 +1,18 @@
 ﻿# Revisión de frontend — Apfel Store
 
-## Resuelto
+## Trabajo aplicado
 
-- **Fotografías:** Sharp genera WebP de 1200 × 1200 con transparencia y escala compartida por modelo. Cards, detalle y miniaturas resuelven sus rutas mediante un manifiesto generado. Las 35 compensaciones CSS anteriores se retiraron; los originales permanecen intactos. El proceso y sus límites están descritos en `docs/PRODUCT-IMAGES.md`.
-- **URL y rastreo:** `src/constants/site.ts` y la metadata usan la URL privada de Sites en lugar de `apfel-store.example`. Se mantiene `noindex` y el bloqueo en `robots.txt` mientras los datos comerciales estén pendientes.
-- **Información comercial:** la disponibilidad de los 21 modelos es “por confirmar”. El filtro de disponibilidad solo aparece cuando existan datos confirmados. La sección Ofertas muestra únicamente dos modelos que tienen un precio anterior de referencia; la consulta por WhatsApp pide confirmación del precio final, inventario, garantía y entrega.
-- **Documentación:** `docs/DESIGN.md` y `README.md` describen ahora los 21 modelos, los filtros reales, el carrusel manual y la situación comercial de la vista privada.
+- El catálogo contiene 23 modelos y 100 variantes de color. Se comprobaron las referencias de imagen presentes en el repositorio.
+- La indexación está habilitada. La URL pública es configurable con `NEXT_PUBLIC_SITE_URL` y no apunta al dominio anterior de Sites; definir el dominio Hostinger antes del build.
+- Se conservaron los carruseles de reseñas y entregas para revisar el diseño. Los textos, nombres, calificaciones y fotos están marcados como demostración y deben reemplazarse por contenido autorizado antes de publicar.
+- La ficha permite configurar producto por URL, enlaza a especificaciones Apple y muestra la barra de contacto móvil cuando el CTA principal sale de pantalla.
+- Se ajustó el footer para que las redes sigan siendo legibles en pantallas estrechas y se quitaron reglas móviles en conflicto.
+- El servicio técnico muestra una entrada activa para consultas, sin insinuar que hay reparaciones autorizadas ni condiciones no confirmadas.
 
-## Por confirmar antes de abrir al público
+## Pendiente de cierre comercial
 
-1. Dominio propio, precios finales, inventario, garantía y condiciones de entrega. No se han inventado ni publicado como confirmados.
-2. Permisos de uso de las fotografías. `ASSET-SOURCES.json` registra el origen de los WebP externos; la autorización de uso no consta en el repositorio. Los JPG conservan diferencias reales de luz, perspectiva y calidad que no se pueden eliminar solo con escala y centrado.
-3. Una revisión visual en móvil y la fotografía definitiva de producto antes del lanzamiento comercial.
+Consultar `docs/PRODUCTION-CHECKLIST.md` para precio, disponibilidad, garantías, pagos y entregas. Consultar `docs/PRODUCTION-ASSETS.md` para fotografías reales de clientes, reseñas consentidas y videos. También se debe confirmar el permiso comercial y la correspondencia exacta de cada imagen de producto.
 
-## Verificación
+## Comprobaciones
 
-- 21 modelos, 92 colores, 92 rutas de fotografía distintas, sin imágenes ausentes.
-- ESLint y compilación estática de Next.js correctos.
+La comprobación de archivos encontró rutas de producto existentes; no equivale a confirmar stock. Ejecutar `npm run lint` y `npm run build` antes de publicar.

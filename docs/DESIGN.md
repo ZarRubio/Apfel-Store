@@ -1,27 +1,19 @@
 ﻿# Diseño y contenido actual
 
-## Identidad
+## Identidad y recorrido
 
-Apfel Store usa negro carbón (`#111113`), grafito (`#242529`), plata (`#C5C7CC`), gris claro (`#F5F5F7`) y blanco. El logo original se conserva sin deformaciones.
+Apfel Store usa negro carbón (`#111113`), grafito (`#242529`), plata (`#C5C7CC`), gris claro (`#F5F5F7`) y blanco. El logo original conserva sus proporciones.
 
-## Recorrido de compra
+La portada conduce al catálogo, a la comparación y a WhatsApp. El catálogo ofrece 23 modelos, 100 variantes de color, filtros y URLs compartibles; la ficha permite seleccionar color y capacidad. Precios y disponibilidad se consultan con un asesor cuando no hay datos confirmados. La documentación técnica de cada iPhone enlaza con Apple.
 
-- La portada presenta un iPhone con recorte transparente, precio de referencia y acceso directo al catálogo.
-- El catálogo ofrece 21 modelos, filtros por serie y ofertas con precio anterior, y orden por precio o generación. Los filtros activos quedan en la URL. No hay búsqueda de texto.
-- La ficha permite elegir color y capacidad; la imagen cambia con el color. El precio mostrado es referencial y la consulta continúa por WhatsApp.
-- El carrusel de destacados se desplaza manualmente con botones, teclado o gesto táctil. No avanza solo.
-- La portada, las tarjetas y el cambio de imagen usan movimiento breve. Se respeta `prefers-reduced-motion`.
+La publicación se compila localmente para subirla manualmente a Hostinger. Define `NEXT_PUBLIC_SITE_URL` con el dominio final antes del build para generar canonical y sitemap correctos. El índice está permitido.
 
-## Fotografías
+## Imágenes y contenido
 
-Las 92 opciones de color usan imágenes WebP normalizadas sobre un canvas transparente de 1200 × 1200. Sharp detecta sus límites, calibra la resolución de origen y calcula una escala común por modelo. Las cards tienen un marco cuadrado; detalle y miniaturas usan los mismos archivos sin compensaciones CSS individuales. La iluminación y la perspectiva dependen de las fotografías originales. Véase `docs/PRODUCT-IMAGES.md`.
+El catálogo dispone de variantes WebP normalizadas. Sus JPG originales y permisos de uso deben verificarse antes de publicar. El inicio conserva carruseles de demostración de reseñas y entregas, claramente señalados como muestra, para revisar la composición. Sustituir nombres, textos, calificaciones y tarjetas de fotografía por contenido real autorizado antes de publicar.
 
-`ASSET-SOURCES.json` registra la procedencia de los WebP usados en la portada y en parte del catálogo. Los permisos de uso de esas imágenes y de los JPG del catálogo siguen por confirmar antes de abrir la tienda al público.
+Los materiales que faltan están enumerados en `docs/PRODUCTION-ASSETS.md`. Los datos comerciales que faltan o no están confirmados están en `docs/PRODUCTION-CHECKLIST.md`.
 
-## Datos comerciales
+## Mantenimiento
 
-La URL canónica usa la dirección privada actual de Sites. La vista conserva `noindex` y `robots.txt` bloquea el rastreo. Los 21 modelos tienen disponibilidad sin confirmar; por eso el sitio no ofrece un filtro de inventario hasta contar con datos reales. Solo dos modelos tienen una comparación de precios de referencia para mostrarse en Ofertas. El asesor confirma precio final, garantía, disponibilidad y entrega.
-
-## Validación
-
-ESLint, compilación de Next.js para Sites, existencia de las fotografías asociadas a los colores y rutas principales. La prueba visual de navegador móvil queda pendiente antes de un lanzamiento comercial.
+El detalle de la normalización de imágenes está en `docs/PRODUCT-IMAGES.md`. Actualizar este documento al incorporar nuevos modelos, imágenes, videos o contenido real de clientes.

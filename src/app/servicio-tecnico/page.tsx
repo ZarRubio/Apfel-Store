@@ -6,7 +6,7 @@ import '../styles/service.css';
 
 export const metadata: Metadata = {
   title: 'Servicio técnico',
-  description: 'Conoce la próxima área de servicio técnico de Apfel Store para iPhone y MacBook.',
+  description: 'Atención técnica para iPhone y MacBook: solicita una evaluación, diagnóstico y cotización por WhatsApp.',
 };
 
 const serviceContactUrl = getWhatsAppUrl({
@@ -23,8 +23,8 @@ const commonIssues = [
 const servicePrinciples = [
   {
     number: '01',
-    title: 'Atención ágil',
-    description: 'Buscamos que recibas orientación clara desde el primer contacto y conozcas el siguiente paso.',
+    title: 'Reparaciones ágiles',
+    description: 'Coordinamos la evaluación y te explicamos el proceso y el plazo estimado para tu equipo.',
     icon: ClockIcon,
   },
   {
@@ -57,10 +57,10 @@ export default function TechnicalServicePage() {
 
           <div className="service-hero-copy">
             <span className="service-status">
-              <span aria-hidden="true" /> Información en preparación
+              <span aria-hidden="true" /> Atención para equipos Apple
             </span>
             <p>
-              ¿Pantalla rota, batería con poca duración o un equipo más lento de lo habitual? Cuéntanos qué sucede y te orientaremos sobre los próximos pasos.
+              ¿Pantalla rota, batería que dura poco o un equipo más lento? Solicita una evaluación y recibe un diagnóstico claro antes de autorizar cualquier reparación.
             </p>
             <a
               className="button button-light"
@@ -69,16 +69,16 @@ export default function TechnicalServicePage() {
               rel="noreferrer"
               data-event="whatsapp_service_click"
             >
-              <WhatsAppIcon /> Consultar por WhatsApp <span aria-hidden="true">↗</span>
+              <WhatsAppIcon /> Solicitar diagnóstico <span aria-hidden="true">↗</span>
             </a>
-            <span className="service-contact-note">+51 921 078 492 · Atención por WhatsApp las 24 horas</span>
+        <span className="service-contact-note">+51 921 078 492 · Consultas por WhatsApp las 24 horas</span>
           </div>
         </div>
       </section>
 
       <section className="service-intro section container" aria-labelledby="service-intro-title">
         <div className="service-intro-heading">
-          <span className="eyebrow">ESTAMOS PREPARÁNDONOS</span>
+          <span className="eyebrow">IPHONE Y MACBOOK</span>
           <h2 id="service-intro-title">
             Cuéntanos qué le pasa
             <br />
@@ -89,7 +89,7 @@ export default function TechnicalServicePage() {
         <div className="service-intro-copy">
           <SmartphoneIcon aria-hidden="true" />
           <p>
-            Desde el iPhone que te acompaña todos los días hasta tu MacBook, estamos definiendo una atención técnica enfocada en evaluar cada caso con claridad.
+            Atendemos consultas sobre iPhone y MacBook. Cuéntanos qué sucede para orientarte sobre el diagnóstico, las opciones de reparación y el cuidado que necesita tu equipo.
           </p>
           <div className="service-issue-list" aria-label="Consultas frecuentes">
             {commonIssues.map((issue) => <span key={issue}>{issue}</span>)}
@@ -107,7 +107,7 @@ export default function TechnicalServicePage() {
               <em>Cuidado en cada paso.</em>
             </h2>
             <p>
-              Publicaremos los equipos admitidos, servicios, precios, tiempos y condiciones cuando el área esté completamente confirmada.
+              Primero evaluamos el equipo. Antes de empezar, recibirás la explicación del trabajo, su precio, el plazo estimado y las condiciones aplicables.
             </p>
           </div>
 
@@ -125,10 +125,10 @@ export default function TechnicalServicePage() {
           </div>
 
           <div className="service-disclaimer">
-            <strong>Servicio en preparación.</strong>
-            <p>Por el momento no recibimos equipos desde esta página. Escríbenos para conocer las novedades y el alcance disponible.</p>
+            <strong>Agenda una evaluación.</strong>
+            <p>Escríbenos con el modelo del equipo y una breve descripción de la falla. Te indicaremos cómo continuar y qué revisar antes de entregarlo.</p>
             <a href={serviceContactUrl} target="_blank" rel="noreferrer" data-event="whatsapp_service_click">
-              <WhatsAppIcon /> Escríbenos al +51 921 078 492 <span aria-hidden="true">↗</span>
+              <WhatsAppIcon /> Contactar al +51 921 078 492 <span aria-hidden="true">↗</span>
             </a>
           </div>
         </div>
