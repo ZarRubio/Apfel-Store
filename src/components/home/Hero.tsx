@@ -19,6 +19,7 @@ export function Hero({ product }: { product: Product }) {
   }, [product.colors, product.defaultColor]);
   const [activeColor, setActiveColor] = useState(0);
   const [interactionPaused, setInteractionPaused] = useState(false);
+  const [pointerWithin, setPointerWithin] = useState(false);
   const [documentVisible, setDocumentVisible] = useState(true);
   const color = colors[activeColor] ?? colors[0];
 
@@ -37,15 +38,17 @@ export function Hero({ product }: { product: Product }) {
   }, [colors]);
 
   useEffect(() => {
-    if (interactionPaused || !documentVisible || colors.length < 2) return;
+    if (interactionPaused || pointerWithin || reduceMotion || !documentVisible || colors.length < 2) return;
     const timer = window.setTimeout(() => setActiveColor((current) => (current + 1) % colors.length), COLOR_CHANGE_DELAY);
     return () => window.clearTimeout(timer);
-  }, [activeColor, colors.length, documentVisible, interactionPaused]);
+  }, [activeColor, colors.length, documentVisible, interactionPaused, pointerWithin, reduceMotion]);
 
   if (!color) return null;
 
   return <section
     className="hero-section legacy-hero iphone18-hero hero-animated"
+    onMouseEnter={() => setPointerWithin(true)}
+    onMouseLeave={() => setPointerWithin(false)}
     onFocusCapture={() => setInteractionPaused(true)}
     onBlurCapture={(event) => {
       if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setInteractionPaused(false);

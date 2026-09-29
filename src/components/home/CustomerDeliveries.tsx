@@ -1,46 +1,35 @@
-﻿'use client';
+'use client';
 
+import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@/components/icons/UiIcons';
 
-const AUTOPLAY_DELAY = 6000;
-
-const deliverySlots = [
-  { city: 'Lima', label: 'Entrega coordinada' },
-  { city: 'Arequipa', label: 'Envío a provincia' },
-  { city: 'Trujillo', label: 'Envío a provincia' },
-  { city: 'Cusco', label: 'Envío a provincia' },
-  { city: 'Chiclayo', label: 'Envío a provincia' },
-  { city: 'Piura', label: 'Envío a provincia' },
-];
+const customerPhotos = [
+  'IMG_5027.PNG', 'IMG_5028.PNG', 'IMG_5029.PNG', 'IMG_5031.PNG', 'IMG_5032.PNG',
+  'IMG_5033.PNG', 'IMG_5034.PNG', 'IMG_5035.PNG', 'IMG_5036.PNG', 'IMG_5037.PNG',
+  'IMG_5038.PNG', 'IMG_5039.PNG', 'IMG_5040.PNG', 'IMG_5052.PNG', 'IMG_5069.JPG',
+  'IMG_5070.JPG', 'IMG_5071.JPG', 'IMG_5072.JPG', 'IMG_5073.JPG',
+].map((filename) => `/CLIENTES-20260928T135017Z-1-001/CLIENTES/${filename}`);
 
 export function CustomerDeliveries() {
-  const sectionRef = useRef<HTMLElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const [activeSlide, setActiveSlide] = useState(0);
   const [canGoBack, setCanGoBack] = useState(false);
   const [canGoForward, setCanGoForward] = useState(true);
-  const [userPaused, setUserPaused] = useState(false);
-  const [hovered, setHovered] = useState(false);
-  const [focusWithin, setFocusWithin] = useState(false);
-  const [isInView, setIsInView] = useState(false);
-  const [documentVisible, setDocumentVisible] = useState(true);
 
   const goToSlide = (index: number) => {
     const track = trackRef.current;
     if (!track) return;
-    const nextIndex = Math.max(0, Math.min(index, deliverySlots.length - 1));
+    const nextIndex = Math.max(0, Math.min(index, customerPhotos.length - 1));
     const slide = track.children.item(nextIndex) as HTMLElement | null;
     if (!slide) return;
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     track.scrollTo({ left: slide.offsetLeft - track.offsetLeft, behavior: reduceMotion ? 'auto' : 'smooth' });
-    setActiveSlide(nextIndex);
   };
 
   useEffect(() => {
     const track = trackRef.current;
     if (!track) return;
-
     const updatePosition = () => {
       const slides = Array.from(track.children) as HTMLElement[];
       const closest = slides.reduce((best, slide, index) => {
@@ -51,7 +40,6 @@ export function CustomerDeliveries() {
       setCanGoBack(track.scrollLeft > 2);
       setCanGoForward(track.scrollLeft < track.scrollWidth - track.clientWidth - 2);
     };
-
     updatePosition();
     track.addEventListener('scroll', updatePosition, { passive: true });
     window.addEventListener('resize', updatePosition);
@@ -61,67 +49,31 @@ export function CustomerDeliveries() {
     };
   }, []);
 
-  useEffect(() => {
-    const section = sectionRef.current;
-    if (!section) return;
-    const observer = new IntersectionObserver(([entry]) => setIsInView(entry.isIntersecting), { threshold: .2 });
-    observer.observe(section);
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    const updateVisibility = () => setDocumentVisible(document.visibilityState === 'visible');
-    updateVisibility();
-    document.addEventListener('visibilitychange', updateVisibility);
-    return () => document.removeEventListener('visibilitychange', updateVisibility);
-  }, []);
-
-  useEffect(() => {
-    if (userPaused || hovered || focusWithin || !isInView || !documentVisible || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    const timer = window.setTimeout(() => goToSlide(canGoForward ? activeSlide + 1 : 0), AUTOPLAY_DELAY);
-    return () => window.clearTimeout(timer);
-  }, [activeSlide, canGoForward, documentVisible, focusWithin, hovered, isInView, userPaused]);
-
-  return <section
-    ref={sectionRef}
-    className="deliveries-section section"
-    aria-labelledby="deliveries-title"
-    onMouseEnter={() => setHovered(true)}
-    onMouseLeave={() => setHovered(false)}
-    onFocusCapture={() => setFocusWithin(true)}
-    onBlurCapture={(event) => {
-      if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setFocusWithin(false);
-    }}
-  >
+  return <section className="deliveries-section section" aria-labelledby="deliveries-title">
     <div className="container">
       <div className="deliveries-heading">
         <div>
-          <span className="eyebrow">ENTREGAS APFEL STORE</span>
-          <h2 id="deliveries-title">Un espacio para tus próximas entregas.</h2>
+          <span className="eyebrow">CLIENTES APFEL STORE</span>
+          <h2 id="deliveries-title">Gracias por elegirnos.</h2>
         </div>
-        <p><strong>Vista previa del carrusel.</strong> Estas tarjetas son espacios de muestra; agrega fotos de entregas reales con autorización antes de publicar.</p>
+        <p>Algunos momentos de nuestros clientes con sus nuevos equipos.</p>
       </div>
 
       <div className="deliveries-toolbar">
-        <p><span>{String(activeSlide + 1).padStart(2, '0')}</span> / {String(deliverySlots.length).padStart(2, '0')} · {userPaused ? 'en pausa' : 'avance automático'}</p>
-        <div className="deliveries-controls" aria-label="Controles del carrusel de entregas">
-          <button type="button" onClick={() => goToSlide(activeSlide - 1)} disabled={!canGoBack} aria-label="Ver entrega anterior"><ChevronLeftIcon /></button>
-          <button type="button" onClick={() => setUserPaused((paused) => !paused)} aria-label={userPaused ? 'Reanudar carrusel de entregas' : 'Pausar carrusel de entregas'} aria-pressed={userPaused}>{userPaused ? '▶' : 'Ⅱ'}</button>
-          <button type="button" onClick={() => goToSlide(activeSlide + 1)} disabled={!canGoForward} aria-label="Ver entrega siguiente"><ChevronRightIcon /></button>
+        <p className="carousel-status" aria-live="polite">{String(activeSlide + 1).padStart(2, '0')} / {String(customerPhotos.length).padStart(2, '0')} · Usa flechas o desliza</p>
+        <div className="deliveries-controls" aria-label="Controles de fotos de clientes">
+          <button type="button" onClick={() => goToSlide(activeSlide - 1)} disabled={!canGoBack} aria-label="Ver foto anterior"><ChevronLeftIcon /></button>
+          <button type="button" onClick={() => goToSlide(activeSlide + 1)} disabled={!canGoForward} aria-label="Ver foto siguiente"><ChevronRightIcon /></button>
         </div>
       </div>
 
-      <div ref={trackRef} className="deliveries-carousel" aria-label="Fotografías de entregas" aria-live="off">
-        {deliverySlots.map((delivery, index) => <article className="delivery-card" key={`${delivery.city}-${index}`}>
-          <div className="delivery-photo-placeholder">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7.5A2.5 2.5 0 0 1 6.5 5h2l1.2-1.5h4.6L15.5 5h2A2.5 2.5 0 0 1 20 7.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 16.5v-9Z"/><circle cx="12" cy="12" r="3.5"/></svg>
-            <span>Fotografía pendiente</span>
-            <small>Formato recomendado: 4:5 vertical</small>
+      <div ref={trackRef} className="deliveries-carousel" aria-label="Fotos de clientes Apfel Store" aria-live="off">
+        {customerPhotos.map((src, index) => <article className="delivery-card" key={src}>
+          <div className="delivery-photo-wrap">
+            <img className="delivery-photo" src={src} alt={`Foto de cliente Apfel Store ${index + 1}`} loading={index < 3 ? 'eager' : 'lazy'} />
+            <span className="delivery-watermark" aria-hidden="true"><Image src="/images/brand/apfel-logo.jpg" alt="" width={48} height={48} /></span>
           </div>
-          <footer>
-            <div><strong>{delivery.label}</strong><span>{delivery.city}, Perú</span></div>
-            <span className="delivery-sample-badge">Vista previa</span>
-          </footer>
+          <footer><strong>Cliente Apfel Store</strong><span>{String(index + 1).padStart(2, '0')}</span></footer>
         </article>)}
       </div>
     </div>

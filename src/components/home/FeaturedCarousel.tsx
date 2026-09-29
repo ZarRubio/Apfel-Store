@@ -10,11 +10,20 @@ export function FeaturedCarousel({ products }: { products: Product[] }) {
   const reduceMotion = useReducedMotion();
   const trackRef = useRef<HTMLDivElement>(null);
   const [edges, setEdges] = useState({ start: true, end: false });
+  const [activeSlide, setActiveSlide] = useState(0);
 
   useEffect(() => {
     const track = trackRef.current;
     if (!track) return;
-    const update = () => setEdges({ start: track.scrollLeft <= 1, end: track.scrollLeft + track.clientWidth >= track.scrollWidth - 1 });
+    const update = () => {
+      setEdges({ start: track.scrollLeft <= 1, end: track.scrollLeft + track.clientWidth >= track.scrollWidth - 1 });
+      const slides = Array.from(track.children) as HTMLElement[];
+      const closest = slides.reduce((best, slide, index) => {
+        const distance = Math.abs(slide.offsetLeft - track.offsetLeft - track.scrollLeft);
+        return distance < best.distance ? { index, distance } : best;
+      }, { index: 0, distance: Number.POSITIVE_INFINITY });
+      setActiveSlide(closest.index);
+    };
     const observer = new ResizeObserver(update);
     observer.observe(track);
     track.addEventListener('scroll', update, { passive: true });
@@ -40,6 +49,6 @@ export function FeaturedCarousel({ products }: { products: Product[] }) {
         transition={{ duration: reduceMotion ? 0.2 : 0.45, delay: reduceMotion ? 0 : Math.min(index, 4) * 0.05, ease: [0.23, 1, 0.32, 1] }}
       ><ProductCard product={product} sizes="(max-width: 640px) 90vw, (max-width: 900px) 46vw, 32vw" /></motion.div>)}
     </div>
-    <div className="carousel-controls"><span className="carousel-status">{products.length} modelos destacados</span><div><button type="button" aria-label="Productos anteriores" aria-controls="featured-products" disabled={edges.start} onClick={() => move(-1)}><ChevronLeftIcon /></button><button type="button" aria-label="Productos siguientes" aria-controls="featured-products" disabled={edges.end} onClick={() => move(1)}><ChevronRightIcon /></button></div></div>
+    <div className="carousel-controls"><span className="carousel-status" aria-live="polite">{String(activeSlide + 1).padStart(2, '0')} / {String(products.length).padStart(2, '0')} · Usa flechas o desliza</span><div><button type="button" aria-label="Productos anteriores" aria-controls="featured-products" disabled={edges.start} onClick={() => move(-1)}><ChevronLeftIcon /></button><button type="button" aria-label="Productos siguientes" aria-controls="featured-products" disabled={edges.end} onClick={() => move(1)}><ChevronRightIcon /></button></div></div>
   </section>;
 }
