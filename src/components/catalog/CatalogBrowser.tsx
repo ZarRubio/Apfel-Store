@@ -3,7 +3,7 @@
 import type { Product } from '@/types/product';
 import { ProductCard } from '@/components/product/ProductCard';
 import { ChevronRightIcon, SearchIcon, XCircleIcon } from '@/components/icons/UiIcons';
-import { replaceLocationSearch, useLocationSearch } from '@/lib/useLocationSearch';
+import { pushLocationSearch, replaceLocationSearch, useLocationSearch } from '@/lib/useLocationSearch';
 
 export function CatalogBrowser({ products }: { products: Product[] }) {
   const search = useLocationSearch();
@@ -35,13 +35,14 @@ export function CatalogBrowser({ products }: { products: Product[] }) {
     const next = new URLSearchParams(params.toString());
     if (value === 'all' || value === 'recommended' || value === '') next.delete(name);
     else next.set(name, value);
-    replaceLocationSearch(next);
+    if (name === 'q') replaceLocationSearch(next);
+    else pushLocationSearch(next);
   }
 
   function clearFilters() {
     const next = new URLSearchParams(params.toString());
     ['q', 'serie', 'disponibilidad', 'ofertas'].forEach((key) => next.delete(key));
-    replaceLocationSearch(next);
+    pushLocationSearch(next);
   }
 
   return <div>

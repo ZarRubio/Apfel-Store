@@ -21,6 +21,7 @@ export function Hero({ product }: { product: Product }) {
   const [interactionPaused, setInteractionPaused] = useState(false);
   const [pointerWithin, setPointerWithin] = useState(false);
   const [documentVisible, setDocumentVisible] = useState(true);
+  const [touchViewport, setTouchViewport] = useState(false);
   const color = colors[activeColor] ?? colors[0];
 
   useEffect(() => {
@@ -31,17 +32,18 @@ export function Hero({ product }: { product: Product }) {
   }, []);
 
   useEffect(() => {
-    colors.slice(1).forEach((option) => {
-      const preload = new window.Image();
-      preload.src = getProductImage(option.image);
-    });
-  }, [colors]);
+    const media = window.matchMedia('(max-width: 640px), (pointer: coarse)');
+    const updateTouchViewport = () => setTouchViewport(media.matches);
+    updateTouchViewport();
+    media.addEventListener('change', updateTouchViewport);
+    return () => media.removeEventListener('change', updateTouchViewport);
+  }, []);
 
   useEffect(() => {
-    if (interactionPaused || pointerWithin || reduceMotion || !documentVisible || colors.length < 2) return;
+    if (interactionPaused || pointerWithin || reduceMotion || !documentVisible || touchViewport || colors.length < 2) return;
     const timer = window.setTimeout(() => setActiveColor((current) => (current + 1) % colors.length), COLOR_CHANGE_DELAY);
     return () => window.clearTimeout(timer);
-  }, [activeColor, colors.length, documentVisible, interactionPaused, pointerWithin, reduceMotion]);
+  }, [activeColor, colors.length, documentVisible, interactionPaused, pointerWithin, reduceMotion, touchViewport]);
 
   if (!color) return null;
 

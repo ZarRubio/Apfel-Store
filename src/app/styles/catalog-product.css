@@ -102,6 +102,10 @@ h1,h2,h3 { text-wrap:balance; }
   .editorial-image { position:relative; width:100%; min-height:250px; margin-top:20px; }
 }
 @media(max-width:560px) { .product-grid { grid-template-columns:minmax(0,1fr); } }
+@media(max-width:380px) {
+  .filter-group { grid-template-columns:minmax(0,1fr); }
+  .check-filter { grid-column:1; justify-content:flex-start; }
+}
 @media(prefers-reduced-motion:reduce) {
   *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; }
   .product-card:hover,.product-card:hover .product-card-image img { transform:none; }

@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo } from 'react';
 import { getWhatsAppUrl } from '@/lib/whatsapp';
-import { replaceLocationSearch, useLocationSearch } from '@/lib/useLocationSearch';
+import { pushLocationSearch, replaceLocationSearch, useLocationSearch } from '@/lib/useLocationSearch';
 import { CompareDeviceCard } from './compare/CompareDeviceCard';
 import { CompareHighlights } from './compare/CompareHighlights';
 import { CompareSpecTables } from './compare/CompareSpecTables';
@@ -73,7 +73,7 @@ export function CompareBrowser({ products }: { products: CompareProduct[] }) {
     nextParams.set('modelos', slugs.join(','));
     if (colors.some(Boolean)) nextParams.set('colores', colors.join('|'));
     else nextParams.delete('colores');
-    replaceLocationSearch(nextParams);
+    pushLocationSearch(nextParams);
   }
 
   function updateModel(index: number, slug: string) {
@@ -117,7 +117,7 @@ export function CompareBrowser({ products }: { products: CompareProduct[] }) {
     const nextParams = new URLSearchParams(params.toString());
     if (checked) nextParams.set('diferencias', '1');
     else nextParams.delete('diferencias');
-    replaceLocationSearch(nextParams);
+    pushLocationSearch(nextParams);
   }
 
   return <div className="compare-page-wrap">

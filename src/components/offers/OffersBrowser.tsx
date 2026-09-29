@@ -5,7 +5,7 @@ import { motion, AnimatePresence, useReducedMotion } from 'motion/react';
 import type { Product } from '@/types/product';
 import { ProductCard } from '@/components/product/ProductCard';
 import { getWhatsAppUrl } from '@/lib/whatsapp';
-import { replaceLocationSearch, useLocationSearch } from '@/lib/useLocationSearch';
+import { pushLocationSearch, replaceLocationSearch, useLocationSearch } from '@/lib/useLocationSearch';
 import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
 import { ShieldIcon, SparklesIcon, TruckIcon } from '@/components/icons/UiIcons';
 
@@ -41,7 +41,7 @@ export function OffersBrowser({ products }: { products: Product[] }) {
     const nextParams = new URLSearchParams(params.toString());
     if (series === 'all') nextParams.delete('serie');
     else nextParams.set('serie', series);
-    replaceLocationSearch(nextParams);
+    pushLocationSearch(nextParams);
   }
 
   return (

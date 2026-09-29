@@ -11,8 +11,18 @@ export function useLocationSearch() {
   return useSyncExternalStore(subscribe, () => window.location.search, () => '');
 }
 
-export function replaceLocationSearch(params: URLSearchParams) {
+function updateLocationSearch(params: URLSearchParams, method: 'pushState' | 'replaceState') {
   const search = params.toString();
-  window.history.replaceState(null, '', `${window.location.pathname}${search ? `?${search}` : ''}${window.location.hash}`);
+  const nextUrl = `${window.location.pathname}${search ? `?${search}` : ''}${window.location.hash}`;
+  if (`${window.location.pathname}${window.location.search}${window.location.hash}` === nextUrl) return;
+  window.history[method](null, '', nextUrl);
   window.dispatchEvent(new PopStateEvent('popstate'));
+}
+
+export function replaceLocationSearch(params: URLSearchParams) {
+  updateLocationSearch(params, 'replaceState');
+}
+
+export function pushLocationSearch(params: URLSearchParams) {
+  updateLocationSearch(params, 'pushState');
 }
