@@ -134,7 +134,7 @@ a.contact-detail-card:hover { border-color:#b9bac0; box-shadow:0 12px 30px #1919
 .product-card-image,.product-main-image,.thumbnail { background:#f5f5f7; }
 .editorial-card { background:#ececef; }
 
-/* Footer layout: desktop â†’ tablet â†’ mobile without compressed columns. */
+/* Pie de página: escritorio, tablet y móvil. */
 @media(max-width:1024px) {
   .footer-main { padding-top:48px; }
   .footer-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:38px 30px; }

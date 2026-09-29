@@ -70,7 +70,7 @@ export function CustomerDeliveries() {
       <div ref={trackRef} className="deliveries-carousel" aria-label="Fotos de clientes Apfel Store" aria-live="off">
         {customerPhotos.map((src, index) => <article className="delivery-card" key={src}>
           <div className="delivery-photo-wrap">
-            <img className="delivery-photo" src={src} alt={`Foto de cliente Apfel Store ${index + 1}`} loading={index < 3 ? 'eager' : 'lazy'} />
+            <Image className="delivery-photo" src={src} alt={`Foto de cliente Apfel Store ${index + 1}`} fill sizes="(max-width: 640px) 88vw, (max-width: 900px) 48vw, 33vw" loading={index < 3 ? 'eager' : 'lazy'} />
             <span className="delivery-watermark" aria-hidden="true"><Image src="/images/brand/apfel-logo.jpg" alt="" width={48} height={48} /></span>
           </div>
           <footer><strong>Cliente Apfel Store</strong><span>{String(index + 1).padStart(2, '0')}</span></footer>

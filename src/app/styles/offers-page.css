@@ -129,6 +129,9 @@
 }
 
 .offers-tab-button {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
   padding: 8px 16px;
   border-radius: 999px;
   border: 1px solid var(--border);

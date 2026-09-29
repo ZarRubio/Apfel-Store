@@ -343,3 +343,14 @@
     padding: 24px;
   }
 }
+
+@media (max-width: 380px) {
+  .service-issue-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .service-issue-list span {
+    justify-content: flex-start;
+    text-align: left;
+  }
+}
