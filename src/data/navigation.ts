@@ -2,6 +2,7 @@ import type { NavItem } from '@/types/common';
 
 export const navigation: NavItem[] = [
   { label: 'iPhone', href: '/productos' },
+  { label: 'Accesorios', href: '/accesorios' },
   { label: 'Comparar', href: '/comparar' },
   { label: 'Ofertas', href: '/ofertas' },
   { label: 'Servicio técnico', href: '/servicio-tecnico' },

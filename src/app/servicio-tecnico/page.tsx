@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
-import { ClockIcon, ShieldIcon, SmartphoneIcon, ToolIcon } from '@/components/icons/UiIcons';
+import Image from 'next/image';
+import { ShieldIcon, SmartphoneIcon, ToolIcon } from '@/components/icons/UiIcons';
 import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
 import { getWhatsAppUrl } from '@/lib/whatsapp';
+import { AdvisorCard } from '@/components/shared/AdvisorCard';
 import '../styles/service.css';
 
 export const metadata: Metadata = {
@@ -23,20 +25,20 @@ const commonIssues = [
 const servicePrinciples = [
   {
     number: '01',
-    title: 'Reparaciones ágiles',
-    description: 'Coordinamos la evaluación y te explicamos el proceso y el plazo estimado para tu equipo.',
-    icon: ClockIcon,
+    title: 'Cuéntanos qué sucede',
+    description: 'Envíanos por WhatsApp el modelo y una breve descripción de la falla para coordinar la evaluación.',
+    icon: WhatsAppIcon,
   },
   {
     number: '02',
-    title: 'Diagnóstico preciso',
-    description: 'El equipo será evaluado antes de confirmar el trabajo, el precio y el tiempo estimado.',
+    title: 'Revisamos tu equipo',
+    description: 'Evaluamos el problema y te comunicamos las opciones de reparación disponibles.',
     icon: ToolIcon,
   },
   {
     number: '03',
-    title: 'Cuidado responsable',
-    description: 'Las condiciones, repuestos y garantía se comunicarán antes de autorizar cualquier intervención.',
+    title: 'Tú decides',
+    description: 'Antes de autorizar el trabajo, podrás confirmar el precio, el plazo, los repuestos y la garantía.',
     icon: ShieldIcon,
   },
 ];
@@ -60,36 +62,40 @@ export default function TechnicalServicePage() {
               <span aria-hidden="true" /> Atención para equipos Apple
             </span>
             <p>
-              ¿Pantalla rota, batería que dura poco o un equipo más lento? Solicita una evaluación y recibe un diagnóstico claro antes de autorizar cualquier reparación.
+              Si tu iPhone o MacBook presenta una falla, conversemos para orientarte y coordinar una evaluación.
             </p>
             <a
-              className="button button-light"
+              className="button button-dark"
               href={serviceContactUrl}
               target="_blank"
               rel="noreferrer"
               data-event="whatsapp_service_click"
             >
-              <WhatsAppIcon /> Solicitar diagnóstico <span aria-hidden="true">↗</span>
+              <WhatsAppIcon /> Consultar por WhatsApp <span aria-hidden="true">↗</span>
             </a>
-        <span className="service-contact-note">+51 921 078 492 · Consultas por WhatsApp las 24 horas</span>
+            <span className="service-contact-note">+51 921 078 492 · Consultas por WhatsApp las 24 horas</span>
           </div>
         </div>
+        <figure className="container service-hero-visual">
+          <Image src="/service/servicio-tecnico-ilustracion.webp" alt="Ilustración de una revisión técnica de un teléfono en una mesa de trabajo" width={1672} height={941} sizes="(max-width: 700px) 100vw, 1240px" priority />
+          <figcaption>Imagen ilustrativa</figcaption>
+        </figure>
       </section>
 
       <section className="service-intro section container" aria-labelledby="service-intro-title">
         <div className="service-intro-heading">
           <span className="eyebrow">IPHONE Y MACBOOK</span>
           <h2 id="service-intro-title">
-            Cuéntanos qué le pasa
+            ¿En qué podemos
             <br />
-            <em>a tu equipo.</em>
+            <em>ayudarte?</em>
           </h2>
         </div>
 
         <div className="service-intro-copy">
           <SmartphoneIcon aria-hidden="true" />
           <p>
-            Atendemos consultas sobre iPhone y MacBook. Cuéntanos qué sucede para orientarte sobre el diagnóstico, las opciones de reparación y el cuidado que necesita tu equipo.
+            Puedes consultarnos por estos problemas o contarnos cualquier otra falla de tu equipo.
           </p>
           <div className="service-issue-list" aria-label="Consultas frecuentes">
             {commonIssues.map((issue) => <span key={issue}>{issue}</span>)}
@@ -100,14 +106,14 @@ export default function TechnicalServicePage() {
       <section className="service-principles section" aria-labelledby="service-principles-title">
         <div className="container">
           <div className="service-principles-heading">
-            <span className="eyebrow">NUESTRA PROPUESTA</span>
+            <span className="eyebrow">ASÍ FUNCIONA</span>
             <h2 id="service-principles-title">
-              Información clara.
+              Atención en tres pasos.
               <br />
-              <em>Cuidado en cada paso.</em>
+              <em>Con claridad desde el inicio.</em>
             </h2>
             <p>
-              Primero evaluamos el equipo. Antes de empezar, recibirás la explicación del trabajo, su precio, el plazo estimado y las condiciones aplicables.
+              Te acompañamos desde la primera consulta hasta que decidas cómo proceder.
             </p>
           </div>
 
@@ -124,13 +130,7 @@ export default function TechnicalServicePage() {
             ))}
           </div>
 
-          <div className="service-disclaimer">
-            <strong>Agenda una evaluación.</strong>
-            <p>Escríbenos con el modelo del equipo y una breve descripción de la falla. Te indicaremos cómo continuar y qué revisar antes de entregarlo.</p>
-            <a href={serviceContactUrl} target="_blank" rel="noreferrer" data-event="whatsapp_service_click">
-              <WhatsAppIcon /> Contactar al +51 921 078 492 <span aria-hidden="true">↗</span>
-            </a>
-          </div>
+          <div className="advisor-spaced"><AdvisorCard eyebrow="SERVICIO TÉCNICO" title="Estamos para ayudarte." description="Conversemos por WhatsApp para indicarte cómo empezar." href={serviceContactUrl} label="Consultar servicio técnico" event="whatsapp_service_click" /></div>
         </div>
       </section>
     </main>

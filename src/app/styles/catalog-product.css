@@ -128,3 +128,5 @@ h1,h2,h3 { text-wrap:balance; }
 
 
 .spec-source-link { display:inline-flex; align-items:center; gap:8px; min-height:44px; margin-top:28px; color:#e7e7eb; font-size:.9rem; text-decoration:underline; text-underline-offset:4px; }
+.recommendations-compare { min-height:44px; display:inline-flex; align-items:center; gap:8px; }
+@media(max-width:560px) { .recommendations-compare { padding:0 15px; border:1px solid var(--border); border-radius:999px; background:var(--surface); } }

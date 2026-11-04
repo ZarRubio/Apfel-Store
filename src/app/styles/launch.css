@@ -74,3 +74,15 @@
 
 @media(hover:none) { .hero-color-picker button { width:44px; height:44px; } }
 .hero-color-picker strong { font-size:11px; }
+.iphone18-hero .legacy-hero-copy h1 { font-size:clamp(36px,4.2vw,64px); line-height:1.02; }
+@media(max-width:640px) { .iphone18-hero .legacy-hero-copy h1 { font-size:clamp(34px,9.5vw,52px); } }
+
+@media(max-width:640px) {
+  .iphone18-hero { min-height:0; padding-top:35px; padding-bottom:62px; }
+  .iphone18-hero .legacy-hero-copy { padding-top:0; }
+  .iphone18-hero .legacy-hero-copy h1 { margin:16px 0; }
+  .iphone18-hero .legacy-hero-copy p { font-size:16px; line-height:1.45; }
+  .iphone18-hero .hero-actions { margin-top:18px; gap:4px 14px; }
+  .hero-reservation-note { margin-top:10px; font-size:13px; }
+  .iphone18-hero .legacy-hero-product { margin-top:4px; margin-bottom:16px; }
+}

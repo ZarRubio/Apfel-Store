@@ -1,11 +1,5 @@
 ﻿/* â”€â”€ Professional Footer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .site-footer { background:var(--primary); color:#fff; padding:0; }
-.footer-cta { border-bottom:1px solid #ffffff10; }
-.footer-cta-inner { display:flex; align-items:center; justify-content:space-between; gap:30px; padding:48px 0; }
-.footer-cta-copy { max-width:480px; }
-.footer-cta-copy .eyebrow { margin-bottom:10px; display:block; }
-.footer-cta-headline { font-size:17px; line-height:1.55; color:#c8c8cd; margin:0; }
-.footer-cta-button { white-space:nowrap; }
 .footer-main { padding:60px 0 0; }
 .footer-grid { display:grid; grid-template-columns:1.8fr 1fr 1fr 1fr; gap:50px; }
 .footer-brand { display:flex; flex-direction:column; }
@@ -47,7 +41,7 @@
 .footer-bottom-links a:hover { color:#909097; }
 .footer-grid>* { min-width:0; }
 .footer-link-list a { min-height:36px; display:inline-flex; align-items:center; overflow-wrap:anywhere; }
-.footer-link-list a:focus-visible,.footer-cta-button:focus-visible { outline:2px solid #fff; outline-offset:3px; }
+.footer-link-list a:focus-visible,.footer-trust-item:focus-visible,.footer-socials .social-link:focus-visible { outline:2px solid #fff; outline-offset:3px; }
 .footer-trust-item div { min-width:0; }
 .footer-trust-item strong,.footer-trust-item span,.footer-legal span { overflow-wrap:anywhere; }
 
@@ -68,6 +62,11 @@
 }
 
 /* Contact page */
+.contact-hero.page-header { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.9fr); gap:clamp(32px,6vw,80px); align-items:center; padding-top:76px; padding-bottom:64px; }
+.contact-hero.page-header h1 { max-width:760px; font-size:clamp(46px,5.4vw,74px); line-height:1.04; }
+.contact-hero-visual { position:relative; margin:0; background:#e7e7e7; }
+.contact-hero-visual figcaption { position:absolute; right:14px; bottom:14px; padding:5px 9px; border-radius:999px; background:#111113bd; color:#fff; font-size:11px; }
+@media(max-width:800px) { .contact-hero.page-header { grid-template-columns:1fr; gap:30px; padding-top:52px; padding-bottom:42px; } .contact-hero.page-header h1 { font-size:clamp(42px,10vw,58px); } }
 .contact-hero h1 { max-width:900px; }
 .contact-hero h1 em { display:block; }
 .contact-hero p { max-width:620px; }
@@ -87,6 +86,7 @@ a.contact-detail-card:hover { border-color:#b9bac0; box-shadow:0 12px 30px #1919
 .contact-channel-label { display:inline-flex; align-items:center; gap:8px; }
 .contact-channel-label>.ui-icon { width:17px; height:17px; }
 .contact-detail-card strong { overflow-wrap:anywhere; font-family:var(--display); font-size:clamp(20px,2.4vw,28px); letter-spacing:-.03em; }
+.contact-details .contact-email-card strong { font-size:clamp(16px,1.4vw,19px); letter-spacing:-.02em; }
 .contact-detail-card small { color:var(--muted); font-size:13px; }
 .contact-social-card { grid-column:1 / -1; }
 .contact-social-card .social-links { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; margin-top:6px; }
@@ -146,9 +146,6 @@ a.contact-detail-card:hover { border-color:#b9bac0; box-shadow:0 12px 30px #1919
 }
 
 @media(max-width:760px) {
-  .footer-cta-inner { align-items:flex-start; flex-direction:column; gap:22px; padding:38px 0; }
-  .footer-cta-copy { max-width:560px; }
-  .footer-cta-button { max-width:100%; white-space:normal; text-align:center; justify-content:center; }
   .footer-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:38px 28px; }
   .footer-brand { grid-column:1 / -1; grid-template-columns:1fr; row-gap:0; }
   .footer-brand .footer-wordmark,.footer-brand .footer-tagline,.footer-brand .footer-location,.footer-brand .footer-socials { grid-column:1; grid-row:auto; }
@@ -180,3 +177,24 @@ a.contact-detail-card:hover { border-color:#b9bac0; box-shadow:0 12px 30px #1919
 
 @media(max-width:360px) { .nav-inner { gap:4px; } .wordmark { gap:6px; font-size:17px; } .wordmark-mark { width:36px; height:36px; } .nav-actions { gap:6px; } .whatsapp-link { width:44px; height:44px; display:grid; place-items:center; font-size:0; } .whatsapp-link .ui-icon { width:22px; height:22px; } .whatsapp-link span { display:none; } }
 
+/* Footer: comfortable contrast and compact navigation on small screens. */
+.footer-tagline,.footer-location,.footer-socials-label,.footer-link-list a { color:#b7b7be; }
+.footer-trust-item { min-height:44px; border-radius:4px; }
+.footer-trust-item svg { color:#b7b7be; }
+.footer-trust-item strong { color:#e1e1e5; }
+.footer-trust-item span,.footer-bottom { color:#aaaab2; }
+.footer-trust-item:hover strong { color:#fff; text-decoration:underline; text-underline-offset:3px; }
+@media(max-width:480px) {
+  .footer-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:30px 20px; }
+  .footer-brand { grid-column:1 / -1; }
+  .footer-nav:last-child { grid-column:auto; }
+  .footer-label { margin-bottom:10px; }
+  .footer-link-list { gap:0; }
+  .footer-trust { gap:14px; margin-top:32px; padding-top:24px; }
+}
+
+
+/* Improve readability of secondary information without changing the palette. */
+.footer-bottom,.footer-bottom-links a { color:#aaaab2; font-size:12px; line-height:1.5; }
+.footer-socials-label,.footer-label { font-size:12px; }
+.footer-location,.footer-trust-item span { color:#aaaab2; }

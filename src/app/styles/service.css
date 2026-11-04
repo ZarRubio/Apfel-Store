@@ -1,8 +1,8 @@
 .service-hero {
-  padding: 108px 0 104px;
+  padding: 90px 0 72px;
   overflow: hidden;
-  background: #111113;
-  color: #fff;
+  background: #f5f5f7;
+  color: #111113;
 }
 
 .service-hero-inner {
@@ -13,7 +13,7 @@
 }
 
 .service-hero .eyebrow {
-  color: #aaaab1;
+  color: #66666e;
 }
 
 .service-hero h1 {
@@ -23,7 +23,7 @@
 }
 
 .service-hero h1 em {
-  color: #999aa1;
+  color: #676870;
 }
 
 .service-hero-copy {
@@ -35,7 +35,7 @@
 .service-hero-copy p {
   max-width: 460px;
   margin: 0;
-  color: #c8c8cd;
+  color: #55555d;
   font-size: 17px;
   line-height: 1.65;
 }
@@ -46,9 +46,9 @@
   align-items: center;
   gap: 9px;
   padding: 7px 12px;
-  border: 1px solid #ffffff2e;
+  border: 1px solid #d1d1d6;
   border-radius: 999px;
-  color: #e5e5e8;
+  color: #505058;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: .08em;
@@ -59,13 +59,39 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #c5c7cc;
+  background: #777b80;
 }
 
 .service-contact-note {
-  color: #8f8f96;
+  color: #686870;
   font-size: 12px;
   line-height: 1.5;
+}
+
+.service-hero-visual {
+  position: relative;
+  margin-top: 54px;
+  overflow: hidden;
+  border-radius: 22px;
+  background: #e5e5e7;
+}
+.service-hero-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 8;
+  object-fit: cover;
+  object-position: center 55%;
+}
+.service-hero-visual figcaption {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: #111113b8;
+  color: #fff;
+  font-size: 11px;
 }
 
 .service-intro {
@@ -77,6 +103,11 @@
 
 .service-intro-heading h2 {
   max-width: 760px;
+}
+
+.service-intro-heading h2 em,
+.service-principles-heading h2 em {
+  color: #62636a;
 }
 
 .service-intro-copy {
@@ -179,7 +210,7 @@
   border-radius: 50%;
 }
 
-.service-principle-icon .ui-icon {
+.service-principle-icon svg {
   width: 19px;
   height: 19px;
 }
@@ -291,8 +322,11 @@
 
 @media (max-width: 560px) {
   .service-hero {
-    padding: 64px 0 70px;
+    padding: 54px 0 48px;
   }
+
+  .service-hero-visual { margin-top: 34px; border-radius: 16px; }
+  .service-hero-visual img { aspect-ratio: 4 / 3; object-position: 55% center; }
 
   .service-hero h1 {
     margin-top: 20px;

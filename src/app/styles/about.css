@@ -1,10 +1,28 @@
 .about-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, .9fr);
+  align-items: center;
+  gap: clamp(32px, 6vw, 80px);
   padding-bottom: 80px;
 }
+
+.about-hero-visual {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 5 / 4;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #e7e7e7;
+}
+
+.about-hero-visual img { object-fit: cover; }
+.about-hero-visual figcaption { position:absolute; right:14px; bottom:14px; padding:5px 9px; border-radius:999px; background:#111113bd; color:#fff; font-size:11px; }
 
 .about-hero h1 {
   max-width: 900px;
 }
+
+.about-hero.page-header h1 { font-size: clamp(48px, 5.4vw, 74px); line-height: 1.02; }
 
 .about-hero p {
   max-width: 620px;
@@ -150,11 +168,16 @@
 }
 
 @media (max-width: 800px) {
+  .about-hero,
+  .about-story,
   .about-benefits-heading,
   .about-community-layout {
     grid-template-columns: 1fr;
     gap: 24px;
   }
+
+  .about-hero-visual { aspect-ratio: 4 / 3; }
+  .about-story-copy { padding-top: 0; }
 
   .about-benefit-grid {
     grid-template-columns: 1fr;
@@ -186,6 +209,8 @@
     margin: 20px 0 16px;
     font-size: clamp(48px, 15vw, 60px);
   }
+
+  .about-hero.page-header h1 { font-size: clamp(42px, 11vw, 56px); }
 
   .about-hero p,
   .about-story-copy p,

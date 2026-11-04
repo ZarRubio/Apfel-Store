@@ -366,6 +366,7 @@ const iphone18Colors = [
 function iphone18Product(max: boolean): Product {
   const slug = max ? 'iphone-18-pro-max' : 'iphone-18-pro';
   const mediaSlug = max ? 'iphone-18-pro-max-apple' : 'iphone-18-pro-apple';
+  const price256 = max ? 6600 : 5600;
   const images = iphone18Colors.map((color) => `/products/normalized/${mediaSlug}/${slug}-${color.slug}.webp`);
   return {
     id: slug,
@@ -377,7 +378,7 @@ function iphone18Product(max: boolean): Product {
     description: max
       ? 'Pantalla de 6,9 pulgadas, chip A20 Pro y cámara principal Fusion de 48 MP con apertura variable. Solicita tu reserva y confirma los detalles con un asesor.'
       : 'Pantalla de 6,3 pulgadas, chip A20 Pro y cámara principal Fusion de 48 MP con apertura variable. Solicita tu reserva y confirma los detalles con un asesor.',
-    price: null,
+    price: price256,
     available: null,
     featured: true,
     new: true,
@@ -386,11 +387,14 @@ function iphone18Product(max: boolean): Product {
     defaultColor: 'Borgoña',
     images,
     colors: iphone18Colors.map((color, index) => ({ name: color.name, hex: color.hex, image: images[index] })),
-    storage: ['256 GB', '512 GB', '1 TB', '2 TB'].map((capacity) => ({ capacity, price: null })),
+    storage: ['256 GB', '512 GB', '1 TB', '2 TB'].map((capacity) => ({ capacity, price: capacity === '256 GB' ? price256 : null })),
+    specificationsSource: 'https://www.apple.com/la/iphone-18-pro/specs/',
     specifications: [
-      { label: 'Pantalla', value: max ? '6,9 pulgadas' : '6,3 pulgadas' },
+      { label: 'Pantalla', value: max ? '6,9 pulgadas Super Retina XDR OLED, ProMotion hasta 120 Hz' : '6,3 pulgadas Super Retina XDR OLED, ProMotion hasta 120 Hz' },
       { label: 'Procesador', value: 'A20 Pro' },
       { label: 'Cámara principal', value: 'Fusion de 48 MP con apertura variable' },
+      { label: 'Autonomía', value: max ? 'Hasta 43 horas de reproducción de video' : 'Hasta 34 horas de reproducción de video' },
+      { label: 'Conectividad', value: '5G (sub-6 GHz), Wi-Fi 7, Bluetooth 6 y NFC' },
       { label: 'Capacidades', value: '256 GB, 512 GB, 1 TB y 2 TB' },
     ],
   };

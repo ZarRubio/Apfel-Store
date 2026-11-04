@@ -800,3 +800,20 @@
     transform: none;
   }
 }
+.compare-source-note { color:var(--muted); font-size:13px; line-height:1.6; margin-top:20px; }
+.compare-source-note a { color:var(--foreground); text-decoration:underline; text-underline-offset:3px; }
+
+/* Keep the comparison readable and its horizontal movement discoverable on phones. */
+.compare-scroll-hint { display:none; }
+@media (max-width:680px) {
+  .compare-page-wrap { gap:24px; padding-bottom:64px; }
+  .compare-header-enhanced { margin-bottom:0; }
+  .compare-header-enhanced h1 { margin:10px 0 12px; font-size:clamp(1.8rem,7vw,2.15rem); }
+  .compare-header-enhanced p { font-size:15px; }
+  .compare-presets-wrap { padding:14px; gap:8px; }
+  .compare-preset-pill { min-height:40px; white-space:normal; text-align:left; }
+  .compare-scroll-hint { display:block; margin:-10px 0 16px; color:#555761; font-size:13px; line-height:1.5; }
+  .compare-table-detailed th:first-child { position:sticky; left:0; z-index:1; background:#f5f5f7; box-shadow:2px 0 5px #11111314; }
+  .compare-table-detailed thead th:first-child { z-index:2; background:#fff; }
+  .compare-table-detailed tr.is-different th[scope="row"] { background:#f0f5fb; }
+}

@@ -9,7 +9,7 @@ import { CompareSpecTables } from './compare/CompareSpecTables';
 import { CompareToolbar } from './compare/CompareToolbar';
 import { SPEC_GROUPS, rowHasDifference } from './compare/compareData';
 import type { CompareProduct } from './compare/types';
-import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
+import { AdvisorCard } from '@/components/shared/AdvisorCard';
 
 const MAX_PRODUCTS = 3;
 const MIN_PRODUCTS = 2;
@@ -125,9 +125,9 @@ export function CompareBrowser({ products }: { products: CompareProduct[] }) {
       <span className="eyebrow">COMPARADOR APFEL STORE</span>
       <h1>
         Compara modelos de iPhone.
-        <em>Elige usando los datos disponibles de cada equipo.</em>
+        <em>Encuentra el ideal para ti.</em>
       </h1>
-      <p>Revisa pantalla, procesador, cámaras, capacidad y precio. Los campos pendientes se identifican claramente para que puedas confirmarlos con un asesor.</p>
+      <p>Compara características y precios. Confirma los datos pendientes con un asesor.</p>
     </header>
 
     <CompareToolbar
@@ -157,15 +157,6 @@ export function CompareBrowser({ products }: { products: CompareProduct[] }) {
     <CompareHighlights products={selectedProducts} />
     <CompareSpecTables products={selectedProducts} onlyDifferences={onlyDifferences} />
 
-    <aside className="compare-advisor-card">
-      <div className="compare-advisor-text">
-        <span className="eyebrow">ASESORÍA DIRECTA APFEL STORE</span>
-        <h2>¿Necesitas confirmar algún detalle?</h2>
-        <p>Consulta disponibilidad, condición, garantía, precio final y entrega del modelo que te interesa antes de reservar.</p>
-      </div>
-      <a className="compare-advisor-btn" href={getWhatsAppUrl()} target="_blank" rel="noreferrer" data-event="whatsapp_compare_advisor">
-        <WhatsAppIcon /> Consultar por WhatsApp <span aria-hidden="true">↗</span>
-      </a>
-    </aside>
+    <div className="advisor-spaced"><AdvisorCard eyebrow="ASESORÍA DIRECTA APFEL STORE" title="¿Necesitas confirmar algún detalle?" description="Consulta disponibilidad, condición, garantía, precio final y entrega del modelo que te interesa antes de reservar." href={getWhatsAppUrl()} label="Consultar por WhatsApp" event="whatsapp_compare_advisor" /></div>
   </div>;
 }

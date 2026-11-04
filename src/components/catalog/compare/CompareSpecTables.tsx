@@ -19,6 +19,8 @@ export function CompareSpecTables({ products, onlyDifferences }: CompareSpecTabl
       <h2 id="specs-heading">Ficha técnica comparada</h2>
     </div>
 
+    <p className="compare-scroll-hint">Desliza la tabla hacia los lados para ver todos los modelos. ↔</p>
+
     {SPEC_GROUPS.map((group, groupIndex) => {
       const rows = onlyDifferences
         ? group.rows.filter((row) => rowHasDifference(row, products))
@@ -58,5 +60,6 @@ export function CompareSpecTables({ products, onlyDifferences }: CompareSpecTabl
 
     {onlyDifferences && SPEC_GROUPS.every((group) => group.rows.every((row) => !rowHasDifference(row, products)))
       && <p className="compare-empty-differences" role="status">No hay diferencias en los datos disponibles para esta selección.</p>}
+    {products.some((product) => product.series === '18') && <p className="compare-source-note">Datos del iPhone 18 Pro y Pro Max según <a href="https://www.apple.com/la/iphone-18-pro/specs/" target="_blank" rel="noreferrer">Apple Latinoamérica ↗</a>. La autonomía indicada corresponde a reproducción de video y puede variar según el uso y la región.</p>}
   </section>;
 }

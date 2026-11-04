@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
-import { WhatsAppCta } from '@/components/home/WhatsAppCta';
+import Image from 'next/image';
+import { AdvisorCard } from '@/components/shared/AdvisorCard';
+import { getWhatsAppUrl } from '@/lib/whatsapp';
 import { SmartphoneIcon, TagIcon, UsersIcon } from '@/components/icons/UiIcons';
 
 export const metadata: Metadata = {
@@ -10,54 +12,54 @@ export const metadata: Metadata = {
 const benefits = [
   {
     number: '01',
-    title: 'Oportunidades exclusivas',
-    description: 'Promociones pensadas para que encuentres el equipo que buscas con una propuesta clara.',
+    title: 'Más con tu iPhone',
+    description: 'Por la compra de un iPhone llevas siete accesorios gratis. Consulta cuáles incluye la promoción.',
     icon: TagIcon,
   },
   {
     number: '02',
-    title: 'Tecnología de punta',
-    description: 'Seleccionamos iPhone para ayudarte a renovar tu equipo y acompañar mejor tu día a día.',
+    title: 'Opciones para elegir',
+    description: 'Explora modelos, colores y capacidades, y consulta la disponibilidad de cada equipo.',
     icon: SmartphoneIcon,
   },
   {
     number: '03',
     title: 'Atención personalizada',
-    description: 'Escuchamos lo que necesitas y te orientamos en modelo, capacidad, color y disponibilidad.',
+    description: 'Conversa con un asesor por WhatsApp para resolver tus dudas y coordinar tu compra.',
     icon: UsersIcon,
   },
 ];
 
 export default function AboutPage() {
   return (
-    <main id="main-content" tabIndex={-1}>
+    <main id="main-content" className="about-page" tabIndex={-1}>
       <section className="page-header about-hero container">
-        <span className="eyebrow">APFEL STORE</span>
-        <h1>
-          Acerca de
-          <br />
-          <em>nosotros.</em>
-        </h1>
-        <p>
-          Creemos que una buena compra empieza con información clara, atención cercana y la libertad de elegir sin presión.
-        </p>
+        <div className="about-hero-copy">
+          <span className="eyebrow">APFEL STORE</span>
+          <h1>Tu próximo iPhone, <em>con atención cercana.</em></h1>
+          <p>Te ayudamos a elegir un equipo que vaya contigo y a resolver tus dudas antes de comprar.</p>
+        </div>
+        <figure className="about-hero-visual" style={{ position: 'relative', width: '100%', aspectRatio: '5 / 4', overflow: 'hidden', borderRadius: 20 }}>
+          <Image src="/about/atencion-ilustrativa.webp" alt="Ilustración de una persona recibiendo atención para elegir un teléfono" fill sizes="(max-width: 800px) 100vw, 50vw" style={{ objectFit: 'cover' }} priority />
+          <figcaption>Imagen ilustrativa</figcaption>
+        </figure>
       </section>
 
       <section className="about-story section container" aria-labelledby="about-story-title">
         <div className="about-story-heading">
-          <span className="eyebrow">NUESTRA FORMA</span>
+          <span className="eyebrow">QUIÉNES SOMOS</span>
           <h2 id="about-story-title">
-            La conversación
+            Una compra que empieza
             <br />
-            es parte del producto.
+            con confianza.
           </h2>
         </div>
         <div className="about-story-copy">
           <p>
-            Cada persona usa su iPhone de una manera distinta. Por eso te ayudamos a comparar modelos, capacidades, colores, condición y disponibilidad antes de coordinar tu compra.
+            En Apfel Store sabemos que cada persona busca algo distinto. Por eso puedes comparar nuestras opciones y conversar con nosotros antes de decidir.
           </p>
           <p>
-            Nuestra mayor satisfacción es que renueves tu equipo con confianza y tengas claro qué estás eligiendo en cada paso.
+            Agradecemos a quienes confían en nosotros para renovar su equipo. Su confianza nos impulsa a seguir mejorando cada experiencia de compra.
           </p>
         </div>
       </section>
@@ -67,12 +69,12 @@ export default function AboutPage() {
           <div className="about-benefits-heading">
             <span className="eyebrow">¿POR QUÉ ELEGIRNOS?</span>
             <h2 id="about-benefits-title">
-              Beneficios reales.
+              Lo que encuentras
               <br />
-              <em>Una elección más simple.</em>
+              <em>en Apfel Store.</em>
             </h2>
             <p>
-              Nuestra comunidad sigue creciendo porque ponemos la orientación y la claridad en el centro de cada compra.
+              Equipos, accesorios y acompañamiento para elegir con tranquilidad.
             </p>
           </div>
 
@@ -93,21 +95,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="about-community section container" aria-labelledby="about-community-title">
-        <span className="eyebrow">COMUNIDAD APFEL</span>
-        <div className="about-community-layout">
-          <h2 id="about-community-title">
-            Tu próxima experiencia
-            <br />
-            <em>empieza aquí.</em>
-          </h2>
-          <p>
-            Ya sea que busques tu primer iPhone o quieras renovar el actual, te ayudamos a encontrar una opción que encaje contigo y a confirmar todos los detalles antes de comprar.
-          </p>
-        </div>
-      </section>
-
-      <WhatsAppCta />
+      <div className="container advisor-section"><AdvisorCard eyebrow="APFEL STORE" title="¿Quieres conocernos mejor?" description="Estamos aquí para ayudarte en tu próxima compra." href={getWhatsAppUrl()} label="Hablar con nosotros" /></div>
     </main>
   );
 }

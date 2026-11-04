@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getWhatsAppUrl } from '@/lib/whatsapp';
 import { SocialLinks } from '@/components/social/SocialLinks';
-import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
 
 const currentYear = new Date().getFullYear();
 
@@ -10,10 +9,8 @@ const footerLinks = {
   productos: {
     label: 'Productos',
     links: [
-      { name: 'iPhone 18 Pro Max', href: '/iphone/iphone-18-pro-max' },
-      { name: 'iPhone 18 Pro', href: '/iphone/iphone-18-pro' },
-      { name: 'iPhone 16 Pro Max', href: '/iphone/iphone-16-pro-max' },
-      { name: 'Todos los modelos', href: '/productos' },
+      { name: 'Todos los iPhone', href: '/productos' },
+      { name: 'Accesorios', href: '/accesorios' },
       { name: 'Comparar modelos', href: '/comparar' },
       { name: 'Ofertas', href: '/ofertas' },
     ],
@@ -30,8 +27,6 @@ const footerLinks = {
     links: [
       { name: 'Servicio técnico', href: '/servicio-tecnico' },
       { name: 'Preguntas frecuentes', href: '/#preguntas' },
-      { name: 'Consultar garantía y condiciones', href: '/contacto' },
-      { name: 'Consultar opciones de entrega', href: '/contacto' },
     ],
   },
 };
@@ -39,27 +34,6 @@ const footerLinks = {
 export function Footer() {
   return (
     <footer className="site-footer" role="contentinfo">
-      {/* ── Top: Newsletter / CTA band ── */}
-      <div className="footer-cta">
-        <div className="container footer-cta-inner">
-          <div className="footer-cta-copy">
-            <span className="eyebrow">Mantente al día</span>
-            <p className="footer-cta-headline">
-              Conoce las novedades y resuelve tus dudas por WhatsApp.
-            </p>
-          </div>
-          <a
-            className="button button-ghost footer-cta-button"
-            href={getWhatsAppUrl()}
-            target="_blank"
-            rel="noreferrer"
-            data-event="whatsapp_click"
-          >
-            <WhatsAppIcon /> Escríbenos por WhatsApp <span aria-hidden="true">↗</span>
-          </a>
-        </div>
-      </div>
-
       {/* ── Main grid ── */}
       <div className="container footer-main">
         <div className="footer-grid">
@@ -78,8 +52,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="footer-tagline">
-              Tu próximo iPhone comienza aquí. Atención humana, productos
-              seleccionados y la mejor experiencia de compra en Lima.
+              iPhone y accesorios con atención personalizada por WhatsApp.
             </p>
             <div className="footer-location">
               <svg
@@ -121,7 +94,7 @@ export function Footer() {
 
         {/* Trust badges */}
         <div className="footer-trust">
-          <div className="footer-trust-item">
+          <Link className="footer-trust-item" href="/contacto" aria-label="Consultar garantía y condiciones">
             <svg
               width="20"
               height="20"
@@ -139,8 +112,8 @@ export function Footer() {
               <strong>Garantía y condiciones</strong>
               <span>Consúltalas con un asesor</span>
             </div>
-          </div>
-          <div className="footer-trust-item">
+          </Link>
+          <Link className="footer-trust-item" href="/contacto" aria-label="Consultar opciones de entrega">
             <svg
               width="20"
               height="20"
@@ -161,8 +134,8 @@ export function Footer() {
               <strong>Opciones de entrega</strong>
               <span>Se coordinan según disponibilidad</span>
             </div>
-          </div>
-          <div className="footer-trust-item">
+          </Link>
+          <a className="footer-trust-item" href={getWhatsAppUrl()} target="_blank" rel="noreferrer" data-event="whatsapp_click" aria-label="Solicitar atención personalizada por WhatsApp">
             <svg
               width="20"
               height="20"
@@ -180,7 +153,7 @@ export function Footer() {
               <strong>Atención personalizada</strong>
               <span>Asesoría por WhatsApp</span>
             </div>
-          </div>
+          </a>
         </div>
       </div>
 
