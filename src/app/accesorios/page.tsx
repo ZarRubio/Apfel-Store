@@ -34,9 +34,16 @@ export default function AccessoriesPage() {
         const itemUrl = getWhatsAppUrl({ message: `Hola Apfel Store, quisiera consultar por ${item.name} (S/ ${item.price}) y su disponibilidad.` });
         return <article className="accessory-card" key={item.name}>
           <div className="accessory-card-image">{item.image ? <Image src={`/accessories/${item.image}`} alt={item.name} fill sizes="(max-width: 600px) 50vw, (max-width: 900px) 33vw, 25vw" /> : <span>Imagen por confirmar</span>}</div>
-          <div className="accessory-card-body"><h3>{item.name}</h3><strong>S/ {item.price}</strong><a href={itemUrl} target="_blank" rel="noreferrer" aria-label={`Consultar ${item.name} por WhatsApp`}>Consultar por WhatsApp <span aria-hidden="true">↗</span></a></div>
+          <div className="accessory-card-body"><h3>{item.name}</h3><strong>S/ {item.price}</strong>{item.name === 'AirPods' && <a href="#airpods-por-cantidad">Ver precios por cantidad ↓</a>}<a href={itemUrl} target="_blank" rel="noreferrer" aria-label={`Consultar ${item.name} por WhatsApp`}>Consultar por WhatsApp <span aria-hidden="true">↗</span></a></div>
         </article>;
       })}</div>
+      <section className="airpods-offer" id="airpods-por-cantidad" aria-labelledby="airpods-offer-title">
+        <div className="airpods-offer-visual"><Image src="/accessories/airpods.jpg" alt="AirPods con estuche de carga" fill sizes="(max-width: 700px) 100vw, 320px" /></div>
+        <div className="airpods-offer-content"><span className="eyebrow">PRECIOS POR CANTIDAD</span><h2 id="airpods-offer-title">Más AirPods, mejor precio.</h2><p>El precio mostrado es por unidad para la cantidad indicada.</p>
+          <ul className="airpods-offer-prices"><li><span>6 unidades</span><strong>S/ 75</strong><small>por unidad</small></li><li><span>12 unidades</span><strong>S/ 69.90</strong><small>por unidad</small></li><li><span>50 unidades</span><strong>S/ 55</strong><small>por unidad</small></li></ul>
+          <a className="button button-light" href={getWhatsAppUrl({ message: 'Hola Apfel Store, quisiera consultar por los precios de AirPods por cantidad y su disponibilidad.' })} target="_blank" rel="noreferrer"><WhatsAppIcon /> Consultar por WhatsApp <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
       <p className="accessories-disclaimer">Las imágenes son referenciales. Consulta por WhatsApp qué accesorios incluye la promoción de tu iPhone.</p>
       <div className="advisor-spaced"><AdvisorCard eyebrow="ACCESORIOS PARA TU EQUIPO" title="¿Dudas sobre un accesorio?" description="Te ayudamos a consultar la compatibilidad con tu equipo." href={getWhatsAppUrl({ message: 'Hola Apfel Store, quisiera consultar por un accesorio y su compatibilidad con mi iPhone.' })} label="Consultar un accesorio" /></div>
     </section>

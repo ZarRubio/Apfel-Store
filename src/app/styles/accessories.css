@@ -27,6 +27,19 @@
 .accessory-card-body strong { font-size:20px; }
 .accessory-card-body a { margin-top:8px; font-size:13px; font-weight:700; text-decoration:underline; text-underline-offset:4px; }
 .accessory-card-body a:focus-visible { outline:2px solid currentColor; outline-offset:4px; }
+.airpods-offer { display:grid; grid-template-columns:minmax(200px,.7fr) minmax(0,1.3fr); overflow:hidden; margin-top:48px; border-radius:20px; background:#17171a; color:#fff; scroll-margin-top:100px; }
+.airpods-offer-visual { position:relative; min-height:340px; background:#000; }
+.airpods-offer-visual img { object-fit:contain; }
+.airpods-offer-content { padding:clamp(24px,4vw,48px); }
+.airpods-offer-content .eyebrow { color:#c5c5cd; }
+.airpods-offer-content h2 { margin:12px 0; font-size:clamp(29px,3vw,42px); line-height:1.08; }
+.airpods-offer-content p { color:#c5c5cd; font-size:15px; line-height:1.5; }
+.airpods-offer-prices { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; list-style:none; padding:0; margin:24px 0; }
+.airpods-offer-prices li { display:grid; gap:4px; padding:14px; border:1px solid #ffffff26; border-radius:12px; background:#ffffff0a; }
+.airpods-offer-prices li span,.airpods-offer-prices li small { color:#c5c5cd; font-size:13px; }
+.airpods-offer-prices strong { font-size:clamp(20px,2vw,26px); white-space:nowrap; }
+@media(max-width:700px) { .airpods-offer { grid-template-columns:1fr; } .airpods-offer-visual { min-height:230px; } }
+@media(max-width:380px) { .airpods-offer-prices { grid-template-columns:1fr; } .airpods-offer-prices li { grid-template-columns:1fr auto; align-items:center; } .airpods-offer-prices small { grid-column:1 / -1; } }
 .accessories-disclaimer { margin-top:24px; color:var(--muted); font-size:13px; line-height:1.5; }
 @media(max-width:900px) { .accessories-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
 @media(max-width:700px) { .accessory-promo { align-items:flex-start; flex-direction:column; margin-top:32px; } .accessories-hero { grid-template-columns:1fr; gap:32px; padding-top:48px; padding-bottom:60px; } .accessories-image { height:360px; } .page-visual { height:220px; } }
